@@ -7,6 +7,42 @@ This note summarizes epistemological framing, methodological choices, and common
 - Constructivist / Interpretivist: assumes meaning is constructed by participants. Supports inductive, exploratory research (ethnography, semi-structured interviews, focus groups) when context, local meanings, and power relations matter.
 - Pragmatist: chooses methods that best answer the research question; often supports mixed-methods designs when both breadth and depth are needed.
 
+### Addendum — paradigms and their mapping to methods (table/image summary)
+- Positivism / Post-positivism: ontology = single objective reality; epistemology = measurable knowledge via reliable tools; methodology = experiments, surveys; methods = questionnaires, structured observation, statistical analysis.
+- Constructivist / Interpretivist: ontology = multiple socially constructed realities; epistemology = subjective knowledge that must be interpreted; methodology = ethnography, grounded theory; methods = interviews, participant observation, thematic analysis.
+- Pragmatism: prioritizes problem-solving; mixes methods pragmatically (e.g., qualitative to develop constructs, quantitative to estimate prevalence).
+- Subjectivism & Critical paradigms: emphasize perspective, power, and critique. Methods lean to qualitative, participatory, and action-research approaches.
+
+## When NOT to choose a questionnaire/survey (practical checklist)
+Before committing to a questionnaire-based approach, consider the following conditions that suggest surveys may be a poor fit:
+
+- Constructs are not well-defined or likely differ across contexts (you need formative qualitative work first).
+- The research question aims to uncover deep meanings, power relations, or local frames rather than prevalence.
+- The population is very small, hard-to-sample, or not representative (surveys won’t yield generalizable estimates).
+- The phenomenon is primarily behavioral and poorly captured by self-report (consider observational, behavioral tasks, or administrative linkage).
+- Ethical or cultural constraints make standardized questioning intrusive or inappropriate (use participatory or qualitative methods).
+- High risk of social desirability or measurement reactivity that would bias answers; consider behavioral measures or triangulation.
+
+If any of the above applies, prefer one of:
+- Formative qualitative work: interviews, FGDs, cognitive interviewing to develop items and understand local meaning.
+- Ethnography / participant observation for rich contextual understanding.
+- Case studies, participatory mapping, and action research when co-production and community engagement are central.
+- Mixed-methods: do qualitative work first, then build a tailored survey and pilot.
+
+## Practical decision checklist (short)
+1. What is the main goal? (estimate prevalence/test hypothesis vs explore meaning)
+2. Are constructs measurable? (existing validated scales or clear operationalizations)
+3. Is the population accessible/large enough for sampling? (power & design)
+4. Are behavioral/objective measures available or preferred? (link or collect them if possible)
+5. Are there ethical or cultural constraints? (adapt methods accordingly)
+
+If 1=prevalence/hypotheses AND 2=yes AND 3=yes → Survey pathway (select/validate scales, pilot, sampling, preregister).
+If 1=exploratory OR 2=no OR 5=yes → Qualitative or mixed-methods pathway.
+
+---
+
+I added a visual decision tree (`decision_tree.svg`) to this folder. Consider adding a Mermaid or Graphviz source if you want an editable flowchart in the repo.
+
 ## Methodologies and when they fit
 - Quantitative survey research
   - Aim: measure prevalence, strength, and distribution of attitudes/behaviors; test hypothesized relationships.
