@@ -4,6 +4,7 @@ This folder stores papers relevant to epistemological alignment and method selec
 
 Current files
 - `Echeverri_2018_BiolCons.pdf` — Echeverri et al. (2018). Biological Conservation. See the BibTeX entry in `echeverri2018.bib`.
+- `Brown_Duenas_2020_MedSciEduc.pdf` — Brown & Dueñas (2020). Medical Science Educator. See the BibTeX entry in `brown_duenas2020.bib`.
 
 Suggested metadata (add or edit as needed):
 
