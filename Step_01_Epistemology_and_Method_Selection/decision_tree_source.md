@@ -73,8 +73,12 @@ flowchart LR
     classDef objective fill:#F2A154,stroke:#C57830,color:#000,font-weight:bold
     classDef method fill:#6BBF8A,stroke:#3E8A5C,color:#000
     classDef bridge fill:#E86F6F,stroke:#B84545,color:#FFF,font-weight:bold
-    classDef eco fill:#9EC5E8,stroke:#5A8DB8,color:#000
+    classDef echo fill:#9EC5E8,stroke:#5A8DB8,color:#000
 ```
+
+<p align="center">
+  <b>Figure 1. Socio-Ecological Method-Selection Decision Tree.</b> A four-layer framework guiding researchers from epistemological worldview (Layer 1) to specific research objectives (Layer 2), socio-ecological data collection methods (Layer 3), and finally to robust ecological integration strategies (Layer 4). This structure ensures methodological coherence and explicitly bridges social data with biophysical ecosystems.
+</p>
 
 ---
 
