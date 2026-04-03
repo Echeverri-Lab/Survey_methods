@@ -8,75 +8,72 @@
 ## Decision Tree
 
 ```mermaid
-graph TD
-    %% ===== LAYER 1 — Epistemology (Philosophical Paradigm) =====
-    EP[[What is your philosophical worldview?]]
+flowchart LR
 
-    EP -->|Reality is objective<br>& measurable| POS[[Positivism]]
-    EP -->|Reality is socially<br>constructed| CON[[Constructivism]]
-    EP -->|What works is<br>what matters| PRA[[Pragmatism]]
-    EP -->|Reality is shaped by<br>individual perspective| SUB[[Subjectivism]]
-    EP -->|Knowledge must expose<br>power & oppression| CRT[[Critical Theory]]
+    EP[["What is your philosophical worldview?"]] -- Reality is objective<br>and measurable --> POS[["Positivism"]]
+    EP -- Reality is socially<br>constructed --> CON[["Constructivism"]]
+    EP -- What works is<br>what matters --> PRA[["Pragmatism"]]
+    EP -- Reality is shaped by<br>individual perspective --> SUB[["Subjectivism"]]
+    EP -- Knowledge must expose<br>power and oppression --> CRT[["Critical Theory"]]
+    POS --> OBJ_GEN{"Objective: Find universal truths and mechanisms/ Generalize"}
+    CON --> OBJ_UND{"Objective: Understand lived experience"}
+    PRA --> OBJ_SOL{"Objective: Solve a practical problem"}
+    SUB --> OBJ_INT{"Objective: Interpret signs and meaning"}
+    CRT --> OBJ_CHG{"Objective: Change / Emancipate"}
+    OBJ_GEN -- "Large-sample inference" --> M_SURV(["Longitudinal surveys,<br> experiments and structured psychometric scales"])
+    OBJ_GEN -- Measure unconscious bias --> M_IAT(["Implicit Association<br>Tests — IATs"])
+    OBJ_UND -- Deep cultural immersion --> M_ETHN(["Ethnography<br> and participant observation"])
+    OBJ_UND -- "Group sense-making" --> M_FGD(["Focus group<br> discussions"])
+    OBJ_SOL -- "Community-driven data" --> M_PMAP(["Participatory mapping<br> and community-based methods"])
+    OBJ_SOL -- Convergent evidence --> M_MIX(["Mixed-methods<br>sequential / concurrent"])
+    OBJ_INT -- Semiotic & narrative data --> M_NARR(["Narrative analysis<br> and photo-elicitation"])
+    OBJ_INT -- Perception of landscape --> M_IAT2(["IATs for<br>Implicit landscape values"])
+    OBJ_CHG -- "Action-oriented inquiry" --> M_PAR(["Participatory action<br>research"])
+    OBJ_CHG -- Policy & discourse --> M_CDA(["Critical discourse<br>analysis"])
+    M_SURV --> BRIDGE{{"How is social data linked<br>to the ecosystem?"}}
+    M_IAT --> BRIDGE
+    M_ETHN --> BRIDGE
+    M_FGD --> BRIDGE
+    M_PMAP --> BRIDGE
+    M_MIX --> BRIDGE
+    M_NARR --> BRIDGE
+    M_IAT2 --> BRIDGE
+    M_PAR --> BRIDGE
+    M_CDA --> BRIDGE
+    BRIDGE -- Spatial overlay of<br>social &amp; biophysical data --> ECO_GIS(["GIS / Remote-Sensing<br>Overlay"])
+    BRIDGE -- "Ecological health<br>ground-truthing" --> ECO_BIO(["Bio-indicators<br> and field transects, surveys, point counts, "])
+    BRIDGE -- Governance &amp;<br>regulatory analysis --> ECO_POL(["Policy Critique<br>&amp; Institutional Mapping"])
 
-    %% ===== LAYER 2 — Research Objective =====
-    POS --> OBJ_GEN{Objective: Generalize}
-    CON --> OBJ_UND{Objective: Understand lived experience}
-    PRA --> OBJ_SOL{Objective: Solve a practical problem}
-    SUB --> OBJ_INT{Objective: Interpret signs & meaning}
-    CRT --> OBJ_CHG{Objective: Change / Emancipate}
-
-    %% ===== LAYER 3 — Methods & Tools =====
-
-    %% — Positivism branch —
-    OBJ_GEN -->|Large-sample inference| M_SURV([Longitudinal Surveys<br>& Structured Scales])
-    OBJ_GEN -->|Measure unconscious bias| M_IAT([Implicit Association<br>Tests — IATs])
-
-    %% — Constructivism branch —
-    OBJ_UND -->|Deep cultural immersion| M_ETHN([Ethnography<br>& Participant Observation])
-    OBJ_UND -->|Group sense-making| M_FGD([Focus Group<br>Discussions — FGDs])
-
-    %% — Pragmatism branch —
-    OBJ_SOL -->|Community-driven data| M_PMAP([Participatory Mapping<br>& Co-Design])
-    OBJ_SOL -->|Convergent evidence| M_MIX([Mixed-Methods<br>Sequential / Concurrent])
-
-    %% — Subjectivism branch —
-    OBJ_INT -->|Semiotic & narrative data| M_NARR([Narrative Analysis<br>& Photo-Elicitation])
-    OBJ_INT -->|Perception of landscape| M_IAT2([IATs for<br>Implicit Landscape Values])
-
-    %% — Critical Theory branch —
-    OBJ_CHG -->|Action-oriented inquiry| M_PAR([Participatory Action<br>Research — PAR])
-    OBJ_CHG -->|Policy & discourse| M_CDA([Critical Discourse<br>Analysis — CDA])
-
-    %% ===== LAYER 4 — Ecological Linkage (The SE Bridge) =====
-    BRIDGE{{"How is social data linked<br>to the ecosystem?"}}
-
-    M_SURV  --> BRIDGE
-    M_IAT   --> BRIDGE
-    M_ETHN  --> BRIDGE
-    M_FGD   --> BRIDGE
-    M_PMAP  --> BRIDGE
-    M_MIX   --> BRIDGE
-    M_NARR  --> BRIDGE
-    M_IAT2  --> BRIDGE
-    M_PAR   --> BRIDGE
-    M_CDA   --> BRIDGE
-
-    BRIDGE -->|Spatial overlay of<br>social & biophysical data| ECO_GIS([GIS / Remote-Sensing<br>Overlay])
-    BRIDGE -->|Ecological health<br>ground-truthing| ECO_BIO([Bio-Indicators<br>& Field Transects])
-    BRIDGE -->|Governance &<br>regulatory analysis| ECO_POL([Policy Critique<br>& Institutional Mapping])
-
-    %% ===== Styling =====
+     EP:::paradigm
+     POS:::paradigm
+     CON:::paradigm
+     PRA:::paradigm
+     SUB:::paradigm
+     CRT:::paradigm
+     OBJ_GEN:::objective
+     OBJ_UND:::objective
+     OBJ_SOL:::objective
+     OBJ_INT:::objective
+     OBJ_CHG:::objective
+     M_SURV:::method
+     M_IAT:::method
+     M_ETHN:::method
+     M_FGD:::method
+     M_PMAP:::method
+     M_MIX:::method
+     M_NARR:::method
+     M_IAT2:::method
+     M_PAR:::method
+     M_CDA:::method
+     BRIDGE:::bridge
+     ECO_GIS:::eco
+     ECO_BIO:::eco
+     ECO_POL:::eco
     classDef paradigm fill:#4A6FA5,stroke:#2E4A7A,color:#FFF,font-weight:bold
     classDef objective fill:#F2A154,stroke:#C57830,color:#000,font-weight:bold
     classDef method fill:#6BBF8A,stroke:#3E8A5C,color:#000
     classDef bridge fill:#E86F6F,stroke:#B84545,color:#FFF,font-weight:bold
     classDef eco fill:#9EC5E8,stroke:#5A8DB8,color:#000
-
-    class EP,POS,CON,PRA,SUB,CRT paradigm
-    class OBJ_GEN,OBJ_UND,OBJ_SOL,OBJ_INT,OBJ_CHG objective
-    class M_SURV,M_IAT,M_ETHN,M_FGD,M_PMAP,M_MIX,M_NARR,M_IAT2,M_PAR,M_CDA method
-    class BRIDGE bridge
-    class ECO_GIS,ECO_BIO,ECO_POL eco
 ```
 
 ---
