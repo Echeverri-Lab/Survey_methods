@@ -2,20 +2,27 @@
 
 This is a step-by-step guide to survey design. It provides a reproducible structure to collect materials, templates, example code, and references for each stage of designing a survey-based study.
 
-Top-level folders (one per step):
+## Repository structure
 
-- Step_01_Epistemology_and_Method_Selection/
-- Step_02_Theory_Grounding/
-- Step_03_Psychometric_Scales/
-- Step_04_Study_Design/
-- Step_05_PreRegistration/
-- Step_06_Instrument_Construction/
-- Step_07_Measuring_Behavior/
-- Step_08_Ethics_and_Compensation/
-- Step_09_Power_and_Sampling/
-- Step_10_Analysis/
+Workflow steps (one folder per step):
 
-Quick start
+- `Step_01_Epistemology_and_Method_Selection/`
+- `Step_02_Theory_Grounding/`
+- `Step_03_Psychometric_Scales/`
+- `Step_04_Study_Design/`
+- `Step_05_PreRegistration/`
+- `Step_06_Instrument_Construction/`
+- `Step_07_Measuring_Behavior/`
+- `Step_08_Ethics_and_Compensation/`
+- `Step_09_Power_and_Sampling/`
+- `Step_10_Analysis/`
+
+Other top-level folders:
+
+- `Relevant Literature/` — collected PDFs, RIS files, and exported reference libraries.
+- `_archive/` — one-off scripts and outputs used during early exploration (not part of the active workflow; see `_archive/README.md`).
+
+## Quick start
 
 1. Edit files and add your papers (PDFs) under the appropriate `papers/` folders.
 2. Add your survey instruments under `Step_06_Instrument_Construction/`.

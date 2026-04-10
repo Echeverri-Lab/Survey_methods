@@ -1,0 +1,119 @@
+Page 2:
+disciplines such as advertising (Grigsby et al., 2023), marketing (Anaza
+et al., 2020), communications (Oh et al., 2020), psychology (Nielsen
+et al., 2018), and healthcare (Andrews et al., 2022). Given the value
+that narrative transportation provides to marketers in terms of
+influencing product choice (Redondo et al., 2018), improving attitudes
+(Escalas, 2004), enhancing word‐of‐mouth intentions (Seo et al., 2018),
+and increasing purchase intentions (McFerran et al., 2010), reviewing
+the extant literature is critical so that academics are able to not only
+understand the current state of the field but also advance the field. As
+such, this systematic literature review synthesizes the literature on
+narrative transportation when used as a means of persuasion.
+To address the issues most relevant to marketers who employ
+narrative transportation as a means by which to communicate and
+persuade and academics who study narrative transportation in the
+context of persuasion, we seek to address five questions. First, when
+studying narrative transportation, what theoretical foundations have
+provided insights into how narrative transportation persuades (RQ1)?
+Next, what factors elicit (RQ2), are outcomes of (RQ3), and moderate the
+effect of (RQ4) narrative transportation? Finally, based on our analysis of
+the literature, what research questions are left unanswered (RQ5)?
+This manuscript is organized as follows. First, we provide an
+overview of narrative transportation. Second, we discuss the protocol
+used (Scientific Procedures and Rationales for Systematic Literature
+Reviews ‐ SPAR‐4‐SLR; Paul et al., 2021) to obtain our sample. We
+present our findings, focusing on the relevant theories and concepts
+(Paul et al., 2021) which enable us to address RQ1–4. We then
+analyze the results of RQ1–4 to provide insights pertinent to RQ5. In
+doing so, we provide academics and practitioners with an overview of
+the current state of the literature, implications from the existing
+literature, and directions for multiple avenues of future research.
+Thus, this manuscript can serve as a roadmap for researchers wishing
+to contribute to the narrative transportation literature.
+2
+|
+OVERVIEW OF NARRATIVE
+TRANSPORTATION
+The construct of narrative transportation is grounded in narrative
+transportation theory and is a process in which an individual becomes
+absorbed in a story, connecting with the characters and the story
+environment while simultaneously disconnecting from their physical
+environment (Green & Brock, 2000). This transportation results in a
+unique persuasive effect that does not align with traditional dual‐
+processing models (e.g., Elaboration Likelihood Model: Petty et al., 1983).
+Cognitive effort is relatively high (Nielsen & Escalas, 2010), likely due to
+the activation of the consumer's imagination (Grigsby et al., 2023), yet
+counterarguing is less likely to occur (Ma, 2020). The persuasive
+outcomes
+that result
+are
+also
+surprisingly
+long‐lasting
+(Appel
+&
+Richter, 2007), despite the apparent lack of careful argument considera-
+tion (Lien & Chen, 2013). While narrative transportation has been
+extensively studied from the perspective of content developed for
+entertainment purposes (e.g., films: Bezdek & Gerrig, 2017; novels:
+Gerrig, 1993; TV shows: Pittman & Steiner, 2019), as previously noted,
+we are interested specifically in how narrative transportation is used as a
+persuasive mechanism.
+It is important to differentiate narrative transportation from a
+narrative (an antecedent of narrative transportation) or other
+processes such as flow or narrative engagement. Please see the
+Web Appendix S1 for details on how narrative transportation relates
+to and differs from other process‐related constructs. Furthermore, to
+date, there have been no systematic literature reviews on narrative
+transportation. However, please see the Web Appendix S1 for
+information on related literature reviews.
+3
+|
+METHODOLOGY
+Literature reviews, as a research methodology, provide critical
+insights into a specific area of inquiry and are especially needed
+when the area of inquiry spans multiple disciplines (Snyder, 2019).
+We specifically execute a systematic literature review as Paul et al.
+(2021) note that systematic literature reviews, when conducted well,
+are the most “informative and scientific” (p. 1), resulting in a “product
+of scholarly research” (p. 2). In doing so, this enables us to address our
+five primary research questions. To determine our sample, consistent
+with other systematic literature reviews (Lim et al., 2022), the SPAR‐
+4‐SLR protocol was employed (Paul et al., 2021). Following the SPAR‐
+4‐SLR protocol, sample articles were selected using three stages,
+assembling, arranging, and assessing, and their six substages. The
+stages (and substages) are identified in Figure 1 and detailed in the
+Web Appendix S1. This process resulted in a final sample of 95
+articles (see Web Appendix S1).
+4
+|
+RESULTS
+Below, we detail our findings as they relate to RQ1–RQ5. To provide
+additional insights, the Web Appendix S1 also contains a descriptive
+profiling of our sample.
+4.1
+|
+Theoretical foundations
+Across the literature we reviewed, 14 theories were mentioned in
+two or more articles, seeTable 1. Additionally, 48 other theories were
+mentioned in just a single article (e.g., protection motivation theory:
+To & Patrick, 2021; theory of planned behavior: Chou et al., 2022;
+uses and gratification theory: Sung et al., 2022). Furthermore, some
+articles employed multiple theories. The theories that were men-
+tioned most frequently are discussed below.
+4.1.1
+|
+Narrative transportation theory
+Unsurprisingly, the most common theory mentioned was narrative
+transportation
+theory
+(n = 95).
+Narrative
+transportation
+theory
+1806
+|
+THOMAS and GRIGSBY
+ 15206793, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/mar.22011 by Univ of California Lawrence Berkeley National Lab, Wiley Online Library on [09/04/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+

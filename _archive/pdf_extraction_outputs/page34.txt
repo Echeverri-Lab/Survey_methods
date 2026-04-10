@@ -1,0 +1,425 @@
+--- Page 3 Text ---
+typically references Green and Brock (2000), whose research was the
+first to develop and validate a narrative transportation scale and
+provide evidence that, through narrative transportation, stories can
+influence audience beliefs. This finding suggested that stories are
+uniquely persuasive, and thus narrative transportation theory quickly
+became popular with marketing academic researchers.
+As the theory developed and grew in popularity, different
+terminology was employed to refer to narrative transportation
+theory. In the context of advertising, some authors refer to the
+process through which narrative transportation can influence beliefs
+as narrative persuasion (e.g., Appel, 2022; Hamby & Brinberg, 2016).
+Narrative processing is also used interchangeably with narrative
+transportation (e.g., Bublitz et al., 2016; Hung et al., 2017); it refers to
+the way consumers process stories (which is encompassed by the
+original theory: Green & Brock, 2000). When authors use this
+terminology, they still rely on the same underlying tenets of narrative
+transportation theory. As such, we counted these articles as relying
+on narrative transportation theory. We also included the extended
+transportation‐imagery model (van Laer et al., 2014) in this category.
+This model extends narrative transportation theory to incorporate a
+more complete set of antecedents, moderators, and consequences
+(van Laer et al., 2014).
+Notably, narrative transportation theory does not explain how or
+why it is so persuasive. Thus, to elucidate the persuasive process,
+researchers often integrate narrative transportation theory with other
+persuasion theories which are discussed in subsequent sections.
+4.1.2
+|
+Dual‐processing models
+This category includes articles that mention the elaboration likelihood
+model, the heuristic systematic model, or dual‐processing theory more
+generally. Dual‐processing theories describe how consumers can process
+information via two different paths, such as the central or peripheral
+paths for the elaboration likelihood model (ELM: Petty et al., 1983) or
+heuristic or systematic processing for the heuristic systematic model
+(HSM: Chaiken, 1980). Early work (e.g., Escalas, 2004; Green & Brock,
+2000) suggested that narrative transportation did not adhere to a
+traditional dual‐processing model. If narrative transportation took the
+form of processing associated with passive processing (such as the
+peripheral path of the ELM or heuristic processing of the HSM), then less
+critical analysis of the message in the story would be expected and
+resulting attitudes should be weakly held and relatively easy to change. If
+narrative transportation took the form of processing associated with
+FIGURE 1
+Sampling methodology. (Paul
+et., 2017; Paul & Rosado‐Serrano, 2019).
+THOMAS and GRIGSBY
+|
+1807
+ 15206793, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/mar.22011 by Univ of California Lawrence Berkeley National Lab, Wiley Online Library on [09/04/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+--- Page 4 Text ---
+more active processing (such as the central path of the ELM or systematic
+processing of the HSM), then more critical thought would be expected
+and the resulting persuasion that occurred should be long‐lasting and
+more difficult to change (Shaffer et al., 2018). Researchers have found
+that narrative transportation was associated with a surprising combination
+of effects. Despite being persuasive, narrative transportation does not
+appear to involve much critical thought, counterarguing, or analytical
+processing of the message contained in the story (Escalas, 2004; Shaffer
+et al., 2018). Researchers have also found that the motivation to process
+the message, an important antecedent to the ELM, does not influence
+outcomes when narrative transportation occurs (Huang et al., 2022).
+Two reviewed articles examine situations in which narrative
+transportation can be reduced and consumers will shift their
+processing approach to better fit in with the predictions made by
+dual‐processing models. Appel (2022) used a manipulative intent
+warning before showing consumers a story, successfully reducing
+narrative
+transportation
+while
+eliciting
+affective
+resistance
+to
+persuasion. Furthermore, Tezer et al. (2022) found that when
+perceived risk was high, consumers avoided narrative transportation
+and instead engaged in analytical processing.
+4.1.3
+|
+Persuasion knowledge model
+The persuasion knowledge model (PKM: Friestad & Wright, 1994) argues
+that as consumers learn and have consumption experiences, they develop
+an understanding of common persuasive practices as well as coping
+strategies to resist the persuasive effects of such tactics. Our review
+found several instances where the PKM was integrated with narrative
+transportation. In some cases, cues that activate persuasion knowledge
+can have a negative influence on persuasive effects, but in other cases,
+narrative transportation can overcome the negative effects of persuasion
+knowledge and still be effective.
+Perceptions of manipulative intent are one way in which the
+persuasiveness of stories can be lost (Appel, 2022; Wentzel et al., 2010),
+as perceptions of manipulative intent reduce narrative transportation. The
+story format can activate persuasion knowledge in some consumers and,
+as a result, consumers become skeptical and more critical of the message,
+reducing its effectiveness (Gilliam & Flaherty, 2015). Similarly, Yıldız and
+Sever (2022) find that high brand presence in a narrative video ad reduces
+persuasive outcomes. Other research supports the argument that when
+consumers feel connected to the brand, message source, or product,
+narrative transportation will minimize persuasion knowledge effects. For
+example, the presence of a brand as the source of the message
+(compared to independent sources such as trade publications) generally
+increases persuasion knowledge; however, this effect is mitigated when
+narrative transportation is high (Tezer et al., 2020). Likewise, Feng and
+colleagues (2021) explore influencer advertising and find that, contrary to
+expectations, the presence of a sponsorship disclosure label did not
+significantly influence persuasive outcomes, which the authors attribute
+to narrative transportation. Kim (2022) finds a similar effect in a
+pharmaceutical advertising context. When influencers disclosed personal
+information, persuasion knowledge was reduced, and narrative transpor-
+tation increased compared to when influencers did not disclose.
+4.1.4
+|
+Social cognitive theory
+Social cognitive theory states that consumers are most likely to have high
+self‐efficacy concerning a new behavior and more likely to adopt the new
+behavior when it is demonstrated by an influential peer rather than simply
+recommended (Bandura, 2001). Because narrative transportation can
+mimic a real experience due to activation of imagination, empathy, and
+identification with the story characters, researchers suggest that
+narratives that depict behaviors (e.g., alcohol consumption: Redondo
+et al., 2018; domestic violence interventions: El‐Khoury & Shafer, 2016;
+purchase decisions: Kang et al., 2020) can influence consumers to engage
+in the depicted behaviors. Researchers argue that social cognition may
+occur as part of the narrative transportation process (e.g., Kang
+et al., 2020), or it may have a direct influence on consumers regardless
+of the level of narrative transportation (e.g., Redondo et al., 2018). El‐
+Khoury and Shafer (2016) uncovered a boundary condition such that
+narrative ads were more effective for those consumers who did not have
+experience with the behavior.
+TABLE 1
+List of theories used in two or more articles in sample.
+Theory
+Seminal article | example
+articlea
+Count
+Narrative transportation
+theory
+Green & Brock (2000) |
+Appel (2022)
+95
+Dual processing models
+Petty et al. (1983) | Shaffer
+et al. (2018)
+8
+Persuasion knowledge
+model
+Friestad & Wright (1994) |
+Kim (2022)
+6
+Social cognitive theory
+Bandura (2001) | Kang
+et al. (2020)
+4
+Associative network theory
+Collins & Loftus (1975) |
+Avramova et al. (2017)
+3
+Cognitive capacity theory
+Isen & Daubman (1984) | Sar
+& Rodriguez (2019)
+2
+Entertainment overcoming
+resistance model
+Moyer‐Gusã & Nabi (2010) |
+Krakow et al. (2018)
+2
+Exemplification theory
+Zillmann (1999) | El‐Khoury &
+Shafer (2016)
+2
+Identification theory
+Cohen, 2018 | Dessart (2018)
+2
+Psychological reactance
+theory
+Brehm (1966) | Lillie
+et al. (2022)
+2
+Social identity theory
+Hogg & Turner (1987) | Van
+den Hende et al. (2012)
+2
+Taylor's strategy wheel
+Taylor (1999) | Sharma &
+Meena (2024)
+2
+aThe seminal article represents a well‐established article on the noted
+theory that future researchers can use for source material. The example
+article is an article from our sample that employs the noted theory.
+1808
+|
+THOMAS and GRIGSBY
+ 15206793, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/mar.22011 by Univ of California Lawrence Berkeley National Lab, Wiley Online Library on [09/04/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+--- Page 5 Text ---
+4.1.5
+|
+Associative network theory
+Associative network theory is used to describe how consumers store
+and access information in memory, suggesting that information is
+stored in the form of nodes that are connected via links (Collins &
+Loftus, 1975). New information is stored in memory with related
+nodes, and during recall, consumers access nodes and related nodes
+via spreading activation. Researchers argue that associative network
+theory can work in combination with narrative transportation theory
+to improve persuasive outcomes. For example, repeated exposure to
+brand information, whether through repeated mention of an unfamiliar
+brand (Avramova et al., 2017) or information presented across
+different media forms (Granitz & Forman, 2015), should improve
+persuasive
+outcomes.
+Narrative
+transportation, due
+to reduced
+counterarguing and increased cognitive effort, further enhances these
+outcomes (Avramova et al., 2017; Wang & Shen, 2019).
+4.2
+|
+Concepts
+Given the systematic literature review parameters, every article in our
+sample discussed either narrative transportation as a theory and/or
+construct. However, that does not mean that every quantitative
+manuscript reviewed incorporated narrative transportation as a variable
+interest. Of the 83 articles that incorporated quantitative methods into
+some aspect of the study design, 27.7% (n = 23) did not formally measure
+or manipulate narrative transportation. Rather, the literature on narrative
+transportation provided theoretical support for their conceptualization. As
+such, the narrative transportation literature was employed to make
+predictions about related, but distinct constructs such as narrative self‐
+referencing, imagination proclivity, or immersion.
+Of the research that included narrative transportation as a construct
+in the study design (n = 60), narrative transportation was almost
+exclusively measured (98%). Regardless of whether it was manipulated
+or measured, narrative transportation was treated as a mediator in 66.7%
+of the articles, a dependent variable in 11.6% of the articles, an
+independent variable in 10% of the articles, a moderator in 8.3% of the
+articles, and an alternative explanation or covariate in 3.3% of the articles.
+Three of the manuscripts examining narrative transportation did so in the
+context of scale development (Bennett et al., 2023; Campbell et al., 2023;
+Yueh & Zheng, 2019), while one examined narrative transportation as an
+individual difference variable (Brechman & Purvis, 2015).
+In Figure 2, we depict the empirical framework, illustrating the
+overarching relationships examined in our sample. Below we discuss
+the primary variables of interest and ways in which these variables
+can be categorized.
+4.2.1
+|
+Antecedents
+The antecedents of narrative transportation can be classified into
+three primary categories: storyteller, consumer, and medium char-
+acteristics. In a previous review (van Laer et al., 2014), antecedents
+were classified into two categories: storyteller characteristics and
+story‐receiver characteristics (discussed here as consumer character-
+istics). Storyteller characteristics include aspects of the story (e.g.,
+plot, brands, etc.) and the characters involved, while consumer
+characteristics include variables unique to the consumer as opposed
+to
+the
+persuasive
+information.
+Medium
+characteristics
+include
+aspects
+of
+the
+medium
+(e.g.,
+visual,
+verbal,
+etc.)
+that
+affect
+transportation. See Table 2 for a complete list of antecedents.
+Starting with storyteller characteristics, the most frequently
+explored antecedent is the narrative nature of the information (n = 9),
+e.g., presenting the information in a story format as compared to an
+expository (e.g., Wentzel et al., 2010) or list (e.g., Schweitzer & Van
+den Hende, 2017) format. Presenting information in a story format is
+more likely to elicit narrative transportation, which is consistent with
+the prevailing conceptualization that the elements of a story are a
+FIGURE 2
+Framework of relationships included in review of narrative transportation.
+THOMAS and GRIGSBY
+|
+1809
+ 15206793, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/mar.22011 by Univ of California Lawrence Berkeley National Lab, Wiley Online Library on [09/04/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+--- Page 6 Text ---
+necessary, but not sufficient condition of narrative transportation
+(van Laer et al., 2014). Other attributes of the information (e.g.,
+disclosure: Kim, 2022; movement: Grigsby et al., 2023) are also found
+to influence narrative transportation. Further, many of the storyteller
+characteristics can be further classified as attributes specific to the
+brand (e.g., brand attributes: McFerran et al., 2010; brand placement:
+Yıldız & Sever, 2022) or attributes of the character (e.g., character
+gaze: To & Patrick, 2021; narrative perspective: Kim, 2022) that is
+presented in the persuasive information. These studies identify
+tactics that marketers can employ to “pull” consumers into the story,
+enhancing the likelihood that they will be transported.
+Consumer characteristics fall into three broad categories: individual
+differences, states, and judgments. Consumer individual differences
+include demographic information (e.g., age and education: Neil et al., 2019)
+and consumer traits (e.g., technological reflectiveness: Schweitzer & Van
+den Hende, 2017; fantasy proneness: Chen, 2015). Conversely, consumer
+states, which are temporary, have also been shown to affect narrative
+transportation and include variables such as imagination (Grigsby
+et al., 2023), message comprehension (Glaser & Reisinger, 2022), and
+mental simulation (Escalas, 2004). Finally, consumer judgments include
+perceptions about user control (Oh et al., 2020), perceived realism
+(Redondo et al., 2018), and feelings of spatial presence (Ma, 2020).
+Understanding the effect of consumer characteristics on narrative
+transportation helps marketers to know who is susceptible to transporta-
+tion and influences targeting efforts.
+Finally, medium characteristics focus on elements of the medium that
+facilitate or inhibit transportation. The style of a demonstration (Ringler
+et al., 2024), the ability to interact with the medium (Oh et al., 2020), and
+the type of medium (Luna‐Nevarez, 2021) can influence the extent to
+which consumers experience narrative transportation. Less research has
+explored the influence of medium characteristics compared to the other
+categories we reviewed. We discuss potential areas for research advances
+related to medium characteristics in Section 5.3.
+4.2.2
+|
+Outcomes
+The examination of the outcomes of narrative transportation can be
+broadly viewed as those that are context‐general (e.g., beliefs about
+TABLE 2
+Antecedents of narrative transportation and their
+effecta on narrative transportation.
+Storyteller characteristics
+Attributes of the story/information
+Anthropomorphism
++
+Disclosure
++
+Foreshadowing
++
+Guilt appeal
++
+Movement in ad
++
+Moving music
++
+Narrative presentation of information
++
+Narrative self‐referencing
++
+Product‐story link
++
+Attributes of the brand
+Brand prominence
+−
+Desirable brand attributes
++
+Presence of slogan
++
+Attributes of the character
+Averted gaze
++
+Narrative perspective
++
+Consumer characteristics
+Individual differences
+Age
+−
+Cognitive flow
++
+Education
++
+Empathy bias
++
+Fantasy proneness
++
+Fashion involvement
++
+Product expertise/knowledge
++
+Technological reflectiveness
++
+States
+Character perspective‐taking
++
+Comprehension
++
+Fantasy passport
++
+Feelings of enjoyment
++
+Imagination
++
+Mental simulation
++
+Judgments
+Identification with characters/story
++
+Perceptions of advertising
++
+Perceived contingency
++
+Perceptions of spatial presence
++
+TABLE 2
+(Continued)
+Consumer characteristics
+Perceptions of user control
++
+Perceived realism
++
+Medium Characteristics
+Graphic presentation format
++
+Interactivity of information
++
+Process demonstration
++
+aThe column on the right signifies whether the effect on narrative
+transportation was either positive or negative.
+1810
+|
+THOMAS and GRIGSBY
+ 15206793, 2024, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/mar.22011 by Univ of California Lawrence Berkeley National Lab, Wiley Online Library on [09/04/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
