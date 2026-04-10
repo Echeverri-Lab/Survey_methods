@@ -1,0 +1,4 @@
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+--- Page 8 Tables ---
+Product choice | +
+Willingness to respond/help | +
