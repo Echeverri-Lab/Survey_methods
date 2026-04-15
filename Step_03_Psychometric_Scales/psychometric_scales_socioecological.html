@@ -1,0 +1,314 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.wrap { padding: 1rem 0; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.25rem; align-items: center; }
+.filter-btn { font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 0.5px solid var(--color-border-secondary); background: var(--color-background-primary); color: var(--color-text-secondary); cursor: pointer; transition: all 0.15s; }
+.filter-btn.active { background: var(--color-background-secondary); color: var(--color-text-primary); border-color: var(--color-border-primary); font-weight: 500; }
+.search { font-size: 13px; padding: 5px 10px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); background: var(--color-background-primary); color: var(--color-text-primary); width: 200px; }
+.tbl-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+th { text-align: left; font-weight: 500; font-size: 12px; color: var(--color-text-secondary); padding: 6px 10px; border-bottom: 0.5px solid var(--color-border-tertiary); white-space: nowrap; }
+td { padding: 8px 10px; border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: top; color: var(--color-text-primary); line-height: 1.5; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: var(--color-background-secondary); }
+.badge { display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 999px; font-weight: 500; white-space: nowrap; }
+.cat-nature { background: #E1F5EE; color: #085041; }
+.cat-value { background: #EEEDFE; color: #3C3489; }
+.cat-affect { background: #FAEEDA; color: #633806; }
+.cat-identity { background: #E6F1FB; color: #0C447C; }
+.cat-attitude { background: #FAECE7; color: #712B13; }
+.cat-wellbeing { background: #EAF3DE; color: #27500A; }
+.verify { font-size: 11px; color: var(--color-text-secondary); font-style: italic; }
+.flag { color: #BA7517; font-size: 11px; font-weight: 500; }
+col.c1 { width: 9%; }
+col.c2 { width: 13%; }
+col.c3 { width: 8%; }
+col.c4 { width: 22%; }
+col.c5 { width: 20%; }
+col.c6 { width: 28%; }
+.hidden { display: none; }
+.count { font-size: 12px; color: var(--color-text-secondary); margin-left: auto; }
+</style>
+<div class="wrap">
+<h2 class="sr-only">Psychometric scales reference table for socio-ecological research</h2>
+<div class="controls">
+  <button class="filter-btn active" onclick="filter('all',this)">All</button>
+  <button class="filter-btn" onclick="filter('nature',this)">Nature connectedness</button>
+  <button class="filter-btn" onclick="filter('value',this)">Values / orientations</button>
+  <button class="filter-btn" onclick="filter('attitude',this)">Attitudes</button>
+  <button class="filter-btn" onclick="filter('identity',this)">Identity</button>
+  <button class="filter-btn" onclick="filter('affect',this)">Affect</button>
+  <button class="filter-btn" onclick="filter('wellbeing',this)">Wellbeing</button>
+  <span class="count" id="count"></span>
+</div>
+<div class="controls">
+  <input class="search" type="text" placeholder="Search scales..." oninput="search(this.value)" />
+</div>
+<div class="tbl-wrap">
+<table id="tbl">
+  <colgroup>
+    <col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"><col class="c6">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Abbrev.</th><th>Full name</th><th>Category</th><th>What it measures</th><th>Items / format</th><th>Citation</th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+</div>
+</div>
+
+<script>
+const scales = [
+  {
+    abbr: "NR / NRS",
+    name: "Nature Relatedness Scale",
+    cat: "nature",
+    catLabel: "Nature connectedness",
+    desc: "Individual's subjective sense of connection with nature, including affective, cognitive, and experiential dimensions",
+    items: "21 items (full); 5-point Likert",
+    cite: "Nisbet, E. K., Zelenski, J. M., & Murphy, S. A. (2009). Environment and Behavior, 41(5), 715–740.",
+    flag: false
+  },
+  {
+    abbr: "NR-6",
+    name: "Nature Relatedness Scale – Short Form",
+    cat: "nature",
+    catLabel: "Nature connectedness",
+    desc: "Brief measure of nature relatedness; validated short version of the NRS retaining core psychometric properties",
+    items: "6 items; 5-point Likert",
+    cite: "Nisbet, E. K., & Zelenski, J. M. (2013). Frontiers in Psychology, 4, 813.",
+    flag: false
+  },
+  {
+    abbr: "CNS",
+    name: "Connectedness to Nature Scale",
+    cat: "nature",
+    catLabel: "Nature connectedness",
+    desc: "Affective, experiential connection to nature; sense of being part of the natural world rather than separate from it",
+    items: "14 items; 5-point Likert",
+    cite: "Mayer, F. S., & Frantz, C. M. (2004). Journal of Environmental Psychology, 24(4), 503–515. [VERIFY]",
+    flag: true
+  },
+  {
+    abbr: "INS",
+    name: "Inclusion of Nature in Self",
+    cat: "nature",
+    catLabel: "Nature connectedness",
+    desc: "Single-item pictorial measure of the overlap between self and nature; widely used as a brief proxy for nature connectedness",
+    items: "1 item (Venn diagram pictorial scale)",
+    cite: "Schultz, P. W. (2002). In P. Schmuck & W. Schultz (Eds.), Psychology of Sustainable Development. [VERIFY]",
+    flag: true
+  },
+  {
+    abbr: "EID",
+    name: "Environmental Identity Scale",
+    cat: "identity",
+    catLabel: "Identity",
+    desc: "Extent to which the natural environment is part of an individual's sense of self and personal identity",
+    items: "24 items; 7-point Likert",
+    cite: "Olivos, P., & Aragonés, J. I. (2011). Psyecology, 2(1), 65–74.",
+    flag: false
+  },
+  {
+    abbr: "EID (revised)",
+    name: "Environmental Identity Scale – Revised",
+    cat: "identity",
+    catLabel: "Identity",
+    desc: "Cross-culturally validated revision of the EID; examines environmental identity across diverse cultural contexts",
+    items: "11 items; 5-point Likert",
+    cite: "Clayton, S., Czellar, S., Nartova-Bochaver, S., Skibins, J. C., et al. (2021). Sustainability, 13(4), 2387.",
+    flag: false
+  },
+  {
+    abbr: "NEP",
+    name: "New Ecological Paradigm Scale",
+    cat: "value",
+    catLabel: "Values / orientations",
+    desc: "Worldview or belief system regarding humanity's relationship with the natural environment; widely used to measure pro-ecological orientation",
+    items: "15 items (revised); 5-point Likert",
+    cite: "Dunlap, R. E., Van Liere, K. D., Mertig, A. G., & Jones, R. E. (2000). Journal of Social Issues, 56(3), 425–442. [VERIFY]",
+    flag: true
+  },
+  {
+    abbr: "VO",
+    name: "Value Orientations towards Wildlife",
+    cat: "value",
+    catLabel: "Values / orientations",
+    desc: "Mutualism vs. domination value orientations towards wildlife; underpins the 2-MEV and Schwartz-based frameworks in wildlife management",
+    items: "Varies by version; Likert items",
+    cite: "Teel, T. L., & Manfredo, M. J. (2010). Human Dimensions of Wildlife, 15(4), 261–274.",
+    flag: false
+  },
+  {
+    abbr: "2-MEV",
+    name: "Two Major Environmental Values",
+    cat: "value",
+    catLabel: "Values / orientations",
+    desc: "Preservation vs. utilization values toward nature; used extensively in European environmental attitude research",
+    items: "10 items; 5-point Likert",
+    cite: "Wiseman, M., & Bogner, F. X. (2003). Personality and Individual Differences, 34(7), 1161–1175. [VERIFY]",
+    flag: true
+  },
+  {
+    abbr: "PANAS",
+    name: "Positive and Negative Affect Schedule",
+    cat: "affect",
+    catLabel: "Affect",
+    desc: "Two-dimensional mood measure: positive affect (PA) and negative affect (NA); used to capture emotional responses to nature experiences",
+    items: "20 items; 5-point Likert",
+    cite: "Watson, D., Clark, L. A., & Tellegen, A. (1988). Journal of Personality and Social Psychology, 54(6), 1063.",
+    flag: false
+  },
+  {
+    abbr: "I-PANAS-SF",
+    name: "International PANAS Short Form",
+    cat: "affect",
+    catLabel: "Affect",
+    desc: "Internationally validated brief version of the PANAS designed for cross-cultural use",
+    items: "10 items; 5-point Likert",
+    cite: "Thompson, E. R. (2007). Journal of Cross-Cultural Psychology, 38(2), 227–242.",
+    flag: false
+  },
+  {
+    abbr: "SPANE",
+    name: "Scale of Positive and Negative Experience",
+    cat: "affect",
+    catLabel: "Affect",
+    desc: "Measures the balance of positive and negative emotional experiences; captures affect balance beyond the PANAS",
+    items: "12 items; 5-point Likert",
+    cite: "Jovanović, V. (2015). Personality and Individual Differences, 86, 487–491.",
+    flag: false
+  },
+  {
+    abbr: "WEMWBS",
+    name: "Warwick–Edinburgh Mental Wellbeing Scale",
+    cat: "wellbeing",
+    catLabel: "Wellbeing",
+    desc: "Positive mental wellbeing including hedonic and eudaimonic dimensions; used to evaluate nature-based interventions",
+    items: "14 items (full) or 7 items (SWEMWBS); 5-point Likert",
+    cite: "Tennant, R., et al. (2007). Health and Quality of Life Outcomes, 5(1), 63. [VERIFY]",
+    flag: true
+  },
+  {
+    abbr: "AAS",
+    name: "Animal Attitude Scale",
+    cat: "attitude",
+    catLabel: "Attitudes",
+    desc: "Attitudes towards the treatment and use of animals; covers dimensions of animal welfare and rights",
+    items: "20 items (short form available); 5-point Likert",
+    cite: "Herzog, H. A., Betchart, N. S., & Pittman, R. B. (1991). Anthrozoos, 4(3), 169–174. [VERIFY]",
+    flag: true
+  },
+  {
+    abbr: "Kellert typology",
+    name: "Kellert Typology of Basic Attitudes towards Animals",
+    cat: "attitude",
+    catLabel: "Attitudes",
+    desc: "Nine-dimension typology of human attitudes towards animals (e.g., naturalistic, ecologistic, humanistic, moralistic, dominionistic)",
+    items: "Multiple items per dimension; structured interview / survey",
+    cite: "Kellert, S. R. (1980 / 1993). [VERIFY – foundational texts, exact scale ref needed]",
+    flag: true
+  },
+  {
+    abbr: "Bat attitudes",
+    name: "Attitudes towards Bats Scale",
+    cat: "attitude",
+    catLabel: "Attitudes",
+    desc: "Species-specific scale measuring knowledge, attitudes, and conservation intentions towards bats",
+    items: "Multi-item Likert",
+    cite: "Pérez et al. (2021). [VERIFY – confirm full citation]",
+    flag: true
+  },
+  {
+    abbr: "Cortes-Avizanda",
+    name: "Cortes-Avizanda et al. scale",
+    cat: "attitude",
+    catLabel: "Attitudes",
+    desc: "Attitudes towards scavengers / vultures in socio-ecological systems",
+    items: "[VERIFY]",
+    cite: "Cortes-Avizanda et al. [VERIFY – confirm full citation and year]",
+    flag: true
+  },
+  {
+    abbr: "Echeverri et al.",
+    name: "Echeverri et al. bird attitudes scale",
+    cat: "attitude",
+    catLabel: "Attitudes",
+    desc: "Attitudes and values towards birds in cultural/socio-ecological contexts",
+    items: "[VERIFY]",
+    cite: "Echeverri et al. (2019). [VERIFY – confirm full citation]",
+    flag: true
+  },
+  {
+    abbr: "ES / EIS",
+    name: "Environmental Sensitivity Scale",
+    cat: "identity",
+    catLabel: "Identity",
+    desc: "Sensitivity and awareness of the natural environment as a trait-like disposition; associated with pro-environmental behavior",
+    items: "Varies; Likert",
+    cite: "Chawla, L. (1998) / Sward, L. (1999). [VERIFY – multiple operationalizations exist]",
+    flag: true
+  },
+  {
+    abbr: "SpecC",
+    name: "Species-specific concern scales",
+    cat: "attitude",
+    catLabel: "Attitudes",
+    desc: "Concern for specific species or taxa; often developed ad hoc for particular study contexts (e.g., predators, pollinators)",
+    items: "Varies; Likert",
+    cite: "Vaske, J. J., & Donnelly, M. P. (1999). Society & Natural Resources, 12(1), 29–44.",
+    flag: false
+  }
+];
+
+const catClasses = {
+  nature: "cat-nature",
+  value: "cat-value",
+  affect: "cat-affect",
+  identity: "cat-identity",
+  attitude: "cat-attitude",
+  wellbeing: "cat-wellbeing"
+};
+
+let currentCat = "all";
+let currentSearch = "";
+
+function renderTable() {
+  const tbody = document.getElementById("tbody");
+  const rows = scales.filter(s => {
+    const matchCat = currentCat === "all" || s.cat === currentCat;
+    const q = currentSearch.toLowerCase();
+    const matchSearch = !q || s.abbr.toLowerCase().includes(q) || s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q);
+    return matchCat && matchSearch;
+  });
+  document.getElementById("count").textContent = rows.length + " scale" + (rows.length !== 1 ? "s" : "");
+  tbody.innerHTML = rows.map(s => `
+    <tr>
+      <td style="font-weight:500;">${s.abbr}</td>
+      <td>${s.name}</td>
+      <td><span class="badge ${catClasses[s.cat]}">${s.catLabel}</span></td>
+      <td>${s.desc}</td>
+      <td style="color:var(--color-text-secondary);">${s.items}</td>
+      <td style="font-size:12px; color:var(--color-text-secondary);">${s.cite}${s.flag ? ' <span class="flag">⚑ verify</span>' : ''}</td>
+    </tr>
+  `).join("");
+}
+
+function filter(cat, btn) {
+  currentCat = cat;
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderTable();
+}
+
+function search(val) {
+  currentSearch = val;
+  renderTable();
+}
+
+renderTable();
+</script>

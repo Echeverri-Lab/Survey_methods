@@ -1,0 +1,24 @@
+# Psychometric Scales Reference Table
+
+*Note: The scales listed below vary widely in their scope and application, ranging from **general dispositional traits** (e.g., NRS, EID) to **context-specific attitudes** (e.g., bat scale, Echeverri birds). This variation highlights the importance of careful construct selection to match your theoretical model.*
+
+| Abbreviation | Full name | Category | What it measures | Items & format | Short form available? | Cross-cultural validation? | Original citation | Adaptations |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **NEP** | New Ecological Paradigm Scale | Values & worldview | Worldview or belief system regarding humanity's relationship with the natural environment | 15 items; 5-point Likert | Yes | Yes | Dunlap et al., 2000 | - |
+| **N/A** | Kellert Typology of Basic Attitudes towards Animals | Attitudes to animals | Nine-dimension typology of human attitudes towards animals (e.g., naturalistic, ecologistic, humanistic, moralistic) | Multiple items per dimension; structured interview / survey | No | Partial | Kellert, 1984 | - |
+| **EID** | Environmental Identity Scale | Identity | Extent to which the natural environment is part of an individual's sense of self and personal identity | 24 items; 7-point Likert | Yes (EID-revised; Clayton et al., 2021) | No / Partial | Olivos & Aragonés, 2011 | - |
+| **EID-revised** | Environmental Identity Scale – Revised | Identity | Cross-culturally validated revision of the EID; examines environmental identity | 11 items; 5-point Likert | N/A | Yes (Clayton et al., 2021) | Clayton et al., 2021 | - |
+| **NRS** | Nature Relatedness Scale | Nature connectedness | Individual's subjective sense of connection with nature, including affective, cognitive, and experiential dimensions | 21 items; 5-point Likert | Yes (NR-6; Nisbet & Zelenski, 2013) | Yes | Nisbet et al., 2009 | - |
+| **NR-6** | Nature Relatedness Scale – Short Form | Nature connectedness | Brief measure of nature relatedness retaining core psychometric properties | 6 items; 5-point Likert | N/A | Yes | Nisbet & Zelenski, 2013 | - |
+| **VO** | Value Orientations towards Wildlife | Values & worldview | Mutualism vs. domination value orientations towards wildlife | Varies; Likert items | Partial | Yes | Teel & Manfredo, 2010 | - |
+| **AAS** | Animal Attitude Scale | Attitudes to animals | Attitudes towards the treatment and use of animals (animal welfare/rights) | 20 items; 5-point Likert | Yes (Herzog et al., 2015) | Yes | Herzog et al., 1991 | - |
+| **AAS short forms** | Animal Attitude Scale - Short Forms | Attitudes to animals | Attitudes towards the treatment and use of animals | 5- or 10-item; 5-point Likert | N/A | Yes | Herzog et al., 2015 | - |
+| **PANAS** | Positive and Negative Affect Schedule | Affect | Two-dimensional mood measure: positive affect (PA) and negative affect (NA) | 20 items; 5-point Likert | Yes (I-PANAS-SF; Thompson, 2007) | Yes | Watson et al., 1988 | - |
+| **I-PANAS-SF** | International PANAS Short Form | Affect | Internationally validated brief version of the PANAS | 10 items; 5-point Likert | N/A | Yes (Thompson, 2007) | Thompson, 2007 | - |
+| **SPANE** | Scale of Positive and Negative Experience | Affect | Measures the balance of positive and negative emotional experiences | 12 items; 5-point Likert | No | Yes | Jovanović, 2015 | - |
+| **WEMWBS** | Warwick–Edinburgh Mental Wellbeing Scale | Wellbeing | Positive mental wellbeing including hedonic and eudaimonic dimensions | 14 items; 5-point Likert | Yes (SWEMWBS) | Yes | Tennant et al., 2007 [VERIFY full citation] | - |
+| **Bat attitudes** | Attitudes towards Bats Scale | Attitudes to animals | Measuring knowledge, attitudes, and conservation intentions towards bats | Multi-item Likert | No | [VERIFY] | Pérez et al., 2021 [VERIFY] | Taxa explicitly adapted for bats |
+| **Echeverri birds** | Echeverri bird attitudes scale | Attitudes to animals | Stakeholders perceived six distinct cultural service and disservice categories. | [VERIFY] | [VERIFY] | [VERIFY] | Echeverri, A., Naidoo, R., Karp, D. S., Chan, K. M., & Zhao, J. (2019). Ecological Indicators, 106, 105454. | Taxa explicitly adapted for birds |
+| **Cortes-Avizanda** | Cortes-Avizanda et al. scale | Attitudes to animals | Attitudes towards scavengers / vultures in socio-ecological systems | [VERIFY] | [VERIFY] | [VERIFY] | Cortés-Avizanda et al. [VERIFY full citation] | Taxa explicitly adapted for scavengers / vultures |
+
+> **Note**: Cells marked with `[VERIFY]` indicate missing information or citations that need to be manually confirmed before inclusion in your paper to avoid fabricating bibliographic details.
