@@ -12,6 +12,7 @@ This folder contains everything needed to assemble a rigorous survey instrument:
 ```
 Step_06_Instrument_Construction/
 ├── README.md                              ← this file
+├── question_types_reference.md            ← Compendium of survey response formats & data types
 │
 ├── examples/
 │   ├── survey_matrix_echeverri2019.md         ← Worked example: full item matrix for Echeverri et al. (2019)
@@ -48,9 +49,10 @@ Key principles for instrument construction:
 
 ### Starting a new instrument
 1. Open `templates/survey_matrix_template.md` — fill in the **Study Overview** and add one row per item.
-2. Complete the **Variable Summary Table** — every IV, DV, and covariate must appear here.
-3. Run the **Respondent Burden Audit** and verify total time is within target range.
-4. Work through the **Item-level QC Checklist** (Part 5 of the template) before any cognitive testing.
+2. Review `question_types_reference.md` to ensure you are selecting the best response formats for your specific analytical and data needs.
+3. Complete the **Variable Summary Table** — every IV, DV, and covariate must appear here.
+4. Run the **Respondent Burden Audit** and verify total time is within target range.
+5. Work through the **Item-level QC Checklist** (Part 5 of the template) before any cognitive testing.
 
 ### Learning from a worked example
 - `examples/survey_matrix_echeverri2019.md` — complete item-by-item breakdown of a 12-species, 19-page socio-ecological survey.
