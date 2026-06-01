@@ -1,0 +1,32 @@
+# Survey Question Types Reference
+
+When designing a survey instrument, choosing the appropriate format for a specific question is just as important as the wording of the question itself. The response type determines the level of nuance captured and governs the types of statistical analyses that can be performed later. 
+
+| Survey question type | Explanation | Response data type | Example question | Reference |
+| --- | --- | --- | --- | --- |
+| **Word association task** | Respondents freely generate words or short phrases that come to mind in response to a stimulus word. Captures spontaneous, unprimed mental associations. | Nominal (categorical text) | "What are three words that come to mind when you think of endangered species?"<br><br>*(text box)* | Boren & Echeverri, 2025 |
+| **Image association task** | Respondents freely generate words or short phrases that come to mind in response to a stimulus image. Used to elicit associations with visual stimuli such as species, landscapes, or environmental conditions. | Nominal (categorical text) | "What are three words that you associate with this bird species?" (image of bird shown)<br><br>*(text box)* | Langhans et al., 2025 |
+| **Open-ended short response** | Respondents answer a question in their own words in a text box, with no predefined options. Produces qualitative data that can reveal nuance, unexpected themes, or the reasoning behind other responses. | Thematic coding may produce nominal or ordinal categories | "Why do you like or dislike this bird?"<br><br>*(text box)* | Echeverri et al., 2019 |
+| **Likert-scale items** | Respondents rate their level of agreement with a statement on a symmetric, ordered scale. This question type is commonly used for validated psychometric scales. | Ordinal; may be treated as continuous if 5+ points to the scale | Rate your agreement with the following statement: "Sea otters should have clean waters to live in"<br><br>*(5 point scale, 1=Strongly Disagree to 5=Strongly Agree)* | Echeverri et al., 2017 |
+| **Pictorial scale items** | Respondents select an image from a visual gradient to indicate their response. Used when the response options are difficult to express verbally. | Ordinal; may be treated as continuous if 5+ points to the scale | "How interconnected are you with nature? Choose the picture which best describes your relationship to nature."<br><br>*(7 point scale, image for each point)* | Liefländer et al., 2013 |
+| **Multiple choice** | Respondents select one (or more) options from a predefined list. | Nominal (unordered options) or ordinal (if options have a natural rank order) | "Which gender do you most identify with?"<br><br>*(Female, Male, Non-binary, Other)* | N/A |
+| **Ranking** | Respondents order a list of items from most to least preferred, important, or relevant. | Ordinal | "Sort the following interactions in descending order according to how you value them and the feeling of happiness associated with them."<br><br>*(Rank 1 to 9)* | Grundei et al., 2024 |
+| **Slider scale** | Respondents drag a marker along a continuous line between two labeled endpoints to indicate their response. Produces interval or ratio data with finer resolution than a Likert scale. | Continuous or interval | "For each of the following words [Inspired, Alert, Excited, etc.] to what degree do they describe your feelings when viewing the above image?"<br><br>*(scale from 0=Does not describe my feelings to 100=Completely describes my feelings)* | Shaw et al., 2026 |
+| **Image heat map** | Respondents click on areas of an image to indicate a reaction, preference, or identification. Produces spatial data showing which parts of an image attract attention or elicit a particular response. | Spatial or nominal-coordinate | "Please use the map below to select a natural area that you have known well for some time (at least 10 years) and are still familiar with"<br><br>*(shown map)* | Prober et al., 2019 |
+| **Pick, group, and rank** | Respondents drag and drop a list of items into labeled categories and rank items within each category by importance. Captures both how respondents classify items and their relative priority within each class. | Ordinal | "Why are you enrolled in this chemistry course?"<br><br>*(A list of statements that participants select and sort into labeled boxes depending on the extent to which the statement applies to them)* | Wang & E. Lewis, 2022 |
+| **3D Visualizations & Virtual Simulations** | Respondents view or interact with 3D renderings, virtual reality (VR) scenes, or complex spatial stimuli representing environmental scenarios to assess visual preferences, acceptance, or willingness-to-pay (WTP). | Often Nominal/Categorical (in Choice Experiments) or Ordinal (Likert-style evaluations) | Presenting different visual configurations of a landscape (e.g. wind farm placement or floodplain restoration structures) and asking participants to choose their preferred layout or rate acceptability.<br><br>*(Choice selections mapped to rendered scenarios)* | Constantz et al., 2026; Klain et al., 2020 |
+
+---
+
+## References
+
+* Constantz, B. M., Dunne, A. M., Haddad, B. M., & Holl, K. D. (2026). Utilitarian and biocentric stakeholders' visual preferences for floodplain restoration heterogeneity. *Restoration Ecology*, e70315.
+* Echeverri, A., et al. (2017). (General Reference for Likert Scales).
+* Echeverri, A., Karp, D. S., Naidoo, R., Zhao, J., & Chan, K. M. (2019). Approaching human-animal relationships from multiple angles: A synthetic perspective. *Biological Conservation*, 240, 108297.
+* Grundei, et al. (2024). (General Reference for Ranking items).
+* Klain, S., Satterfield, T., Chan, K. M., & Lindberg, K. (2020). Octopus’s garden under the blade: Boosting biodiversity increases willingness to pay for offshore wind in the United States. *Energy Research & Social Science*, 69, 101744.
+* Langhans, et al. (2025). (General Reference for Image Association).
+* Liefländer, A. K., Fröhlich, G., Bogner, F. X., & Schultz, P. W. (2013). Promoting connectedness with nature through environmental education. *Environmental Education Research*, 19(3), 370-384. 
+* Prober, et al. (2019). (General Reference for Image Heat Maps).
+* Shaw, et al. (2026). (General Reference for Slider Scales).
+* Wang & E. Lewis. (2022). (General Reference for Pick, group, and rank).
