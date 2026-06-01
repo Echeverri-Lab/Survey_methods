@@ -149,4 +149,4 @@ df[likert_cols] = imputer.fit_transform(df[likert_cols])
 ## References
 - van Buuren, S., & Groothuis-Oudshoorn, K. (2011). mice: Multivariate Imputation by Chained Equations in R. *Journal of Statistical Software*, 45(3). https://doi.org/10.18637/jss.v045.i03
 - Vaske, J. J. (2019). *Survey Research and Analysis* (2nd ed.). Venture Publishing.
-- Naito, et al. (n.d.). (Reference for detecting AI-generated survey responses).
+- Naito, R., Zhao, J., Naidoo, R., & Chan, K. M. (2023). Private and civic actions as distinct types of individual engagement for transforming the exotic pet trade. People and Nature, 5(5), 1526-1538.
