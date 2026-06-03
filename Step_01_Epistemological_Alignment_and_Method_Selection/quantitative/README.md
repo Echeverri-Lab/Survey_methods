@@ -1,0 +1,1 @@
+This folder contains rationale for surveys, experiments, and measurement choices.

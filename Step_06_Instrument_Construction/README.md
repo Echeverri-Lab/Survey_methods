@@ -15,8 +15,9 @@ Step_06_Instrument_Construction/
 ├── question_types_reference.md            ← Compendium of survey response formats & data types
 │
 ├── examples/
-│   ├── survey_matrix_echeverri2019.md         ← Worked example: full item matrix for Echeverri et al. (2019)
-│   └── survey_flow_diagram_echeverri2019.md   ← Mermaid flowchart, colour-coded by variable role
+│   ├── survey_matrix_echeverri2019.md             ← Worked example: full item matrix for Echeverri et al. (2019)
+│   ├── survey_flow_diagram_echeverri2019.md        ← Mermaid flowchart, colour-coded by variable role
+│   └── survey_matrix_FFCP_premonitoring.md         ← Real-world example: FFCP pre-monitoring survey matrix (Kelley, unpublished)
 │
 ├── templates/
 │   ├── survey_template.md                 ← Minimal survey assembly template
@@ -42,6 +43,31 @@ Key principles for instrument construction:
 | **Inclusive categories** | Ill-fitting options produce frustration and disengagement (Miller, 2025) |
 | **Attention checks** | Non-negotiable for online surveys; frame as comprehension aids with community partners (Abbey & Meloy, 2017) |
 | **Interactive / multimedia elements** | Mitigate fatigue and improve ecological validity (e.g., species photos + audio in Echeverri et al. 2019) |
+
+---
+
+---
+
+## 💡 Lab practice: survey question justification matrix
+
+> *Taught and used in the Echeverri Lab; first demonstrated in the FFCP pre-monitoring survey (Kelley, unpublished).*
+
+Before piloting any instrument, build a **question justification matrix** — a table with one row per survey item that documents:
+
+| Column | What to fill in |
+|---|---|
+| **Question** | Exact wording of the item as it will appear to respondents |
+| **Purpose / research justification** | Which research question or objective this item addresses; what you will *do* with the data |
+| **Construction source** | Existing validated scale (cite it), adapted item (note changes), or custom item (explain how it was constructed) |
+
+**Why this works:**
+
+- **Reduces survey bloat** — any item that cannot be justified against a research question is a candidate for removal before piloting.
+- **Improves item rigor** — forces you to think about whether a custom item is necessary or whether a validated scale already exists.
+- **Speeds up IRB/ethics review** — reviewers can immediately see why each question is included and that nothing extraneous is being collected.
+- **Enables post-hoc transparency** — the matrix becomes a methods appendix or supplementary material in the final paper.
+
+**See it in action:** `examples/survey_matrix_FFCP_premonitoring.md` — a real-world example from the FFCP wildlife monitoring add-on study, covering 8 items across consent, repeated-measures constructs, a benchmarking item (NWOS), and open-ended close.
 
 ---
 
