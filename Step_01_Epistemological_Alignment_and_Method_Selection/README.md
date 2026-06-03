@@ -2,10 +2,8 @@
 
 This folder discusses aligning your research questions with epistemological assumptions and choosing appropriate methods.
 
-Subfolders:
+Folder structure:
 - `qualitative/` — Notes, interview guides, codebooks for qualitative approaches.
 - `quantitative/` — Rationale for surveys, experiments, and measurement choices.
-
-Suggested contents:
-- Short memo describing epistemological stance (positivist, interpretivist, etc.).
-- Example decision log for selecting method(s).
+- `epistemological_stance_memo.md` — Short memo describing epistemological stance (positivist, interpretivist, etc.).
+- `method_selection_log.md` — Decision log for selecting method(s).

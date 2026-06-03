@@ -24,6 +24,7 @@ flowchart LR
     OBJ_GEN -- Measure unconscious bias --> M_IAT(["Implicit Association<br>Tests — IATs"])
     OBJ_UND -- Deep cultural immersion --> M_ETHN(["Ethnography<br> and participant observation"])
     OBJ_UND -- "Group sense-making" --> M_FGD(["Focus group<br> discussions"])
+    OBJ_UND -- "Individual sense-making" --> M_INT(["In-depth<br>interviews"])
     OBJ_SOL -- "Community-driven data" --> M_PMAP(["Participatory mapping<br> and community-based methods"])
     OBJ_SOL -- Convergent evidence --> M_MIX(["Mixed-methods<br>sequential / concurrent"])
     OBJ_INT -- Semiotic & narrative data --> M_NARR(["Narrative analysis<br> and photo-elicitation"])
@@ -34,6 +35,7 @@ flowchart LR
     M_IAT --> BRIDGE
     M_ETHN --> BRIDGE
     M_FGD --> BRIDGE
+    M_INT --> BRIDGE
     M_PMAP --> BRIDGE
     M_MIX --> BRIDGE
     M_NARR --> BRIDGE
@@ -59,6 +61,7 @@ flowchart LR
      M_IAT:::method
      M_ETHN:::method
      M_FGD:::method
+     M_INT:::method
      M_PMAP:::method
      M_MIX:::method
      M_NARR:::method

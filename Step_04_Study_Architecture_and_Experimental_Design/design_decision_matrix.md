@@ -2,6 +2,10 @@
 
 Use this matrix to select the appropriate study design given your construct type, research goal, and practical constraints. Circle or highlight the row that matches your situation and carry that design code into `study_design_checklist.md`.
 
+### Key Terms
+- **BACI (Before-After Control-Impact):** A classic experimental design where you measure both a treatment group (Impact) and a comparison group (Control) both *before* and *after* an intervention. This allows you to account for pre-existing differences and environmental changes over time.
+- **ACI (After Control-Impact):** A design where measurements are only taken *after* the intervention across both a treatment and control group. Used when baseline (before) measurements are impossible or would tip off participants.
+
 ---
 
 ## Part 1: Construct × Design Compatibility
@@ -50,6 +54,8 @@ Is there a stimulus / treatment?
 
 ## Part 3: Within-Subjects vs. Between-Subjects Trade-offs
 
+*Note on **Washout**: A washout period is a designated gap in time between treatments in a within-subjects design. It allows the psychological or behavioral effects of the earlier treatment to dissipate so they do not "carry over" and contaminate the measurement of the next treatment.*
+
 | Criterion | Within-subjects | Between-subjects |
 |---|---|---|
 | Statistical power | Higher (participant = own control) | Lower (requires larger N) |
@@ -62,6 +68,9 @@ Is there a stimulus / treatment?
 ---
 
 ## Part 4: Temporal Context Risk Assessment
+
+**How to use this section:** Human attitudes and behaviors do not exist in a vacuum; they interact closely with transient environmental and social events. If external events—like a highly publicized local human-wildlife conflict or unseasonable weather—coincide with your data collection, they can severely confound the signals you are trying to measure. 
+Use the table below BEFORE launch to actively map out these risks. Rate each one based on its likelihood to overlap with your study. If you mark any factor as Medium or High, commit to the recommended action to either statistically control for the event (via covariates) or chronologically avoid it.
 
 Rate each factor Low / Medium / High for your data collection window.
 
