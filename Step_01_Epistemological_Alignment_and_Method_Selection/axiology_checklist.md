@@ -8,7 +8,7 @@ Before deciding on your methods, evaluate the underlying values and motivations 
 - [ ] How do the researchers' own backgrounds, biases, and values intersect with this context?
 
 ## 2. Intended Use and Outcomes
-- [ ] **Empirical / Neutral:** Are you aiming to produce generalizable, "objective" estimates (e.g., what percentage of landowners support a policy)? (*Leans toward Positivist/Surveys*).
+- [ ] **Empirical / Neutral:** Are you aiming to produce generalizable, "objective" estimates (e.g., what percentage of landowners support a policy)? (*Leans toward Positivist/Surveys*)
 - [ ] **Interpretive / Contextual:** Are you aiming to deeply understand how a specific group makes meaning of an ecological phenomenon? (*Leans toward Constructivist/Qualitative*)
 - [ ] **Pragmatic / Management-Driven:** Is the primary aim to find a functional solution to a management problem? (*Leans toward Pragmatism/Mixed Methods*)
 - [ ] **Advocacy / Critical:** Is the research explicitly intended to challenge power dynamics or advocate for an marginalized group? (*Leans toward Critical/Participatory Methods*)
