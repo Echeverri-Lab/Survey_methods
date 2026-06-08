@@ -73,7 +73,7 @@ Before modeling: normality (Q-Q plots, Shapiro–Wilk), homogeneity of variance 
 
 **Always report effect sizes** (partial η², Cohen's *d*, odds ratios, standardized β) and confidence intervals alongside *p*-values (Sun et al., 2010). Statistical significance alone does not convey practical relevance.
 
-See `analysis_reference_table.md` for a full crosswalk with external repositories.
+See `inferential_analysis_table.md` for an expanded set of inferential analyses, their assumptions, and compatible R packages.
 
 ---
 
