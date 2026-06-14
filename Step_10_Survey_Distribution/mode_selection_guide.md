@@ -27,7 +27,7 @@ Use this guide to systematically select the most appropriate distribution mode(s
 
 ### Online Panels (Prolific, Qualtrics, Dynata, Lucid)
 - **Prolific**: Best for vetting participants; demographic pre-screening, transparent pay, lower bot rates. Use Prolific Academic for academic research rates (≥$8/hr USD).
-- **Qualtrics Panels / Lucid**: Good for quota-filling fast, but scrutinize data quality. Include attention checks and timing exclusions.
+- **Qualtrics Panels / Lucid**: Good for quota-filling fast, but scrutinize data quality. Include attention checks and timing exclusions. Note that Qualtrics Panels requires extra payments if you employ them to run a panel survey for you (aka recruit participants to meet demographic/eligibility requirements).
 - **MTurk**: Data quality has degraded significantly (bot farms, scammer accounts). Use only with very robust quality controls and document your approach.
 
 ### In-Person Intercept

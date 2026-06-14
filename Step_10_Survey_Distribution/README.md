@@ -44,7 +44,8 @@ For mail surveys, follow Dillman's **Tailored Design Method** (TDM; Dillman, 201
 
 | Tool | Best use case | Offline capable | Branching logic | Multimedia support | Cost |
 |---|---|---|---|---|---|
-| **Qualtrics** | Academic/commercial panels, complex instruments | ✗ | ✓ (advanced) | ✓ (audio, video, images) | Institutional license |
+| **Qualtrics** | Academic/commercial panels, complex instruments | ✓ (via offline app) | ✓ (advanced) | ✓ (audio, video, images) | Institutional license (extra fees for panel recruitment) |
+| **QuestionPro** | Low priority surveys (e.g., screening, webinar follow-ups) | ✗ | ✓ (basic) | ✓ | Cheaper than Qualtrics |
 | **KoBoToolbox** | Humanitarian, field-based, low-resource contexts | ✓ | ✓ | ✓ (images) | Free (humanitarian) |
 | **ODK / ODK Collect** | Ecological/field surveys, GPS required | ✓ | ✓ | ✓ (images, audio) | Free |
 | **Survey123 (Esri)** | Geospatially integrated studies | ✓ | ✓ | ✓ | Esri license |
@@ -76,6 +77,7 @@ Language and cultural adaptation are inseparable from administration. A cultural
 
 ### Pre-Launch
 - [ ] IRB/BREB approval received and documented (see Step 8)
+- [ ] Ensure your survey is only collecting identifiable data you have permission to collect. (Note: Qualtrics automatically collects IP addresses, which many IRBs count as identifiable, but you can turn this off).
 - [ ] Survey programmed and tested across devices (desktop, tablet, mobile)
 - [ ] Randomization and branching logic verified
 - [ ] Attention checks confirmed active
@@ -108,9 +110,9 @@ Response rate definitions matter for transparency and comparability. Use AAPOR s
 
 | Metric | Formula |
 |---|---|
-| **Response Rate (RR1)** | Complete interviews / (Complete + Partial + Refusals + Non-contacts) |
-| **Cooperation Rate** | Complete interviews / (Complete + Partial + Refusals) |
-| **Completion Rate** | Complete / (Complete + Partial) |
+| **Response Rate (RR1)** | Complete surveys / (Complete + Partial + Refusals + Non-contacts + Others) |
+| **Cooperation Rate** | Complete surveys / (Complete + Partial + Refusals + Others) |
+| **Completion Rate** | Complete surveys / (Complete + Partial) |
 
 > 💡 For online panels, vendors often report "incidence rate" (IR) and "completion rate," which are not the same as AAPOR response rates. Report both clearly in your methods.
 

@@ -62,8 +62,9 @@ Before modeling: normality (Q-Q plots, Shapiro–Wilk), homogeneity of variance 
 
 | Research question | Recommended method | Key considerations | R packages | Python packages |
 |---|---|---|---|---|
-| Group difference (2 groups) | t-test, Wilcoxon rank-sum | Check normality; Wilcoxon for ordinal/non-normal | `stats`, `coin` | `scipy.stats`, `pingouin` |
-| Group difference (3+ groups) | ANOVA, Kruskal-Wallis | Post-hoc correction (Tukey, Bonferroni) | `stats`, `emmeans` | `pingouin`, `statsmodels` |
+| Group difference (2 groups, continuous) | t-test, Wilcoxon rank-sum | Check normality; Wilcoxon for ordinal/non-normal | `stats`, `coin` | `scipy.stats`, `pingouin` |
+| Group difference (3+ groups, continuous) | ANOVA, Kruskal-Wallis | Post-hoc correction (Tukey, Bonferroni) | `stats`, `emmeans` | `pingouin`, `statsmodels` |
+| Group difference (categorical associations) | Chi-squared test, Fisher's exact test | Expected frequencies > 5 for Chi-squared; use Fisher's otherwise | `stats` | `scipy.stats` |
 | Association between variables | Pearson/Spearman correlation | Ordinal data → Spearman or polychoric | `psych`, `Hmisc` | `pingouin`, `scipy.stats` |
 | Prediction (continuous outcome) | OLS regression | Check residuals, VIF for multicollinearity | `lm()`, `car`, `performance` | `statsmodels`, `sklearn` |
 | Prediction (binary outcome) | Logistic regression | Report odds ratios + 95% CI | `glm()`, `MASS` | `statsmodels`, `sklearn` |
@@ -78,6 +79,10 @@ See `inferential_analysis_table.md` for an expanded set of inferential analyses,
 ---
 
 ## 4. Qualitative and Mixed-Methods Analysis
+
+**Inductive vs. Deductive Coding:**
+- **Inductive (bottom-up):** Codes and themes are derived directly from the data without trying to fit them into a pre-existing coding frame or researcher's preconceptions.
+- **Deductive (top-down):** driven by the researcher's theoretical or analytic interest, where data is coded to fit into a pre-existing coding framework.
 
 | Approach | Orientation | Software | Key use case |
 |---|---|---|---|
