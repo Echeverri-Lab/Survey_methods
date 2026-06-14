@@ -1,1 +1,0 @@
-This folder contains conceptual model diagrams for theoretical relationships.

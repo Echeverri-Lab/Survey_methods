@@ -3,6 +3,5 @@
 This folder is for theoretical background and how constructs are defined and related.
 
 Folder structure:
-- `papers/` — PDF copies or citations (add brief BibTeX entries)
-- `diagrams/` — Conceptual model diagrams
+- `papers/` — PDF copies or citations (currently only contains `theories_cited.bib`)
 - `notes.md` — Short memo describing how theory informs measurement
