@@ -1,1 +1,0 @@
-This folder contains notes, interview guides, and codebooks for qualitative approaches.
