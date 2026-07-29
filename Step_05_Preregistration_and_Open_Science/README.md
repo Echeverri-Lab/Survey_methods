@@ -100,3 +100,32 @@ Manuscript: report confirmatory and exploratory results in separate sections
 - Ioannidis, J. P. A. (2005). Why most published research findings are false. *PLOS Medicine, 2*(8), e124.
 - Fidler, F., et al. (2017). Metaresearch for evaluating reproducibility in ecology and evolution. *BioScience, 67*(3), 282–289.
 - Gould, E., et al. (2025). Preregistration in ecology and conservation. [cite full reference]
+- Ferguson, J., Littman, R., Christensen, G., Paluck, E. L., Swanson, N., Wang, Z. A., Miguel, E., Birke, D., & Pezzuto, J. H. (2023). Survey of open science practices and attitudes in the social sciences. *Nature Communications, 14*, 5401. https://doi.org/10.1038/s41467-023-41111-1
+- Spitzer, L., & Mueller, S. (2023). Registered report: Survey on attitudes and experiences regarding preregistration in psychological research. *PLOS ONE, 18*(3), e0281086.
+- Willroth, E. C., & Atherton, O. E. (2024). Best laid plans: A guide to reporting preregistration deviations. *Advances in Methods and Practices in Psychological Science, 7*(1). https://doi.org/10.1177/25152459231213802
+- Ghai, S., Theriault, R., Forscher, P., Shoda, Y., Syed, M., Puthillam, A., Peng, H. C., Basnight-Brown, D., Majid, A., Azevedo, F., & Singh, L. (2025). A manifesto for a globally diverse, equitable, and inclusive open science. *Communications Psychology, 3*, 1. https://doi.org/10.1038/s44271-024-00179-1
+- Mundinger, C., Schulz, N. K. E., Singh, P., Janz, S., Schurig, M., Seidemann, J., Kurtz, J., Müller, C., Schielzeth, H., von Kortzfleisch, V. T., & Richter, S. H. (2025). Testing the reproducibility of ecological studies on insect behavior in a multi-laboratory setting identifies opportunities for improving experimental rigor. *PLOS Biology, 23*(x), e3003019.
+
+---
+
+## 2026 revision — literature curation pass
+
+Reviewed against 32 candidate papers (Step 5 topic match) from the 25%
+random subsample described in
+`Relevant Literature/search_2026/exports/suggested_new_citations.md`.
+
+- **Added:** Willroth & Atherton (2024) on reporting preregistration
+  deviations (fills a real procedural gap — the checklist previously had no
+  guidance for what to do *after* a deviation occurs; now Section 8 of
+  `preregistration_checklist.md`); Ferguson et al. (2023) and Spitzer &
+  Mueller (2023) as empirical evidence on adoption rates/attitudes toward
+  preregistration in the social sciences (C1); Ghai et al. (2025) on equity
+  and global diversity in open science practice (a dimension not previously
+  addressed here — C2); and Mundinger et al. (2025), a directly relevant
+  ecology-specific multi-lab reproducibility test used as a worked
+  cautionary example in Section 8 (C3).
+- **Not added:** the majority of remaining candidates concerned
+  reproducibility in unrelated domains (analytical chemistry, materials
+  science, nuclear clocks, 3D bioprinting) that, while using the word
+  "reproducibility," do not offer transferable guidance for socio-ecological
+  survey preregistration (fails C2).

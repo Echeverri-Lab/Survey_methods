@@ -68,9 +68,34 @@
 
 ---
 
+## Section 8 — Deviations from the preregistered plan
+
+Real data collection rarely goes exactly as planned. The goal is not to
+avoid deviations but to report them transparently (Willroth & Atherton,
+2024).
+
+- [ ] Any deviation from the preregistered sample size, measures, exclusion
+      criteria, or analysis plan is logged as it happens (not reconstructed
+      after the fact).
+- [ ] Each deviation is classified: unplanned exclusion, measure change,
+      analysis change, or sample-size change.
+- [ ] The manuscript reports deviations explicitly (e.g., in a "Deviations
+      from preregistration" subsection) rather than silently reporting the
+      as-run analysis as if it were the pre-specified one.
+- [ ] Multi-site/multi-lab or replication-style studies additionally report
+      inter-site variability in effect estimates, since a single "reproducible"
+      result at one site does not guarantee reproducibility elsewhere
+      (Mundinger et al., 2025, found meaningful cross-laboratory variation in
+      a multi-lab reproducibility test of insect behavior assays — a useful
+      cautionary worked example for any multi-site socio-ecological survey).
+
+---
+
 ## Sign-off
 
 | Role | Name | Date |
 |---|---|---|
 | Principal Investigator | | |
 | Co-investigator / reviewer | | |
+
+*References: Willroth & Atherton (2024); Mundinger et al. (2025).*
