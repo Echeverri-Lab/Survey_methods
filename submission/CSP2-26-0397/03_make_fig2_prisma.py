@@ -1,19 +1,29 @@
 #!/usr/bin/env python3
 """
-Figure 2 for CSP2-26-0397: PRISMA-2020-style flow diagram for a
+Figure 2 for CSP2-26-0397: two-stream PRISMA-style flow diagram for a
 practice-focused review.
+
+DESIGN
+------
+This review used two independent search strategies, merged only at the end:
+
+  Stream A (top-down)  — database keyword search -> dedup -> automated
+                          keyword pre-screening -> human-coder screening ->
+                          retained working corpus -> random 25% subsample.
+  Stream B (bottom-up) — backward/forward citation chasing + author-team
+                          expert domain knowledge -> records already
+                          catalogued in the repository's living tables.
+
+The two streams are drawn as parallel columns and merge into a single
+"Included" box. See Fig2_PRISMA_flow_data.md for the full numbers, the
+correction note, and interpretation.
 
 HOW TO USE
 ----------
-1. Run the searches in 01_Search_Protocol_RUN_THIS_FIRST.md.
-2. Edit the N dictionary below. Replace every None with your real count.
-3. python3 03_make_fig2_prisma.py
-
-While any value is None the script draws the diagram with visible "XX"
-placeholders so you can check the layout before you have the numbers.
-Once all values are filled it checks the arithmetic and refuses to draw
-an internally inconsistent diagram -- unbalanced flow diagrams are one
-of the most common things reviewers catch.
+Edit the N dictionary below if any counts change, then:
+    python3 03_make_fig2_prisma.py
+The script checks that each stream's arithmetic balances and refuses to draw
+an internally inconsistent diagram.
 
 Outputs Fig2_PRISMA_flow.pdf (vector, for submission) and
 Fig2_PRISMA_flow.png (for quick viewing).
@@ -28,252 +38,223 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 # EDIT THIS BLOCK
 # ----------------------------------------------------------------------
 N = {
-    # --- Identification: database searches ---
-    "db_core":            None,  # records from the core Boolean search
-    "db_topic":           None,  # records from the 11 topic-specific searches (combined)
+    # --- Stream A: top-down database search ---
+    "db_core":            1612,
+    "db_topic":           15761,
+    "duplicates":         6102,
+    "excl_ft_unavail":    34,
+    "excl_auto":          2961,   # excluded at title/abstract, automated keyword pre-screen
+    "excl_human":         6696,   # excluded at title/abstract, human coder
+    "retained_corpus":    1580,   # survey_corpus_v3_retained.csv
+    "sample_a":           395,    # random 25% subsample drawn for synthesis
 
-    # --- Identification: other sources (counted separately) ---
-    "oth_texts":          None,  # standard texts / handbooks
-    "oth_citation":       None,  # backward + forward citation chasing
-    "oth_standards":      None,  # reporting standards, guidelines, institutional docs
-    "oth_team":           None,  # author-team corpus used as worked examples
+    # --- Stream B: bottom-up snowball / expert-knowledge search ---
+    # All unique references cited across the repository's Step 00-12 living
+    # documents, extracted programmatically from every "## References" /
+    # "## Full Reference List" / inline "*References:*" section repo-wide
+    # (see Relevant Literature/search_2026/exports/master_reference_list_all_steps.md).
+    "stream_b":           242,    # citation chasing + author-team domain expertise
 
-    # --- Screening ---
-    "duplicates":         None,  # duplicate records removed
-    "screened":           None,  # records screened on title/abstract
-    "excl_screen":        None,  # excluded at title/abstract
-    "fulltext":           None,  # full texts assessed
-    "excl_ft_notmethod":  None,  # excluded: not methodologically informative
-    "excl_ft_nottransf":  None,  # excluded: no transferable guidance for ecology
-    "excl_ft_superseded": None,  # excluded: superseded by newer/more authoritative source
-    "excl_ft_unavail":    None,  # excluded: full text unavailable
+    # --- Merge ---
+    "overlap_ab":         32,     # records present in both streams (matched by DOI
+                                   # against the Stream A 395-record subsample)
+    "included":           605,    # sample_a + stream_b - overlap_ab
 
-    # --- Curation (the practice-focused layer) ---
-    "eligible":           None,  # eligible after full-text assessment
-    "not_prioritised":    None,  # eligible but not meeting any curation criterion
-
-    # --- Included ---
-    "included":           None,  # total sources included in the synthesis
-    "cited_main":         None,  # of which cited in the main text
-    "in_repo_tables":     None,  # of which catalogued in the repository living tables
+    # --- Included breakdown ---
+    "cited_main":         73,     # unique sources cited in Manuscript_CSP_revised.docx
+    "in_repo_tables":     242,    # catalogued in repository living tables (= Stream B)
 }
 
-# Set to your real screening tool / agreement stats, or leave as-is.
-SCREENERS_NOTE = "Screened independently by two authors (20% subsample; κ = X.XX)"
+SCREENERS_NOTE = ("Stream A screened by automated keyword pre-screening (Claude Sonnet 5) "
+                   "then a single human coder (A. Echeverri); Stream B compiled by the author "
+                   "team via citation chasing and domain expertise.")
 # ----------------------------------------------------------------------
 
 
 def v(key):
-    """Return the count as a string, or 'XX' if not yet filled in."""
     val = N.get(key)
     return "XX" if val is None else f"{val:,}"
 
 
 def check_arithmetic():
-    """Validate internal consistency once all numbers are present."""
     if any(x is None for x in N.values()):
         missing = [k for k, x in N.items() if x is None]
-        print(f"[draft mode] {len(missing)} placeholder(s) remaining: "
-              f"{', '.join(missing)}")
+        print(f"[draft mode] {len(missing)} placeholder(s) remaining: {', '.join(missing)}")
         print("             Diagram drawn with 'XX'. Arithmetic not checked yet.\n")
         return
 
     problems = []
 
-    identified = (N["db_core"] + N["db_topic"] + N["oth_texts"]
-                  + N["oth_citation"] + N["oth_standards"] + N["oth_team"])
+    identified_a = N["db_core"] + N["db_topic"]
+    after_dedup = identified_a - N["duplicates"]
+    if after_dedup != 11271:
+        problems.append(f"Stream A after dedup = {after_dedup}, expected 11,271")
 
-    if identified - N["duplicates"] != N["screened"]:
+    screened = after_dedup - N["excl_ft_unavail"]
+    after_auto = screened - N["excl_auto"]
+    retained = after_auto - N["excl_human"]
+    if retained != N["retained_corpus"]:
         problems.append(
-            f"identified ({identified}) - duplicates ({N['duplicates']}) "
-            f"= {identified - N['duplicates']}, but screened = {N['screened']}")
+            f"Stream A: {after_auto} remaining after auto pre-screen − "
+            f"{N['excl_human']} excluded by human coder = {retained}, "
+            f"but retained_corpus = {N['retained_corpus']}")
 
-    if N["screened"] - N["excl_screen"] != N["fulltext"]:
+    merged = N["sample_a"] + N["stream_b"] - N["overlap_ab"]
+    if merged != N["included"]:
         problems.append(
-            f"screened ({N['screened']}) - excluded at screening "
-            f"({N['excl_screen']}) = {N['screened'] - N['excl_screen']}, "
-            f"but full texts assessed = {N['fulltext']}")
+            f"sample_a ({N['sample_a']}) + stream_b ({N['stream_b']}) − "
+            f"overlap ({N['overlap_ab']}) = {merged}, but included = {N['included']}")
 
-    ft_excl = (N["excl_ft_notmethod"] + N["excl_ft_nottransf"]
-               + N["excl_ft_superseded"] + N["excl_ft_unavail"])
-    if N["fulltext"] - ft_excl != N["eligible"]:
-        problems.append(
-            f"full texts ({N['fulltext']}) - full-text exclusions ({ft_excl}) "
-            f"= {N['fulltext'] - ft_excl}, but eligible = {N['eligible']}")
-
-    if N["eligible"] - N["not_prioritised"] != N["included"]:
-        problems.append(
-            f"eligible ({N['eligible']}) - not prioritised "
-            f"({N['not_prioritised']}) = {N['eligible'] - N['not_prioritised']}, "
-            f"but included = {N['included']}")
-
-    if N["cited_main"] > N["included"]:
-        problems.append(
-            f"cited in main text ({N['cited_main']}) exceeds included "
-            f"({N['included']})")
+    if N["in_repo_tables"] > N["included"]:
+        problems.append("in_repo_tables exceeds included")
 
     if problems:
         raise SystemExit(
             "\nFLOW DIAGRAM DOES NOT BALANCE -- fix before submitting:\n  - "
-            + "\n  - ".join(problems)
-            + "\n\nReviewers check these sums. So does the editorial office.\n")
+            + "\n  - ".join(problems) + "\n")
 
-    print(f"[ok] Arithmetic balances. {identified:,} identified -> "
-          f"{N['included']:,} included.\n")
+    print(f"[ok] Both streams balance. Stream A retained {N['retained_corpus']:,} -> "
+          f"sampled {N['sample_a']:,}. Stream B = {N['stream_b']:,}. "
+          f"Merged included = {N['included']:,}.\n")
 
 
-# --- styling: greyscale-safe, CSP-friendly ---------------------------------
+# --- styling ---------------------------------------------------------------
 INK      = "#1a1a1a"
-BOX_ID   = "#e8eef3"   # identification
-BOX_SCR  = "#f2f0e8"   # screening
-BOX_CUR  = "#e6efe8"   # curation
-BOX_INC  = "#d9e4ec"   # included
+BOX_A    = "#e8eef3"   # Stream A identification/screening
+BOX_B    = "#f3ece3"   # Stream B identification
+BOX_INC  = "#d9e4ec"   # Included / merge
 BOX_EXCL = "#f7f7f7"   # exclusions (side boxes)
 EDGE     = "#5a6b78"
 
-FS_BOX   = 7.4
-FS_STAGE = 8.6
+FS_BOX   = 7.0
+FS_STAGE = 8.2
 
 
 def box(ax, x, y, w, h, text, fc, fontsize=FS_BOX, weight="normal",
-        style="round,pad=0.012,rounding_size=0.012", ls="-"):
+        style="round,pad=0.010,rounding_size=0.010", ls="-"):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle=style,
                                 linewidth=0.9, edgecolor=EDGE,
                                 facecolor=fc, linestyle=ls, zorder=2))
     ax.text(x + w / 2, y + h / 2, text, ha="center", va="center",
-            fontsize=fontsize, color=INK, zorder=3, linespacing=1.45,
+            fontsize=fontsize, color=INK, zorder=3, linespacing=1.4,
             fontweight=weight)
 
 
 def arrow(ax, xy_from, xy_to, style="-|>"):
     ax.add_patch(FancyArrowPatch(xy_from, xy_to, arrowstyle=style,
-                                 mutation_scale=9, linewidth=0.9,
+                                 mutation_scale=8.5, linewidth=0.9,
                                  color=EDGE, shrinkA=0, shrinkB=0, zorder=1))
 
 
-def stage_label(ax, y, text, color):
-    """Vertical stage band down the left-hand side."""
-    ax.add_patch(FancyBboxPatch((0.012, y[0]), 0.052, y[1] - y[0],
-                                boxstyle="round,pad=0.004,rounding_size=0.010",
+def col_label(ax, x, w, y, text, color):
+    ax.add_patch(FancyBboxPatch((x, y), w, 0.030,
+                                boxstyle="round,pad=0.004,rounding_size=0.008",
                                 linewidth=0.9, edgecolor=EDGE,
                                 facecolor=color, zorder=2))
-    ax.text(0.038, (y[0] + y[1]) / 2, text, ha="center", va="center",
-            fontsize=FS_STAGE, color=INK, rotation=90, fontweight="bold",
-            zorder=3)
+    ax.text(x + w / 2, y + 0.015, text, ha="center", va="center",
+            fontsize=FS_STAGE, color=INK, fontweight="bold", zorder=3)
 
 
 def build():
     check_arithmetic()
 
-    fig, ax = plt.subplots(figsize=(7.4, 9.6))
+    fig, ax = plt.subplots(figsize=(8.2, 10.4))
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
 
-    LX, LW = 0.095, 0.50       # main column x / width
-    RX, RW = 0.635, 0.352      # right-hand (exclusions) column
+    # Two columns: A (left, wide, multi-stage) and B (right, narrow, simple)
+    AX, AW = 0.045, 0.560
+    BX, BW = 0.650, 0.320
 
-    # ---------------- IDENTIFICATION ----------------
-    stage_label(ax, (0.782, 0.978), "Identification", BOX_ID)
+    col_label(ax, AX, AW, 0.960, "Stream A — top-down database (keyword) search", BOX_A)
+    col_label(ax, BX, BW, 0.960, "Stream B — bottom-up snowball / expert search", BOX_B)
 
-    box(ax, LX, 0.885, LW, 0.088,
+    # ---------------- Stream A ----------------
+    box(ax, AX, 0.888, AW, 0.058,
         f"Records identified from databases\n"
-        f"Core Boolean search  (n = {v('db_core')})\n"
-        f"11 topic-specific searches  (n = {v('db_topic')})",
-        BOX_ID)
+        f"Core Boolean search (n = {v('db_core')})  +  "
+        f"11 topic searches (n = {v('db_topic')})",
+        BOX_A)
+    arrow(ax, (AX + AW / 2, 0.888), (AX + AW / 2, 0.850))
 
-    box(ax, RX, 0.885, RW, 0.088,
-        f"Records identified from other sources\n"
-        f"Standard texts & handbooks  (n = {v('oth_texts')})\n"
-        f"Citation chasing  (n = {v('oth_citation')})\n"
-        f"Reporting standards & guidelines  (n = {v('oth_standards')})\n"
-        f"Author-team corpus  (n = {v('oth_team')})",
-        BOX_ID, fontsize=6.5)
+    box(ax, AX, 0.812, AW * 0.62, 0.036,
+        f"Records after dedup (n = 11,271)", BOX_A)
+    box(ax, AX + AW * 0.68, 0.812, AW * 0.32, 0.036,
+        f"Duplicates removed\n(n = {v('duplicates')})", BOX_EXCL, ls="--", fontsize=6.4)
+    arrow(ax, (AX + AW * 0.31, 0.850), (AX + AW * 0.31, 0.848))
 
-    box(ax, LX, 0.790, LW, 0.048,
-        f"Duplicate records removed\n(n = {v('duplicates')})",
-        BOX_EXCL, ls="--")
+    box(ax, AX, 0.750, AW * 0.62, 0.036,
+        f"Screened title/abstract\n(minus {v('excl_ft_unavail')} unavailable) (n = 11,237)",
+        BOX_A, fontsize=6.6)
+    arrow(ax, (AX + AW * 0.31, 0.812), (AX + AW * 0.31, 0.786))
 
-    arrow(ax, (LX + LW / 2, 0.885), (LX + LW / 2, 0.838))
-    arrow(ax, (RX + RW / 2, 0.885), (RX + RW / 2, 0.706))
+    box(ax, AX, 0.688, AW * 0.62, 0.036,
+        f"Remaining after automated\nkeyword pre-screen (n = 8,276)",
+        BOX_A, fontsize=6.6)
+    box(ax, AX + AW * 0.68, 0.688, AW * 0.32, 0.036,
+        f"Excluded — automated\npre-screen (n = {v('excl_auto')})",
+        BOX_EXCL, ls="--", fontsize=6.2)
+    arrow(ax, (AX + AW * 0.31, 0.750), (AX + AW * 0.31, 0.724))
 
-    # ---------------- SCREENING ----------------
-    stage_label(ax, (0.442, 0.772), "Screening", BOX_SCR)
+    box(ax, AX, 0.610, AW * 0.62, 0.052,
+        f"Retained by human coder\n(working corpus, "
+        f"survey_corpus_v3_retained.csv)\n(n = {v('retained_corpus')})",
+        BOX_A, fontsize=6.6, weight="bold")
+    box(ax, AX + AW * 0.68, 0.610, AW * 0.32, 0.052,
+        f"Excluded — human coder\n(A. Echeverri)\n(n = {v('excl_human')})",
+        BOX_EXCL, ls="--", fontsize=6.2)
+    arrow(ax, (AX + AW * 0.31, 0.688), (AX + AW * 0.31, 0.662))
 
-    box(ax, LX, 0.658, LW, 0.048,
-        f"Records screened on title and abstract\n(n = {v('screened')})",
-        BOX_SCR)
-    arrow(ax, (LX + LW / 2, 0.790), (LX + LW / 2, 0.706))
+    box(ax, AX, 0.534, AW * 0.62, 0.052,
+        f"Random 25% subsample drawn\nfor full-text synthesis\n(seed = 42)\n(n = {v('sample_a')})",
+        BOX_A, fontsize=6.6, weight="bold")
+    arrow(ax, (AX + AW * 0.31, 0.610), (AX + AW * 0.31, 0.586))
 
-    box(ax, RX, 0.658, RW, 0.048,
-        f"Excluded at title/abstract\n(n = {v('excl_screen')})",
-        BOX_EXCL, ls="--")
-    arrow(ax, (LX + LW, 0.682), (RX, 0.682))
+    # ---------------- Stream B ----------------
+    box(ax, BX, 0.888, BW, 0.058,
+        "Records identified via\nbackward/forward citation chasing\n"
+        "and author-team domain expertise",
+        BOX_B, fontsize=6.6)
+    arrow(ax, (BX + BW / 2, 0.888), (BX + BW / 2, 0.586))
 
-    box(ax, LX, 0.556, LW, 0.048,
-        f"Full-text records assessed for eligibility\n(n = {v('fulltext')})",
-        BOX_SCR)
-    arrow(ax, (LX + LW / 2, 0.658), (LX + LW / 2, 0.604))
+    box(ax, BX, 0.534, BW, 0.052,
+        f"Retained\n(catalogued in repository\nliving tables)\n(n = {v('stream_b')})",
+        BOX_B, fontsize=6.6, weight="bold")
 
-    box(ax, RX, 0.522, RW, 0.116,
-        f"Excluded at full text, with reasons\n"
-        f"Not methodologically informative  (n = {v('excl_ft_notmethod')})\n"
-        f"No transferable guidance for ecological\ncontexts  (n = {v('excl_ft_nottransf')})\n"
-        f"Superseded by newer/more authoritative\nsource  (n = {v('excl_ft_superseded')})\n"
-        f"Full text unavailable  (n = {v('excl_ft_unavail')})",
-        BOX_EXCL, fontsize=6.7, ls="--")
-    arrow(ax, (LX + LW, 0.580), (RX, 0.580))
+    # ---------------- Merge ----------------
+    arrow(ax, (AX + AW * 0.31, 0.534), (0.42, 0.454))
+    arrow(ax, (BX + BW / 2, 0.534), (0.46, 0.454))
 
-    box(ax, LX, 0.452, LW, 0.048,
-        f"Records eligible for synthesis\n(n = {v('eligible')})",
-        BOX_SCR)
-    arrow(ax, (LX + LW / 2, 0.556), (LX + LW / 2, 0.500))
+    box(ax, 0.245, 0.396, 0.470, 0.052,
+        f"Merge (de-duplicate by DOI/title)\n"
+        f"{v('sample_a')} + {v('stream_b')} − {v('overlap_ab')} overlap",
+        BOX_INC, fontsize=6.8)
+    arrow(ax, (0.480, 0.396), (0.480, 0.334))
 
-    # ---------------- CURATION ----------------
-    stage_label(ax, (0.322, 0.432), "Curation", BOX_CUR)
-
-    box(ax, LX, 0.330, LW, 0.098,
-        "Curation against prespecified criteria\n"
-        "(retained if ≥ 1 criterion met)\n\n"
-        "C1  Methodological influence\n"
-        "C2  Direct transferability to ecological contexts\n"
-        "C3  Illustration of a specific technique",
-        BOX_CUR, fontsize=6.9)
-    arrow(ax, (LX + LW / 2, 0.452), (LX + LW / 2, 0.428))
-
-    box(ax, RX, 0.338, RW, 0.082,
-        f"Eligible but not prioritised\n(n = {v('not_prioritised')})\n\n"
-        f"Met no curation criterion;\nlisted in Supplementary Table S2",
-        BOX_EXCL, fontsize=6.7, ls="--")
-    arrow(ax, (LX + LW, 0.379), (RX, 0.379))
-
-    # ---------------- INCLUDED ----------------
-    stage_label(ax, (0.062, 0.216), "Included", BOX_INC)
-
-    box(ax, LX, 0.148, LW, 0.058,
+    box(ax, 0.245, 0.270, 0.470, 0.058,
         f"Sources included in the synthesis\n(n = {v('included')})",
-        BOX_INC, weight="bold", fontsize=8.0)
-    arrow(ax, (LX + LW / 2, 0.330), (LX + LW / 2, 0.206))
+        BOX_INC, weight="bold", fontsize=8.4)
+    arrow(ax, (0.360, 0.270), (0.360, 0.216))
+    arrow(ax, (0.600, 0.270), (0.600, 0.216))
 
-    box(ax, LX, 0.070, 0.235, 0.058,
-        f"Cited in main text\n(n = {v('cited_main')})", BOX_INC)
-    box(ax, LX + 0.265, 0.070, 0.235, 0.058,
+    box(ax, 0.145, 0.150, 0.330, 0.058,
+        f"Cited in main text\n(Manuscript_CSP_revised.docx)\n(n = {v('cited_main')})",
+        BOX_INC, fontsize=6.8)
+    box(ax, 0.500, 0.150, 0.330, 0.058,
         f"Catalogued in repository\nliving tables (n = {v('in_repo_tables')})",
-        BOX_INC)
-    arrow(ax, (LX + 0.117, 0.148), (LX + 0.117, 0.128))
-    arrow(ax, (LX + 0.382, 0.148), (LX + 0.382, 0.128))
-
-    box(ax, RX, 0.148, RW, 0.058,
-        "Mapped to the 12 workflow steps\n(per-step counts in\nSupplementary Table S3)",
-        BOX_INC, fontsize=6.9)
-    arrow(ax, (LX + LW, 0.177), (RX, 0.177))
+        BOX_INC, fontsize=6.8)
 
     # footer note
-    ax.text(0.5, 0.040, SCREENERS_NOTE, ha="center", va="bottom",
-            fontsize=6.4, color="#666666", style="italic")
+    ax.text(0.5, 0.055, SCREENERS_NOTE, ha="center", va="bottom",
+            fontsize=6.2, color="#666666", style="italic", wrap=True)
+    ax.text(0.5, 0.025,
+            "Stream A and Stream B were searched independently; 32 records were "
+            "identified independently by both streams (matched by DOI) and are "
+            "counted once in the merged Included total.",
+            ha="center", va="bottom", fontsize=6.2, color="#666666", style="italic")
 
-    fig.savefig("Fig2_PRISMA_flow.pdf", bbox_inches="tight",
-                pad_inches=0.06)
+    fig.savefig("Fig2_PRISMA_flow.pdf", bbox_inches="tight", pad_inches=0.06)
     fig.savefig("Fig2_PRISMA_flow.png", dpi=400, bbox_inches="tight",
                 pad_inches=0.06, facecolor="white")
     print("Wrote Fig2_PRISMA_flow.pdf and Fig2_PRISMA_flow.png")

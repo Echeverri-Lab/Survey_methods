@@ -84,6 +84,27 @@ Rate each factor Low / Medium / High for your data collection window.
 
 ---
 
+## Part 4b: Discrete Choice Experiments (DCE) — a stated-preference alternative to BACI
+
+**When to use:** DCEs ask respondents to repeatedly choose between hypothetical
+alternatives (e.g., management scenarios, land-use options, policy packages)
+that vary systematically across attributes and levels. Unlike a single-item
+willingness-to-pay question, a DCE decomposes preferences into the
+contribution of each attribute (e.g., cost, distance, species affected),
+and is well suited to socio-ecological trade-off questions (habitat
+restoration design, protected-area management, payment-for-ecosystem-service
+scheme design) where no real-world BACI intervention is feasible.
+
+| Consideration | Guidance |
+|---|---|
+| Attribute and level selection | Ground in qualitative/expert pre-work (focus groups, Step 1) before fielding; over-large attribute sets increase cognitive burden and attribute non-attendance |
+| Attribute non-attendance (ANA) | Respondents may ignore one or more attributes when making choices, biasing willingness-to-pay estimates if unaddressed; test for and model ANA explicitly (Notaro et al., 2022) |
+| Experimental design | Use an efficient (D-optimal or Bayesian-efficient) design rather than a full factorial to keep the number of choice tasks tractable |
+| Model choice | Conditional/mixed logit is standard; report willingness-to-pay space vs. preference space estimates and justify the choice |
+| Review of applications | See Cop & Njavro (2022) for a systematic review of DCE applications specifically in agricultural/environmental risk management, useful for benchmarking attribute choices against the published literature |
+
+---
+
 ## Part 5: Selected Design Summary (fill in)
 
 | Field | Your entry |
@@ -101,3 +122,5 @@ Rate each factor Low / Medium / High for your data collection window.
 ---
 
 *Cross-reference: `study_design_checklist.md` · `design_docs/randomization_plan.md` · `../Step_05_PreRegistration/` · `../Step_09_Power_and_Sampling/`*
+
+*References: Notaro, De Salvo, & Raffaelli (2022); Cop & Njavro (2022).*
