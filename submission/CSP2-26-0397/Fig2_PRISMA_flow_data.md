@@ -109,15 +109,31 @@ rather than relying on the database search alone.
 
 ## Citation cross-check against the manuscript
 
-Extracted programmatically from the Zotero `CSL_CITATION` fields embedded in
-`Manuscript_CSP_revised.docx` (79 in-text citation fields → 73 unique sources
-by DOI/title).
+**Correction (this revision):** the previous version of this table reported
+"73 unique sources cited, 12 overlapping" — computed against the old
+418-record corpus, from back when Stream B held only 23 records. Stream B is
+now 242 records (merged corpus = 605), and the manuscript's actual reference
+list contains **75** unique entries, not 73. Both counts have been
+recomputed against current data: manually transcribing the reference list
+from `Manuscript_CSP_revised.docx` (75 entries), then matching it against
+the reproduced Stream A 25% subsample (seed = 42) unioned with the
+242-record Stream B list, by normalized first-author-surname + year
+(normalized-title substring as fallback). See
+`Relevant Literature/search_2026/citation_overlap_check.py` /
+`manuscript_refs.py` for the reproducible pipeline.
 
 | Field | Value |
 |---|---|
-| Unique sources currently cited in `Manuscript_CSP_revised.docx` | 73 |
-| Of those, also present in the 418-record master synthesis database | 12 |
+| Unique sources currently cited in `Manuscript_CSP_revised.docx` | 75 |
+| Of those, also present in the 605-record master synthesis database | 56 |
 | Candidate new sources identified from the 395-record subsample (≥1 keyword match to a Step topic, not already cited in the manuscript) | 348 (ranked shortlist: `Relevant Literature/search_2026/exports/suggested_new_citations.md`) |
+
+The 19 manuscript-cited sources not matched in the corpus (e.g. Baker 2010,
+Page et al. 2021 PRISMA statement, Xiiem et al. 2019) are largely
+methodology/reporting-standard references outside the scope of the
+systematic + snowball search strategy, not missed matches — but this uses
+approximate author/title matching rather than authoritative DOI lookup, so
+worth a manual skim before treating as final.
 
 These 348 are **candidates for human curation** (apply criteria C1–C3 from
 `01_Search_Protocol_RUN_THIS_FIRST.md` Step B.4) before being added to the

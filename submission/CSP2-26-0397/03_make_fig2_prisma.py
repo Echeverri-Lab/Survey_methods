@@ -61,7 +61,14 @@ N = {
     "included":           605,    # sample_a + stream_b - overlap_ab
 
     # --- Included breakdown ---
-    "cited_main":         73,     # unique sources cited in Manuscript_CSP_revised.docx
+    # Recomputed via Relevant Literature/search_2026/citation_overlap_check.py:
+    # matches the manuscript's actual reference list (75 entries, not the
+    # previously assumed 73) against the reproduced Stream A subsample
+    # (seed=42) unioned with the 242-record Stream B list, by normalized
+    # first-author-surname + year (title-substring fallback). This replaces
+    # the stale "12 of 73" figure computed against the old 418-record corpus.
+    "cited_main":         75,     # unique sources cited in Manuscript_CSP_revised.docx
+    "cited_and_in_corpus": 56,    # of those, also present in the 605-record synthesis corpus
     "in_repo_tables":     242,    # catalogued in repository living tables (= Stream B)
 }
 
@@ -108,6 +115,9 @@ def check_arithmetic():
     if N["in_repo_tables"] > N["included"]:
         problems.append("in_repo_tables exceeds included")
 
+    if N["cited_and_in_corpus"] > N["cited_main"]:
+        problems.append("cited_and_in_corpus exceeds cited_main")
+
     if problems:
         raise SystemExit(
             "\nFLOW DIAGRAM DOES NOT BALANCE -- fix before submitting:\n  - "
@@ -146,13 +156,15 @@ def arrow(ax, xy_from, xy_to, style="-|>"):
                                  color=EDGE, shrinkA=0, shrinkB=0, zorder=1))
 
 
-def col_label(ax, x, w, y, text, color):
-    ax.add_patch(FancyBboxPatch((x, y), w, 0.030,
+def col_label(ax, x, w, y, text, color, fontsize=FS_STAGE):
+    n_lines = text.count("\n") + 1
+    h = 0.030 if n_lines == 1 else 0.030 + 0.024 * (n_lines - 1)
+    ax.add_patch(FancyBboxPatch((x, y - (h - 0.030)), w, h,
                                 boxstyle="round,pad=0.004,rounding_size=0.008",
                                 linewidth=0.9, edgecolor=EDGE,
                                 facecolor=color, zorder=2))
-    ax.text(x + w / 2, y + 0.015, text, ha="center", va="center",
-            fontsize=FS_STAGE, color=INK, fontweight="bold", zorder=3)
+    ax.text(x + w / 2, y - (h - 0.030) + h / 2, text, ha="center", va="center",
+            fontsize=fontsize, color=INK, fontweight="bold", zorder=3, linespacing=1.3)
 
 
 def build():
@@ -167,8 +179,8 @@ def build():
     AX, AW = 0.045, 0.560
     BX, BW = 0.650, 0.320
 
-    col_label(ax, AX, AW, 0.960, "Stream A — top-down database (keyword) search", BOX_A)
-    col_label(ax, BX, BW, 0.960, "Stream B — bottom-up snowball / expert search", BOX_B)
+    col_label(ax, AX, AW, 0.960, "Stream A — top-down database (keyword) search", BOX_A, fontsize=7.2)
+    col_label(ax, BX, BW, 0.960, "Stream B — bottom-up\nsnowball / expert search", BOX_B, fontsize=6.6)
 
     # ---------------- Stream A ----------------
     box(ax, AX, 0.888, AW, 0.058,
@@ -235,15 +247,13 @@ def build():
     box(ax, 0.245, 0.270, 0.470, 0.058,
         f"Sources included in the synthesis\n(n = {v('included')})",
         BOX_INC, weight="bold", fontsize=8.4)
-    arrow(ax, (0.360, 0.270), (0.360, 0.216))
-    arrow(ax, (0.600, 0.270), (0.600, 0.216))
+    arrow(ax, (0.480, 0.270), (0.480, 0.220))
 
-    box(ax, 0.145, 0.150, 0.330, 0.058,
-        f"Cited in main text\n(Manuscript_CSP_revised.docx)\n(n = {v('cited_main')})",
-        BOX_INC, fontsize=6.8)
-    box(ax, 0.500, 0.150, 0.330, 0.058,
-        f"Catalogued in repository\nliving tables (n = {v('in_repo_tables')})",
-        BOX_INC, fontsize=6.8)
+    box(ax, 0.145, 0.150, 0.685, 0.070,
+        f"Unique sources currently cited in Manuscript_CSP_revised.docx (n = {v('cited_main')})\n"
+        f"Of those {v('cited_main')}, also present in the {v('included')}-record synthesis corpus (n = {v('cited_and_in_corpus')})\n"
+        f"Candidate new sources from Stream A's subsample not yet cited (shortlist, unvetted) (n = 348)",
+        BOX_EXCL, fontsize=6.6)
 
     # footer note
     ax.text(0.5, 0.055, SCREENERS_NOTE, ha="center", va="bottom",
