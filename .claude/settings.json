@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 compute_overlap.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(cp /private/tmp/claude-1103764429/-Users-ale-echeverri-Survey-Design-Supplementary-Material-/10a291d9-ca61-4a89-b553-f38a17618bfd/scratchpad/manuscript_refs.py /Users/ale.echeverri/Survey_Design_Supplementary_Material/submission/CSP2-26-0397/manuscript_refs.py)",
+      "Bash(cp /private/tmp/claude-1103764429/-Users-ale-echeverri-Survey-Design-Supplementary-Material-/10a291d9-ca61-4a89-b553-f38a17618bfd/scratchpad/survey_corpus_v3_retained.csv /Users/ale.echeverri/Survey_Design_Supplementary_Material/submission/CSP2-26-0397/survey_corpus_v3_retained.csv)",
+      "Bash(cp /private/tmp/claude-1103764429/-Users-ale-echeverri-Survey-Design-Supplementary-Material-/10a291d9-ca61-4a89-b553-f38a17618bfd/scratchpad/master_reference_list_all_steps.md /Users/ale.echeverri/Survey_Design_Supplementary_Material/submission/CSP2-26-0397/master_reference_list_all_steps.md)",
+      "Bash(python3 citation_overlap_check.py)",
+      "Bash(git --git-dir=\"/Users/ale.echeverri/Survey_Design_Supplementary_Material /.git\" --work-tree=\"/Users/ale.echeverri/Survey_Design_Supplementary_Material \" status)",
+      "Bash(D=\"/Users/ale.echeverri/Survey_Design_Supplementary_Material \" *)"
+    ],
+    "additionalDirectories": [
+      "/Users/ale.echeverri/Survey_Design_Supplementary_Material /Relevant Literature/search_2026",
+      "/Users/ale.echeverri/Survey_Design_Supplementary_Material /submission/CSP2-26-0397"
+    ]
+  }
+}
