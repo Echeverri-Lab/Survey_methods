@@ -36,6 +36,14 @@ Data cleaning is not a preliminary task — it is an analytic decision with dire
 
 See `data_cleaning_checklist.md` for annotated R and Python code.
 
+### 1b. Data Quality Diagnostics — 2026 Evidence Update
+
+- **Response-format choices affect data quality directly.** Experimental work on memes/emoji response scales in web surveys found measurable effects on multimodal cognitive effort and data quality relative to standard Likert formats — a caution against novel visual response formats without piloting ("Using Memes and Emoji-Scales in a Web Survey," 2024).
+- **Scale direction (ascending vs. descending) is not a neutral design choice.** A dedicated study on scale direction found it measurably affects response data quality, reinforcing the general survey-design principle of testing item/scale formatting choices rather than assuming they are interchangeable ("The Impact of Scale Direction on Data Quality," 2025).
+- **Interviewer-respondent rapport and demographic match matter for data quality.** In the NESDA study, interviewer and respondent sociodemographic characteristics and interpersonal rapport jointly predicted data quality in interviewer-administered surveys — relevant for any in-person or phone administration in this repository's Step 10 guidance (Interviewer and Respondent Sociodemographic Characteristics, Rapport, and Their Joint Impact on Data Quality in the NESDA Study, 2025).
+- **Incentive structure affects data quality, not just response rate.** A field experiment on guaranteed incentives vs. prize drawings in a web survey of college students on sensitive topics found effects on both participation *and* data quality/cost — a reminder that incentive-design decisions (see Step 10) have downstream implications for the analysis stage covered here (Guaranteed Incentives and Prize Drawings, 2023).
+- **Group-level data-quality disparities should be checked, not assumed absent.** A study explicitly testing for racial differences in survey data quality is a useful methodological check to replicate in any survey with diverse respondent demographics before pooling data across groups ("Do Racial Differences Exist in Survey Data Quality?", 2025).
+
 ---
 
 ## 2. Reliability, Dimensionality, and Assumption Checking
@@ -103,6 +111,17 @@ See `inferential_analysis_table.md` for an expanded set of inferential analyses,
 - Document model name, version, parameters, and full prompts in supplementary materials.
 - Consider privacy-preserving alternatives: local models (Ollama + Llama 3), institutional LLM sandboxes.
 
+### 4b. LLM-Assisted Qualitative Coding — 2026 Evidence Update
+
+A 2025–2026 wave of methodological papers directly tests where LLM-assisted
+coding is (and is not) trustworthy for survey/qualitative data:
+
+- **LLMs can approach human-level performance on latent content coding.** Across sentiment, political leaning, emotional intensity, and sarcasm, one large benchmarking study found LLM annotations frequently converge with trained human coders, though performance varies substantially by construct and text type — sarcasm and political leaning remain harder than sentiment ("Comparing Large Language Models and Human Annotators in Latent Content Analysis of Sentiment, Political Leaning, Emotional Intensity and Sarcasm," *Scientific Reports*, 2025).
+- **Structured, step-by-step LLM workflows outperform ad hoc prompting.** A step-by-step thematic-analysis protocol using ChatGPT (mirroring Braun & Clarke's phases) improved transparency and reproducibility of LLM-assisted coding relative to unstructured prompting ("Thematic Analysis and Artificial Intelligence: A Step-by-Step Process for Using ChatGPT in Thematic Analysis," 2025).
+- **LLMs can scale open-ended survey coding, including non-English text.** A case study coding German open-ended survey responses on survey motivation with LLMs demonstrates multilingual applicability of the same LLM-coding template used for English text — useful for the cross-national survey work in this repository ("Using Large Language Models for Coding German Open-Ended Survey Responses on Survey Motivation," 2025).
+- **Qualitative researchers remain skeptical of "knowledge production" claims.** A qualitative interview study of researchers who use generative AI found consistent concern that LLMs can produce plausible-sounding text without genuine interpretive insight, reinforcing this README's guidance to treat LLM output as a coding *aid* requiring human validation, not an autonomous analyst ("It Might Be Able to Produce a Text, but It's Not Able to Produce Knowledge," 2025).
+- **LLMs can support, not replace, large-scale qualitative data collection.** A case study using LLMs to collect and structure qualitative data at scale illustrates both the throughput gains and the need for validation loops when LLMs are used earlier in the pipeline (data collection/structuring) rather than only for post hoc coding ("Collecting Qualitative Data at Scale with Large Language Models: A Case Study," 2025).
+
 ---
 
 ## 5. Visualization
@@ -154,8 +173,14 @@ See `visualization_guide.md` for annotated examples and code. Quick reference:
 - Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. *Qualitative Research in Psychology*, 3(2), 77-101.
 - Browne-Nuñez, C., et al. (2015). Toward an integrated understanding of the human dimensions of human-wildlife conflict. *Biological Conservation*, 184, 258-266.
 - Cortés-Avizanda, A., et al. (2018). (Reference for factor analysis in socio-ecological surveys).
+- "Collecting Qualitative Data at Scale with Large Language Models: A Case Study" (2025). https://doi.org/10.1145/3710947
+- "Comparing Large Language Models and Human Annotators in Latent Content Analysis of Sentiment, Political Leaning, Emotional Intensity and Sarcasm" (2025). *Scientific Reports*. https://doi.org/10.1038/s41598-025-96508-3
+- "Do Racial Differences Exist in Survey Data Quality?" (2025). https://doi.org/10.1007/s41996-025-00181-7
 - Goodson, et al. (2025). (Reference for SEM linking biological and social data).
+- "Guaranteed Incentives and Prize Drawings: Effects on Participation, Data Quality, and Costs in a Web Survey of College Students on Sensitive Topics" (2023). https://doi.org/10.1177/08944393231189853
 - Hayes, A. (2025). (Reference for NLP scaling qualitative insights).
+- "Interviewer and Respondent Sociodemographic Characteristics, Rapport, and Their Joint Impact on Data Quality in the NESDA Study" (2025). https://doi.org/10.1002/mpr.70090
+- "It Might Be Able to Produce a Text, but It's Not Able to Produce Knowledge: Qualitative Researchers' Perspectives on the Use of Generative AI in Research" (2025). https://doi.org/10.1080/14780887.2025.2602816
 - Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. *Nature Machine Intelligence*, 1(9), 389-399.
 - Krippendorff, K. (2018). *Content Analysis: An Introduction to Its Methodology* (4th ed.). SAGE.
 - Langhans, M., Echeverri, A., et al. (2025). (Reference for per-participant sentiment scoring in word-association tasks).
@@ -168,6 +193,40 @@ See `visualization_guide.md` for annotated examples and code. Quick reference:
 - Sun, S., Pan, W., & Wang, L. L. (2010). A comprehensive review of effect size reporting. *Psychological Methods*, 15(4), 424-428.
 - Tavakol, M., & Dennick, R. (2011). Making sense of Cronbach's alpha. *International Journal of Medical Education*, 2, 53-55.
 - Teel, T. L., & Manfredo, M. J. (2010). Understanding the diversity of public interests. *Environment and Behavior*, 42(4), 549-570.
+- "The Impact of Scale Direction on Data Quality" (2025). https://doi.org/10.18148/srm/2025.v19i2.8384
+- "Thematic Analysis and Artificial Intelligence: A Step-by-Step Process for Using ChatGPT in Thematic Analysis" (2025). https://doi.org/10.1177/16094069251333886
 - Turner, B. S., & Astin, J. (2021). (Reference for grounded theory in survey contexts).
+- "Using Large Language Models for Coding German Open-Ended Survey Responses on Survey Motivation" (2025). https://doi.org/10.18148/srm/2025.v19i3.8568
+- "Using Memes and Emoji-Scales in a Web Survey: Experimental Assessment of Consequences for Multimodal Cognitive Effort and Data Quality" (2024). https://doi.org/10.1080/13645579.2024.2359474
 - Vaske, J. J. (2019). *Survey Research and Analysis* (2nd ed.). Venture Publishing.
 - Wilson, et al. (2022). (Reference for fine-tuned classifiers vs. generative LLMs for coding).
+
+---
+
+## 2026 revision — literature curation pass
+
+Of 87 Step 11 candidates reviewed by abstract — by far the largest candidate
+set of any Step — the great majority (~65) were rejected as off-topic
+Structural Equation Modeling *application* papers (Theory of Planned
+Behavior, protection motivation, ecosystem services, TAM/UTAUT, forestry,
+tourism, entrepreneurship, etc.) that use SEM as an analytic tool in
+unrelated substantive domains, offering no new *methodological* guidance
+beyond what Section 3's existing SEM row already documents. Instead, this
+pass focused on two clusters of genuinely new methodological evidence: (1)
+five 2025 papers on LLM-assisted qualitative coding, added to a new Section
+4b, directly extending this README's existing (but citation-sparse) LLM
+guidance in Section 4 with concrete benchmarking and workflow evidence; and
+(2) five 2023–2025 papers on survey data-quality diagnostics (response
+format, scale direction, interviewer rapport, incentive structure, racial
+data-quality disparities), added to a new Section 1b, extending the existing
+data-cleaning checklist with evidence on *why* these specific design choices
+matter for downstream data quality. Ecological data-quality papers
+("Evaluating effects of data quality and variable weighting on habitat
+suitability modelling," "Data quality issues in data used in species
+distribution models") were reviewed but judged out of scope — they concern
+species distribution modeling data pipelines, not human-subjects survey data
+cleaning, and are more relevant to a conservation-biology methods repository
+than this survey-design one. Several references above are cited by title
+rather than full author lists because author metadata was not available in
+the corpus records reviewed during this pass; author names should be
+verified against source PDFs before final manuscript submission.

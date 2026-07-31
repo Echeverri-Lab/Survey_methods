@@ -118,8 +118,43 @@ Response rate definitions matter for transparency and comparability. Use AAPOR s
 
 ---
 
+## 6. Response Rates, Incentives, and Nonresponse Bias — Evidence Update
+
+Recent large-scale panel and field experiments give more precise, generalizable guidance than intuition alone on two recurring Step 10 questions: *do declining response rates actually threaten data quality*, and *what incentive strategies most cost-effectively raise them*?
+
+- **Declining response rates ≠ automatically biased samples.** Analyzing 776 surveys, a 2025 study ("Against All Odds: On the Robustness of Probability Samples Against Decreases in Response Rates") finds that decreases in response rates over recent decades have not systematically translated into worse sample quality for probability-based surveys — a useful counter to the assumption that a low response rate alone invalidates a study; representativeness should still be checked directly (e.g., benchmarking against known population totals) rather than inferred from response rate alone.
+- **Timing of incentives matters as much as amount.** A companion pair of panel-recruitment experiments ("The Effects of a Targeted 'Early Bird' Incentive Strategy" and "The Early Bird Catches the Worm! Setting a Deadline for Online Panel Recruitment Incentives") show that offering a modest incentive bonus conditional on responding within a short window increases response rates and reduces fieldwork cost/effort relative to a flat incentive of the same average value, without materially changing sample composition.
+- **Incentive value increases help most for hard-to-reach subgroups.** "Benefits of Increasing the Value of Respondent Incentives During the Course of a Longitudinal Mixed-Mode Survey" (2024) — a large-scale randomized incentive experiment embedded in a national longitudinal survey — found that increasing incentive value over successive waves improved response rates most for previously low-propensity respondents, partially offsetting panel attrition bias.
+- **Recruitment-letter design affects elite/hard-to-reach populations.** "Invitation Letters Increase Response Rates in Elite Surveys: Evidence from Germany and the United Kingdom" (2025) — a randomized letter-design experiment with political elites — found that personalized invitation letters meaningfully increased response rates in a notoriously low-response population, directly relevant to any survey targeting professionals, officials, or other elite/gatekeeper samples.
+- **Mode and questionnaire-length choices affect measurement, not just response rate.** Multiple 2023-2025 studies in this candidate set ("Three Approaches to Improve Inferences Based on Survey Data Collected with Mixed-mode Designs"; "The Impact of Survey Mode Design and Questionnaire Length on Measurement Quality") reinforce Section 4's warning above: mode effects should be tested empirically within a study, not assumed away, especially when switching from interviewer-administered to self-administered modes.
+
+---
+
 ## References
 - Dillman, D. A., Smyth, J. D., & Christian, L. M. (2011). *Internet, phone, mail, and mixed-mode surveys: The tailored design method*. John Wiley & Sons.
 - Douglas, B. D., Ewell, P. J., & Brauer, M. (2023). Data quality in online human-subjects research. *PLOS ONE*, 18(3), e0279720.
 - Edunov, S., et al. (2018). (Reference for back-translation evaluation).
+- Against All Odds: On the Robustness of Probability Samples Against Decreases in Response Rates (2025). *Survey Methods: Insights from the Field*. https://doi.org/10.18148/srm/8475
+- Invitation Letters Increase Response Rates in Elite Surveys: Evidence from Germany and the United Kingdom (2025). *Journal of Experimental Political Science*. https://doi.org/10.1017/xps.2025.10004
 - American Association for Public Opinion Research (AAPOR). (2023). *Standard Definitions: Final Dispositions of Case Codes and Outcome Rates for Surveys*. https://aapor.org
+
+---
+
+## 2026 revision — literature curation pass
+
+Of 31 Step 10 candidates reviewed by abstract, this pass added a new Section 6
+synthesizing the strongest response-rate/incentive/nonresponse evidence rather
+than a long uncurated reference dump, given the volume of candidates (31 —
+the largest single Step folder after Step 11). Priority was given to papers
+with (a) large-scale randomized or quasi-experimental designs, and (b) direct
+actionability for a field survey administrator (incentive timing, letter
+design, response-rate interpretation). Two references above are cited by
+title rather than author list because author metadata was not available in
+the corpus abstract records reviewed during this pass — author names should
+be verified against the source PDFs before final manuscript submission. Many
+remaining candidates were topically adjacent but off-domain applications
+(e.g., forest owner TPB surveys, angler mixed-mode nudging, hunter/trapper
+mail response trends, ethnic-name signature discrimination in Finnish traffic
+surveys) — genuinely interesting for mode/nonresponse methodology but not
+added individually to keep this README's citation list a curated "best
+evidence" set rather than an exhaustive bibliography.

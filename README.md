@@ -2,7 +2,7 @@
 
 A peer-reviewed, open-access companion repository for the manuscript:
 
-> **"A Step-by-Step Guide to Survey Design for Socio-Ecological Research"**
+> **"From Opinion Polls to Psychometrics: A Review and Practical Guide to Survey Design in Socio-Ecological Research"**
 
 This repository provides structured guidance, templates, annotated code, and reference materials for each of the 12 stages described in the manuscript. It is intended for students and researchers who are new to psychometrics and survey design in conservation, ecology, and environmental social science.
 

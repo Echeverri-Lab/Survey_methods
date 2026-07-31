@@ -30,6 +30,8 @@ The examples below span a spectrum from *low-cost behavioral proxies* (petition 
 | B-06 | Radke et al. (2024) | Physical container recycling | Count of accepted containers brought to lab | In-person lab task | Between-group comparison (probabilistic vs. certain reward) |
 | B-07 | Shi (2023) | Mouse-tracking visual attention (BubbleView) | Proportional dwell time; fixation count per AOI | Browser-based task (Qualtrics-compatible) | Pre-registered; mixed-effects regression |
 | B-08 | Shi (2023) | Decision choice | Binary (better card = 1, worse card = 0) | Browser-based task | Logistic regression |
+| B-09 | de Goede et al. (2025) | Actual online protective behavior vs. self-reported behavior | Behavioral outcome vs. matched self-report item, both embedded in the same survey experiment | Population-based survey experiment (N = 2,419) | Comparison of Protection Motivation Theory (PMT) predictors of self-reported vs. actual online behavior |
+| B-10 | Schneider et al. (2025) | Objective physical activity (activPAL accelerometer) vs. self-reported EMA activity | Seconds/minute active vs. matched EMA self-report (5-min and 2-hr recall windows) | Wearable accelerometer + ecological momentary assessment (EMA) prompts, 7-day protocol | Multilevel models testing whether response delays bias EMA self-reports relative to the objective benchmark |
 
 ---
 
@@ -169,6 +171,40 @@ A lab experiment used a browser-based mouse-tracking paradigm (BubbleView; adapt
 
 ---
 
+### B-09 — Comparing Self-Reported and Actual Online Protective Behavior
+**Source:** de Goede, M., Leukfeldt, E. R., van der Wagen, W., & van de Weijer, S. (2025). Does protection motivation predict self-protective online behaviour? Comparing self-reported and actual online behaviour using a population-based survey experiment. *Computers in Human Behavior Reports*, 100649. https://doi.org/10.1016/j.chbr.2025.100649
+
+#### Study Context
+Protection Motivation Theory (PMT) research on cybersecurity has relied almost exclusively on self-reported measures of protective behavior. This population-based survey experiment (N = 2,419) directly compared PMT constructs (threat appraisal, coping appraisal) as predictors of *self-reported* online protective behavior versus a matched measure of *actual* online behavior collected within the same instrument.
+
+| Field | Detail |
+|---|---|
+| **Behavioral proxy** | Actual online protective behavior (e.g., verified security actions), contrasted with a parallel self-report item on the same behavior |
+| **Variable role** | Two parallel dependent variables (actual vs. self-reported), each regressed on the same PMT predictor set |
+| **Key finding** | PMT predictors that reliably predicted self-reported behavior did not reliably predict actual behavior, revealing a construct-level attitude–behavior gap in a domain (online security) rarely tested against objective outcomes |
+| **Design note** | Because both outcomes were measured in the same survey experiment, the discrepancy cannot be attributed to sample differences — it isolates the self-report vs. actual-behavior gap itself |
+
+> **Ecological application.** This design is directly transferable: whenever a conservation survey asks about a discrete, verifiable action (e.g., "did you report an illegal fishing incident," "did you install a fence"), a parallel administrative or observational record of the same action allows a within-sample test of whether attitude/motivation constructs predict behavior similarly across self-report and verified-behavior outcomes.
+
+---
+
+### B-10 — Do Response Delays Bias Ecological Momentary Self-Reports?
+**Source:** Schneider, S., Toledo, M. J., Junghaenel, D. U., Smyth, J. M., Lee, P.-J., Goldstein, S., Pomeroy, O., & Stone, A. A. (2025). Do delayed responses introduce bias in ecological momentary assessment? Evidence from comparisons between self-reported and objective physical activity. *Frontiers in Psychology*, 15, 1503411. https://doi.org/10.3389/fpsyg.2024.1503411
+
+#### Study Context
+Participants (N = 339) wore a continuous activPAL accelerometer for 7 days while also self-reporting physical activity via EMA prompts five times daily. Because responses could be delayed up to 15 minutes, the study used the objective accelerometer trace as a moment-matched benchmark to test whether (a) people self-select the moments they respond to EMA prompts based on current activity, and (b) delayed self-reports are systematically biased or noisier than immediate ones relative to the objective benchmark.
+
+| Field | Detail |
+|---|---|
+| **Behavioral proxy** | Continuously recorded objective physical activity (accelerometer) as a benchmark for a matched self-reported EMA item |
+| **Variable role** | Objective criterion variable used to audit the validity of a self-report measure under varying response-delay conditions |
+| **Key finding** | Participants were more likely to delay EMA responses when currently active, but this self-selection did not translate into large systematic bias in reported activity levels — though delayed responses showed modestly more random measurement error |
+| **Design note** | Multilevel models decomposed within- and between-person effects and tested an assessment-type × response-delay interaction — a template for auditing any self-report/objective-measure pairing collected via EMA or diary methods |
+
+> **Ecological application.** For conservation EMA/experience-sampling designs (e.g., daily logging of time spent in nature, wildlife encounters, or pro-environmental micro-behaviors), this paper provides a rigorous template for testing whether participant-controlled response timing (snoozing, delaying) compromises data quality — directly relevant whenever passive sensor data (GPS, accelerometer, camera trap) can be paired with a matched self-report item.
+
+---
+
 ## Selecting the Right Behavioral Measure: A Decision Guide
 
 | Research Goal | Recommended Measure | Cost to Participant | Ecological Feasibility |
@@ -202,12 +238,31 @@ The value of behavioral measures is realized when they are regressed against psy
 ## References
 
 - Cohen, J. (2013). *Statistical power analysis for the behavioral sciences* (2nd ed.). Routledge.
+- de Goede, M., Leukfeldt, E. R., van der Wagen, W., & van de Weijer, S. (2025). Does protection motivation predict self-protective online behaviour? Comparing self-reported and actual online behaviour using a population-based survey experiment. *Computers in Human Behavior Reports*, 100649. https://doi.org/10.1016/j.chbr.2025.100649
 - ElHaffar, G., Durif, F., & Dubé, L. (2020). Towards closing the attitude-intention-behavior gap in green consumption: A narrative review of the literature and an overview of future research directions. *Journal of Cleaner Production*, 275, 122556.
 - Fernandes, D., Lynch, J. G., & Netemeyer, R. G. (2014). Financial literacy, financial education, and downstream financial behaviors. *Management Science*, 60(8), 1861–1883.
 - Luo, R., & Zhao, J. (2019). Inspired by BubbleView: Mouse-tracking as a proxy for visual attention. *Unpublished manuscript*, University of British Columbia.
 - Radke, J., Argentopoulos, S., Dunn, E. W., & Zhao, J. (2024). Probabilistic refunds increase beverage container recycling behavior. SSRN. https://doi.org/10.2139/ssrn.5016156
 - Salazar, G., Monroe, M. C., Ennes, M., Jones, J. A., & Veríssimo, D. (2022). Testing the influence of visual framing on engagement and pro-environmental action. *Conservation Science and Practice*, 4(10), e12812. https://doi.org/10.1111/csp2.12812
+- Schneider, S., Toledo, M. J., Junghaenel, D. U., Smyth, J. M., Lee, P.-J., Goldstein, S., Pomeroy, O., & Stone, A. A. (2025). Do delayed responses introduce bias in ecological momentary assessment? Evidence from comparisons between self-reported and objective physical activity. *Frontiers in Psychology*, 15, 1503411. https://doi.org/10.3389/fpsyg.2024.1503411
 - Schwartz, L. M., Woloshin, S., Black, W. C., & Welch, H. G. (1997). The role of numeracy in understanding the benefit of screening mammography. *Annals of Internal Medicine*, 127(11), 966–972.
 - Shi, C. (2023). *How does choice architecture influence attention and decision making?* (MA Thesis in Psychology, University of British Columbia).
 - Stern, P. C. (2000). New environmental theories: Toward a coherent theory of environmentally significant behavior. *Journal of Social Issues*, 56(3), 407–424.
 - Veríssimo, D., Fiennes, S., & Dunn, M. (2024). Using digital mobile games to increase the support for nature conservation. *Conservation Science and Practice*, 6(11), e13236. https://doi.org/10.1111/csp2.13236
+
+---
+
+## 2026 revision — literature curation pass
+
+Of 22 Step 7 candidates reviewed by abstract, two were added as new worked
+examples (B-09, B-10) because they directly instantiate this Step's core
+methodological point — comparing self-reported and actual/objective behavior
+within the same study — in domains (online security behavior; wearable-verified
+physical activity) not previously represented in the example matrix. Most other
+candidates were rejected as off-topic self-report *scale validations*
+(psychometric adaptations, SEM applications, teacher/policing surveys) rather
+than genuine self-report-vs-behavior comparisons; two further candidates —
+"Little Evidence for Consistent Initial Elevation Bias..." (EMA coordinated
+analysis) and "Coercive Control...Semi-Structured Interviews Versus
+Likert-Scale Self-Reports" — were reviewed but not added in this pass to keep
+the example matrix focused; they remain candidates for a future revision.
