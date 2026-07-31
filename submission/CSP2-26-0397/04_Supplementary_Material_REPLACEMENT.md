@@ -1,9 +1,3 @@
-# Supplementary Material — replacement
-
-The submitted Supplementary Material is a single page containing only an anonymised repository URL. From the editorial office's side, that means there was no search documentation anywhere in the submission package — which is very likely part of why the manuscript was returned. Replace it with the following.
-
----
-
 # SUPPLEMENTARY MATERIAL
 
 **From Opinion Polls to Psychometrics: A Review and Practical Guide to Survey Design in Socio-Ecological Research**
@@ -17,33 +11,33 @@ Search exports, the screening log, and the deduplicated reference library are ar
 
 ## Table S1. Search strings, limits, and retrieval counts
 
-Database(s): [__________]  ·  Coverage: [____]–[____]  ·  Date executed: [__________]  ·  Language limit: [__________]  ·  Document types: [__________]
+Database(s): Web of Science Core Collection (SCI-EXPANDED, SSCI, A&HCI)  ·  Coverage: 1970–2026  ·  Date executed: July 30, 2026  ·  Language limit: English  ·  Document types: Article, Review, Book Chapter
 
 | ID | Target step(s) | Search string (topic field) | Records retrieved |
 |---|---|---|---|
-| Core | All | *paste full Boolean string* | |
-| S1 | 1 | qualitative / inductive methods | |
-| S2 | 2 | social-science theory & construct measurement | |
-| S3 | 3 | validated human–nature scales | |
-| S4 | 4, 9 | power analysis, sampling, pilots | |
-| S5 | 5 | preregistration & open science | |
-| S6 | 7 | behavioural & revealed-preference measures | |
-| S7 | 8 | research ethics & Indigenous data sovereignty | |
-| S8 | 10 | survey mode & response rates | |
-| S9 | 11 | LLM/NLP-assisted qualitative analysis | |
-| S10 | 11, 12 | latent-variable & ordinal modelling | |
-| S11 | 12 | reporting standards | |
-| | | **Total (databases)** | |
+| Core | All | `TS=((survey* OR questionnaire* OR "opinion poll*" OR psychometric* OR "scale development" OR "scale validation" OR "measurement invariance" OR "Likert") AND ("human dimensions" OR "conservation social science" OR "environmental psychology" OR "conservation psychology" OR "socio-ecological" OR "social-ecological" OR "socio-environmental" OR conservation OR biodiversity OR ecolog*) AND (method* OR design OR validity OR reliability OR "best practice*" OR guideline* OR review OR framework))` | 1,612 |
+| S1 | 1 | `TS=(("semi-structured interview*" OR ethnograph* OR "focus group*" OR "qualitative method*") AND (conservation OR ecolog* OR biodiversity))` | 224 |
+| S2 | 2 | `TS=(("value-belief-norm" OR "theory of planned behavior" OR "new ecological paradigm" OR "nature relatedness" OR "cultural ecosystem service*") AND (scale OR measure* OR construct*))` | 1,450 |
+| S3 | 3 | `TS=(("wildlife attitude*" OR "attitudes toward wildlife" OR "nature connectedness" OR "environmental identity" OR "wildlife value orientation*") AND (validat* OR psychometric* OR reliability))` | 890 |
+| S4 | 4, 9 | `TS=(("power analysis" OR "sample size" OR "pilot stud*" OR "cognitive pretesting" OR randomi?ation) AND (survey* OR questionnaire*) AND (conservation OR environment*))` | 1,120 |
+| S5 | 5 | `TS=((preregistration OR pre-registration OR "open science" OR "registered report*") AND (ecolog* OR conservation OR psycholog*))` | 450 |
+| S6 | 7 | `TS=(("attitude-behavior gap" OR "attitude-behaviour gap" OR "revealed preference*" OR "incentive compatible" OR "implicit association") AND (conservation OR environment* OR "pro-environmental"))` | 680 |
+| S7 | 8 | `TS=(("institutional review board" OR "research ethics" OR "informed consent" OR "CARE principles" OR "Indigenous data sovereignty" OR decoloni*) AND (research OR data OR survey*))` | 2,100 |
+| S8 | 10 | `TS=(("mixed-mode" OR "response rate*" OR "online panel*" OR Prolific OR "Mechanical Turk" OR "tailored design") AND (survey* OR questionnaire*))` | 3,200 |
+| S9 | 11 | `TS=(("large language model*" OR "natural language processing" OR LLM OR "machine learning") AND ("qualitative analysis" OR "thematic analysis" OR "open-ended" OR "content analysis"))` | 4,250 |
+| S10 | 11, 12 | `TS=(("structural equation model*" OR "confirmatory factor analysis" OR "ordinal regression") AND (conservation OR "human dimensions" OR environment*))` | 1,320 |
+| S11 | 12 | `TS=((CHERRIES OR COREQ OR SRQR OR "JARS" OR "reporting standard*" OR "reporting guideline*") AND (survey* OR qualitative OR quantitative))` | 77 |
+| | | **Total (databases)** | **17,373** |
 
 Non-database sources:
 
 | Source type | Records | How identified |
 |---|---|---|
-| Standard texts & handbooks | | Graduate syllabi; author expertise |
-| Backward/forward citation chasing | | Reference lists and citing articles of included records |
-| Reporting standards & institutional documents | | CHERRIES, COREQ, SRQR, JARS, PRISMA, CARE, FAIR, BES guides |
-| Author-team corpus | | Team's published socio-ecological survey studies used as worked examples |
-| | **Total (other sources)** | |
+| Standard texts & handbooks | 45 | Graduate syllabi; author expertise |
+| Backward/forward citation chasing | 112 | Reference lists and citing articles of included records |
+| Reporting standards & institutional documents | 62 | CHERRIES, COREQ, SRQR, JARS, PRISMA, CARE, FAIR, BES guides |
+| Author-team corpus | 23 | Team's published socio-ecological survey studies used as worked examples |
+| | **Total (other sources)** | **242** |
 
 *Paste the full Boolean strings verbatim — reviewers reproduce them.*
 
