@@ -25,9 +25,17 @@
 | **Echeverri birds** | Echeverri Bird Attitudes Scale | Attitudes to animals | Attitudes towards birds and their associated cultural ecosystem services and disservices (Disservices, Education, Bequest, Birdwatching, Acoustic Aesthetic, Identity) | 14 items; Likert scale | No | No | Echeverri et al., 2019 | Transcends contexts but relies on distinct avian cultural ecosystem services |
 | **Geladi birds** | Geladi Avian Ecosystem (Dis)service Scale | Attitudes to animals | Avian ecosystem services and disservices among farmers, combining open-ended qualitative codes with corresponding Likert statements on benefits and negative effects | Mixed qualitative and 7-point Likert scale | No | No | Geladi et al., 2025 | Taxa explicitly adapted for birds |
 | **PAS** | Plant Attitude Scale | Attitudes to plants | Attitudes toward plants across four distinct dimensions (Interest, Importance, Urban trees, and Utilization) | 29 items; Likert-scale | No | Partial (Validated in Slovakia) | Fančovičová & Prokop, 2010 | - |
-
+| **SINS** | State of Interdependence with Nature Scale | Nature connectedness | *State* (momentary, as opposed to trait) sense of deep connection or "oneness" with nature; complements trait measures like NRS by capturing situational fluctuations | 8 items; Likert scale | No | No | Hanley et al., 2022 | - |
+| **CNS** | Connectedness to Nature Scale | Nature connectedness | Emotional, experiential connection with the natural world, distinct in construction from NRS (adapted and validated in a 7-item Polish national-sample form) | 7 items (Polish adaptation); Likert scale | Yes (7-item short form) | Yes (Poland, quota-sampled national adult sample) | Mayer & Frantz, 2004 | Polish 7-item adaptation, Bajkowska et al., 2026 |
+| **EVBS** | Environmental Value-Bases Scale | Values & worldview | Distinguishes instrumental, intrinsic, and relational bases for valuing nature (complements the Relational Values scale by explicitly contrasting all three value types in one instrument) | Likert scale | No | Yes (5-culture validation) | Lengieza et al., 2025 | - |
+| **HEAS** | Hogg Eco-Anxiety Scale | Affect / climate distress | Eco-anxiety as a distinct construct from general anxiety; assesses affective, behavioral, and cognitive responses to ecological/climate threat | Likert scale | No | Partial (Italian adaptation) | Hogg et al., 2021 | Italian adaptation, Rocchi et al., 2023 |
+| **CAS** | Climate Anxiety Scale | Affect / climate distress | Climate anxiety as a psychological response to climate change across two subscales: cognitive impairment and functional impairment | 13 items; Likert scale | No | Partial (Polish adaptation) | Clayton & Karazsia, 2020 | Polish adaptation (2022) |
 
 ## Full Reference List
+
+Bajkowska, K., Modlinska, K., Rycielska, L., & Domaradzka, E. (2026). Psychometric evaluation of a 7-item Connectedness to Nature Scale in a Polish national adult sample. *Current Psychology*. https://doi.org/10.1007/s12144-026-09512-9
+
+Clayton, S., & Karazsia, B. T. (2020). Development and validation of a measure of climate change anxiety. *Journal of Environmental Psychology, 69*, 101434.
 
 Clayton, S. (2003). Environmental identity: A conceptual and an operational definition. *Identity and the natural environment: The psychological significance of nature*, 45-65.
 
@@ -45,13 +53,21 @@ Fančovičová, J., & Prokop, P. (2010). Development and initial psychometric as
 
 Geladi, I., Zhao, J., Fessl, B., Garcia, S., & Kremen, C. (2025). The birds and the trees: Avian ecosystem (dis)service perspectives and farmers' willingness to plant native trees in the agricultural landscape of the Galapagos Islands. *People and Nature, 7*, 3182–3206. https://doi.org/10.1002/pan3.70177
 
+Hanley, A. W., Deringer, S. A., Sneed, J. C., Bettmann, J. E., & Gonzalez-Pons, K. M. (2022). The State of Interdependence with Nature Scale: Development and initial validation. *Ecopsychology, 14*(3). https://doi.org/10.1089/eco.2021.0014
+
 Herzog, H. A., Betchart, N. S., & Pittman, R. B. (1991). Gender, sex role orientation, and attitudes toward animals. *Anthrozoös, 4*(3), 184–191.
 
 Herzog, H., Grayson, S., & McCord, D. (2015). Brief Measures of the Animal Attitude Scale. *Anthrozoös, 28*(1), 145–152. https://doi.org/10.2752/089279315X14129350721894
 
+Hogg, T. L., Stanley, S. K., O'Brien, L. V., Wilson, M. S., & Watsford, C. R. (2021). The Hogg Eco-Anxiety Scale: Development and validation of a multidimensional scale. *Global Environmental Change, 71*, 102391.
+
 Kellert, S. R. (1984). American attitudes toward and knowledge of animals: An update. In *Advances in animal welfare science 1984* (pp. 177-213). Dordrecht: Springer Netherlands.
 
 Klain, S. C., Olmsted, P., Chan, K. M., & Satterfield, T. (2017). Relational values resonate broadly and differently than intrinsic or instrumental values, or the New Ecological Paradigm. *PloS one, 12*(8), e0183962.
+
+Lengieza, M. L., Swim, J. K., DeCoster, J., Guerriero, J. G., Saito, O., Le Coent, P., Hérivaux, C., & Ragazzi, E. (2025). A five-culture validation of the Environmental Value-Bases Scale: A measure of instrumental, intrinsic, and relational environmental values. *Sustainability, 17*(22), 10102. https://doi.org/10.3390/su172210102
+
+Mayer, F. S., & Frantz, C. M. (2004). The connectedness to nature scale: A measure of individuals' feeling in community with nature. *Journal of Environmental Psychology, 24*(4), 503–515.
 
 McNair, D. M., Lorr, M., & Droppleman, L. F. (1971). Manual for the Profile of Mood States. *Educational and Industrial Testing Service*.
 
@@ -60,6 +76,8 @@ Nisbet, E. K., & Zelenski, J. M. (2013). The NR-6: A new brief measure of nature
 Nisbet, E. K., Zelenski, J. M., & Murphy, S. A. (2009). The nature relatedness scale: Linking individuals' connection with nature to environmental concern and behavior. *Environment and behavior, 41*(5), 715-740.
 
 Pérez, B., Álvarez, B., Boso, A., & Lisón, F. (2021). Design and psychometric properties of the BAtSS: a new tool to assess attitudes towards bats. *Animals, 11*(2), 244.
+
+Rocchi, G., Pileri, J., Luciani, F., Gennaro, A., & Lai, C. R. (2023). Insights into eco-anxiety in Italy: Preliminary psychometric properties of the Italian version of the Hogg Eco-anxiety Scale, age and gender distribution. *Journal of Environmental Psychology, 91*, 102180.
 
 Spielberger, C. D. (1983). Manual for the State-Trait Anxiety Inventory. *Consulting Psychologists Press*.
 

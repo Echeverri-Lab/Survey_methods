@@ -23,6 +23,7 @@
 - [ ] Negatively worded items are flagged (for reverse-scoring in analysis)
 - [ ] Reading level is appropriate for target population (aim for ≤ Grade 8 for general public)
 - [ ] Items have been translated and back-translated if multilingual delivery is planned
+- [ ] For abstract attitudinal constructs (e.g., trust, legitimacy, institutional confidence), consider whether a closed-form item actually captures what respondents mean — Landesvatter & Bauer (2025) used open-ended probing plus supervised machine learning to show that standard trust survey items can miss substantial heterogeneity in how respondents interpret the question; where feasible, pair a closed item with an open-ended probe during cognitive interviewing (Stage 2 below) to check this.
 
 ### 1C — Response options
 - [ ] All Likert scales have clearly labelled endpoints and a defined number of points (5 or 7 recommended)
@@ -164,6 +165,20 @@
 - Beatty, P. C., & Willis, G. B. (2007). Research synthesis: The practice of cognitive interviewing. *Public Opinion Quarterly*, 71(2), 287–311.
 - Galesic, M., & Bosnjak, M. (2009). Effects of questionnaire length on participation and indicators of response quality. *Public Opinion Quarterly*, 73(2), 349–360.
 - Hu, L., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis. *Structural Equation Modeling*, 6(1), 1–55.
+- Landesvatter, C., & Bauer, P. C. (2025). How valid are trust survey measures? New insights from open-ended probing data and supervised machine learning. *Sociological Methods & Research*. https://doi.org/10.1177/00491241241234871
 - Miller, J. (2025). Inclusive survey design. *Survey Practice*.
 - Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). *The Psychology of Survey Response*. Cambridge University Press.
 - Willis, G. B. (2005). *Cognitive Interviewing: A Tool for Improving Questionnaire Design*. SAGE.
+
+---
+
+## 2026 revision — literature curation pass
+
+Only 1 candidate paper (of the 395-record random subsample) matched Step 6
+keywords: Landesvatter & Bauer (2025), added above to Section 1B as guidance
+on validating abstract attitudinal items (e.g., trust) via open-ended
+probing and supervised ML (meets C3 — concrete technique illustration).
+No other candidates were found; this is expected, since Step 6 (item
+wording mechanics) is a narrower topic than the broader theory/scales/design
+Steps and was under-represented in the keyword search strings used to build
+the subsample.
