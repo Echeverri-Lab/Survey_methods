@@ -14,7 +14,7 @@ Reproducible pipeline for rebuilding the literature corpus:
    using the same keyword logic as the S1-S11 topic searches documented in
    `search_strings.md`, so additions can be routed to the right Step.
 5. Write outputs used to update Fig2_PRISMA_flow_data.md and to drive the
-   step-by-step curation pass (Step 4 of the work plan).
+   step-by-step curation pass.
 
 Outputs (all under Relevant Literature/search_2026/exports/):
     master_corpus_395_plus_repo.csv   - full master database

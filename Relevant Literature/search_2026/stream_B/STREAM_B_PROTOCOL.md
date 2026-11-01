@@ -24,8 +24,6 @@ The Table S2 breakdown (45 / 112 / 62 / 23) cannot be reproduced from any file. 
 
 The rebuilt Stream B is a **supplementary search**, run and logged prospectively. It sits alongside the re-run database search (Stream A) and goes through the **same eligibility and curation criteria and the same screening log**.
 
-
-
 ## Components
 
 Each component writes rows to `../screening_log.csv`, with `source` set to the component code below.

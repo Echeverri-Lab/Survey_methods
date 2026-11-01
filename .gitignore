@@ -31,3 +31,6 @@ Relevant Literature/search_2026/screening/screening_workbook_*.xlsx
 Relevant Literature/search_2026/local_abstracts/
 # API response caches (contain abstracts; regenerable)
 Relevant Literature/search_2026/stream_B/api_cache.json
+
+# Local Claude Code settings (machine-specific paths)
+.claude/
