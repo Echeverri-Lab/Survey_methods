@@ -27,7 +27,7 @@ LOG = HERE.parent / "screening_log.csv"
 csv.field_size_limit(10**8)
 
 DECISIONS = ["include", "exclude", "unsure"]
-# Exclusion codes from the approved criteria (submission/ConBio-26-785/01_ELIGIBILITY_CRITERIA_DRAFT.md).
+# Exclusion codes from the approved eligibility criteria (see ../stream_B/STREAM_B_PROTOCOL.md, amendment log).
 REASONS = ["not_human_survey", "application_only", "instrument_out_of_domain", "not_english", "wrong_doc_type", "duplicate"]
 FONT = "Arial"
 HEAD_FILL = PatternFill("solid", fgColor="1F3A5F")

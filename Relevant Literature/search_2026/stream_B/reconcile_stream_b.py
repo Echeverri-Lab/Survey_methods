@@ -135,7 +135,7 @@ def main():
         "3. Stream B as currently defined is 'what the repository cites', which mixes methodological guidance with theory primary sources and worked examples. "
         "It cannot be described as an independent bottom-up search without a documented procedure (see `STREAM_B_PROTOCOL.md`).",
         "4. The suspect and placeholder entries sit in public repository files and must be fixed regardless of the review method "
-        "(handling editor: 'accuracy and currency of citations').",
+        "(citation accuracy).",
     ]
     (HERE / "stream_b_summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))

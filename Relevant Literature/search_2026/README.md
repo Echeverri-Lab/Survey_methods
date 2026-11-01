@@ -8,8 +8,8 @@ practice-focused curation described there. It exists because a search cannot
 be judged reproducible if its only trace is a paragraph of prose — everything
 here is the primary record the paragraph summarizes.
 
-See `01_Search_Protocol_RUN_THIS_FIRST.md` (in `submission/CSP2-26-0397/`) for
-the full protocol this folder implements.
+The search protocol this folder implements is documented in `search_strings_v2_DRAFT.md` and
+`stream_B/STREAM_B_PROTOCOL.md`.
 
 ## Contents
 
@@ -53,7 +53,6 @@ are checkable against a primary record rather than taken on faith.
    as records move through deduplication, screening, full-text assessment,
    and curation.
 3. Run `python3 count_from_log.py` and paste the printed dict into the `N`
-   block at the top of `../../submission/CSP2-26-0397/03_make_fig2_prisma.py`
-   (or wherever that script currently lives).
+   block of the flow-diagram script (kept with the manuscript files, not in this repository).
 4. Regenerate the figure and copy the resulting counts into the Methods
    section.

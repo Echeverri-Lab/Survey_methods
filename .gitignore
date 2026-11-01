@@ -13,7 +13,7 @@ venv/
 # Sensitive data (Examples of approved IRB protocols with PII)
 Step_08_Ethics_and_Participant_Compensation/Examples\ of\ approved\ IRB\:BREB\ protocols\ and\ recruitment\ materials/
 
-# Submission materials (manuscripts, confidential reviews, response letters): never commit
+# Manuscript and submission materials: never commit
 submission/
 
 # Published papers with contact emails
@@ -31,3 +31,6 @@ Relevant Literature/search_2026/screening/screening_workbook_*.xlsx
 Relevant Literature/search_2026/local_abstracts/
 # API response caches (contain abstracts; regenerable)
 Relevant Literature/search_2026/stream_B/api_cache.json
+
+# Local Claude Code settings (machine-specific paths)
+.claude/

@@ -6,7 +6,7 @@ Creates `../screening_log.csv` (the single log for all review records, per
 STREAM_B_PROTOCOL.md) and fills it with Stream B rows:
 
   B1 standards  — the fixed list of named standards and guidance documents
-  B2 texts      — reviewer-nominated texts (syllabi and author nominations to be added)
+  B2 texts      — externally nominated texts (syllabi and author nominations to be added)
   B3 citation_chasing — every record from b3_records.csv, flagged if it is a
                  seed, already in the Stream A corpus, or already cited in the repo
   B4 team_corpus — the author team's studies used as worked examples
@@ -114,7 +114,7 @@ def main(streamA_csv):
                           notes="Record version and date accessed when retrieved"))
     for i, (who, yr, what, pub) in enumerate(B2_REVIEWER, 1):
         rows.append(blank(record_id=f"B2-{i:03d}", **{SRC: "texts"}, authors=who, year=yr, title=what,
-                          journal_or_publisher=pub, notes="Nominated by Reviewer 1 (ConBio 26-785)"))
+                          journal_or_publisher=pub, notes="Externally nominated text"))
     for i, (who, yr, what, doi) in enumerate(B4_TEAM, 1):
         rows.append(blank(record_id=f"B4-{i:03d}", **{SRC: "team_corpus"}, authors=who, year=yr, title=what, doi=doi,
                           **{DUP: dup_of(doi, what)}, notes="Worked example only; not counted as evidence"))

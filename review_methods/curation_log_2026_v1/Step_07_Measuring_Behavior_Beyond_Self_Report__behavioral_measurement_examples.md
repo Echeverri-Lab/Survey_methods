@@ -1,4 +1,4 @@
-<!-- Moved verbatim from `Step_07_Measuring_Behavior_Beyond_Self_Report/examples/behavioral_measurement_examples.md` on 2026-11-01 (ConBio 26-785 revision, R2-20). -->
+<!-- Moved verbatim from `Step_07_Measuring_Behavior_Beyond_Self_Report/examples/behavioral_measurement_examples.md` on 2026-11-01. -->
 
 ## 2026 revision — literature curation pass
 

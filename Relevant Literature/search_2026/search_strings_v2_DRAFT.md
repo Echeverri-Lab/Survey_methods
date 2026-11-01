@@ -3,10 +3,10 @@
 **Status:** APPROVED by the authors as drafted, 2026-11-01. Decisions: 2020–2026 on every string; Web of Science Core Collection only (single database stated as a limitation); variant (b) threshold 3,000 records. **Next:** peer review by an information specialist (PRESS 2015) before running; the reviewed version is saved as `search_strings_v2.md`. Not yet run.
 **Database:** Web of Science Core Collection (Advanced Search). The editions searched must be recorded at run time.
 **Replaces:** every earlier version. There are three conflicting copies, none tied to the counts reported in SI Table S1.
-**Eligibility:** `submission/ConBio-26-785/01_ELIGIBILITY_CRITERIA_DRAFT.md` (approved). Each string below names the criterion (I1–I5) it targets.
+**Eligibility:** the approved criteria summarized in `stream_B/STREAM_B_PROTOCOL.md` (amendment log). Each string below names the criterion (I1–I5) it targets.
 **Citations marked [verify]** have not been read yet.
 
-## Conventions (R1: "formatting… S11 inconsistently formatted")
+## Conventions
 
 - **One field throughout:** `TS=` (title, abstract, author keywords, Keywords Plus). The only exception is the prespecified narrowing variant (b) below.
 - **Quoting:** multi-word phrases go in double quotes; single words stay unquoted.
@@ -19,7 +19,7 @@
 
 ## What changed and why
 
-| Reviewer point (R1-19 unless noted) | Change |
+| Issue in the earlier strings | Change |
 |---|---|
 | "conservation social science" lacks a wildcard; missing "environmental / marine / natural resource social science\*" | The context block now has all four, wildcarded, plus "human dimension\*", "conservation psycholog\*", and "environmental psycholog\*" |
 | Item response theory missing | Added "item response theory" and Rasch to the core search and to S3 and S10 |
@@ -27,9 +27,9 @@
 | S11 inconsistent quotes | All strings now follow the conventions above |
 | Search may introduce bias; benchmark protocols | Benchmark sensitivity test (below) |
 | External expert review (ROSES / Environmental Evidence) | Information-specialist peer review using PRESS 2015 (below) |
-| Eligibility now covers guidance from any discipline (R1-22, R1-3) | Step-specific strings (S4, S5, S8, S9, S11) no longer require an environmental term; the core search, S1, S2, S3, S6, and S10 keep one because their targets are environment-specific |
-| Paradigm and limits (R2-1, HE-3; criterion I5) | New S12 |
-| Single database (R1, positionality section) | See decision 2 |
+| Eligibility now covers guidance from any discipline | Step-specific strings (S4, S5, S8, S9, S11) no longer require an environmental term; the core search, S1, S2, S3, S6, and S10 keep one because their targets are environment-specific |
+| Paradigm and limits (criterion I5) | New S12 |
+| Single database | See decision 2 |
 
 ## Strings
 
@@ -195,7 +195,7 @@ TS=(
 
 **Syntax to confirm in the live interface (and in the PRESS review):** `NEAR/5` with a parenthesized OR group on each side (core); `$` inside a quoted phrase (`"theory of planned behavio$r"`, S2, S6); and whether `LA=` and `DT=` combine with `NOT DT=` as written. Web of Science accepts these as far as I know, but I couldn't test them without access.
 
-## Benchmark sensitivity test (R1: "benchmark article protocols")
+## Benchmark sensitivity test
 
 Before screening, check that the combined retrieval contains each benchmark: eligible records already known, indexed in Web of Science, and published 2020–2026. Report sensitivity as found/total.
 
@@ -219,7 +219,7 @@ If any benchmark is missed, identify the string that should have caught it, revi
 | 14 | Jowsey et al. 2025, *Qual Inquiry* (10.1177/10778004251401851) | S9 |
 | 15 | Lengieza et al. 2025 (five-culture validation) | S3 |
 
-## Information-specialist peer review (R1: "external expert review")
+## Information-specialist peer review
 
 - **Reviewer:** a librarian or information specialist outside the author team, e.g., a UC Berkeley subject librarian for environmental science or the social sciences. Name and affiliation go in the Acknowledgments, with their permission.
 - **Instrument:** the PRESS 2015 Guideline Evidence-Based Checklist (McGowan et al. 2016, *J Clin Epidemiol* [verify]). It covers translation of the question, Boolean and proximity operators, subject headings, text words, spelling/syntax, and limits.
@@ -247,7 +247,7 @@ If any benchmark is missed, identify the string that should have caught it, revi
 
 ## Decisions for you
 
-1. **Date window.** As drafted, 2020–2026 for every string, matching what the manuscript reported. Foundational and older work enters through Stream B (texts, standards, citation chasing), which has no date limit. A wider window (e.g., 2015–2026) would be more complete, but would roughly double screening for one screener before 30 January 2027.
-2. **Add Scopus?** It answers the single-database limitation that R1 and our own positionality section raise, and much of it will overlap Web of Science and drop out at deduplication. If yes, I translate the approved strings to Scopus syntax (`TITLE-ABS-KEY`, `W/n` for proximity) after the information-specialist review.
+1. **Date window.** As drafted, 2020–2026 for every string, matching what the manuscript reported. Foundational and older work enters through Stream B (texts, standards, citation chasing), which has no date limit. A wider window (e.g., 2015–2026) would be more complete, but would roughly double screening for a single screener.
+2. **Add Scopus?** It addresses the single-database limitation noted in the positionality section, and much of it will overlap Web of Science and drop out at deduplication. If yes, I translate the approved strings to Scopus syntax (`TITLE-ABS-KEY`, `W/n` for proximity) after the information-specialist review.
 3. **The 3,000-record threshold** for variant (b).
 4. **Who will do the information-specialist review?**

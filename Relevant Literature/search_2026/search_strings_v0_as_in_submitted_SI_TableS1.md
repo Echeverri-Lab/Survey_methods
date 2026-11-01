@@ -1,4 +1,4 @@
-# Search strings — CSP2-26-0397
+# Search strings (version printed in the original submission)
 
 Verbatim Boolean strings extracted from `01_Search_Protocol_RUN_THIS_FIRST.md`
 (Step A). Fill in the blank fields as each search is executed. Export the

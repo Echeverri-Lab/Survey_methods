@@ -1,4 +1,4 @@
-<!-- Moved verbatim from `Step_10_Survey_Distribution/README.md` on 2026-11-01 (ConBio 26-785 revision, R2-20). -->
+<!-- Moved verbatim from `Step_10_Survey_Distribution/README.md` on 2026-11-01. -->
 
 ## 2026 revision — literature curation pass
 

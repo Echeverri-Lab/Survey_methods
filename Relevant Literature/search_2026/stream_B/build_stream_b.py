@@ -2,7 +2,7 @@
 build_stream_b.py
 =================
 
-Rebuilds the Stream B (bottom-up / expert-knowledge) record log for ConBio 26-785.
+Rebuilds the Stream B (bottom-up / expert-knowledge) record log for the 2026 supplementary search.
 
 Stream B was originally defined as "every unique reference cited across the
 repository's Step folders" (master_reference_list_all_steps.md, n=242). This
