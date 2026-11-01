@@ -171,62 +171,33 @@ See `visualization_guide.md` for annotated examples and code. Quick reference:
 ## References
 
 - Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. *Qualitative Research in Psychology*, 3(2), 77-101.
-- Browne-Nuñez, C., et al. (2015). Toward an integrated understanding of the human dimensions of human-wildlife conflict. *Biological Conservation*, 184, 258-266.
-- Cortés-Avizanda, A., et al. (2018). (Reference for factor analysis in socio-ecological surveys).
-- "Collecting Qualitative Data at Scale with Large Language Models: A Case Study" (2025). https://doi.org/10.1145/3710947
-- "Comparing Large Language Models and Human Annotators in Latent Content Analysis of Sentiment, Political Leaning, Emotional Intensity and Sarcasm" (2025). *Scientific Reports*. https://doi.org/10.1038/s41598-025-96508-3
-- "Do Racial Differences Exist in Survey Data Quality?" (2025). https://doi.org/10.1007/s41996-025-00181-7
-- Goodson, et al. (2025). (Reference for SEM linking biological and social data).
-- "Guaranteed Incentives and Prize Drawings: Effects on Participation, Data Quality, and Costs in a Web Survey of College Students on Sensitive Topics" (2023). https://doi.org/10.1177/08944393231189853
-- Hayes, A. (2025). (Reference for NLP scaling qualitative insights).
-- "Interviewer and Respondent Sociodemographic Characteristics, Rapport, and Their Joint Impact on Data Quality in the NESDA Study" (2025). https://doi.org/10.1002/mpr.70090
-- "It Might Be Able to Produce a Text, but It's Not Able to Produce Knowledge: Qualitative Researchers' Perspectives on the Use of Generative AI in Research" (2025). https://doi.org/10.1080/14780887.2025.2602816
+- Browne-Nuñez, C., Treves, A., MacFarland, D., Voyles, Z., & Turng, C. (2015). Tolerance of wolves in Wisconsin: A mixed-methods examination of policy effects on attitudes and behavioral inclinations. Biological Conservation, Detecting and Understanding Non-Compliance with Conservation Rules, 189, 59–71. https://doi.org/10.1016/j.biocon.2014.12.016
+- Cortés-Avizanda, A., Martín-López, B., Ceballos, O., & Pereira, H. M. (2018). Stakeholders perceptions of the endangered Egyptian vulture: Insights for conservation. Biological Conservation, 218, 173–180. https://doi.org/10.1016/j.biocon.2017.09.028
+- Cuevas, A., Scurrell, J. V., Brown, E. M., Entenmann, J., & Daepp, M. I. G. (2025). Collecting qualitative data at scale with large language models: A case study. *Proceedings of the ACM on Human-Computer Interaction*, *9*(2), 1–27. https://doi.org/10.1145/3710947
+- Bojić, L., Zagovora, O., Zelenkauskaite, A., Vuković, V., Čabarkapa, M., Veseljević Jerković, S., & Jovančević, A. (2025). Comparing large language models and human annotators in latent content analysis of sentiment, political leaning, emotional intensity and sarcasm. *Scientific Reports*, *15*, 11477. https://doi.org/10.1038/s41598-025-96508-3
+- Ahn, Y., & Chang, A. C. (2026). Do racial differences exist in survey data quality? *Journal of Economics, Race, and Policy*, *9*(3), 205–227. https://doi.org/10.1007/s41996-025-00181-7
+- Goodson, D. J., van Riper, C. J., & Hauber, M. E. (2025). Fostering bird friendly cities: Multispecies justice through pro-environmental behaviors. Npj Urban Sustainability, 5(1), 33. https://doi.org/10.1038/s42949-025-00224-w
+- Dykema, J., Stevenson, J., Jones, C. P., & Day, B. (2023). Guaranteed incentives and prize drawings: Effects on participation, data quality, and costs in a web survey of college students on sensitive topics. *Social Science Computer Review*, *42*(3), 777–793. https://doi.org/10.1177/08944393231189853
+- Hayes, A. S. (2025). “Conversing” with qualitative data: Enhancing qualitative research through large language models (LLMs) (Pt. 1-19). International Journal of Qualitative Methods, 24. https://journals.sagepub.com/doi/full/10.1177/16094069251322346
+- Horsfall, M., Hoogendoorn, A. W., Draisma, S., Eikelenboom, M., & Penninx, B. W. J. H. (2026). Interviewer and respondent sociodemographic characteristics, rapport, and their joint impact on data quality in the NESDA study. *International Journal of Methods in Psychiatric Research*, *35*(2), e70090. https://doi.org/10.1002/mpr.70090
+- Foley, S., Dempsey, M., O’Sullivan, C., & Frost, N. (2025). “It might be able to produce a text, but it’s not able to produce knowledge”: Qualitative researchers’ perspectives on the use of generative AI in research. *Qualitative Research in Psychology*, 1–26. https://doi.org/10.1080/14780887.2025.2602816
 - Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. *Nature Machine Intelligence*, 1(9), 389-399.
 - Krippendorff, K. (2018). *Content Analysis: An Introduction to Its Methodology* (4th ed.). SAGE.
-- Langhans, M., Echeverri, A., et al. (2025). (Reference for per-participant sentiment scoring in word-association tasks).
+- Langhans, K. E., Echeverri, A., Xu, M., Callahan, M., Palmeri, M. L., Nguyen, O., Ardoin, N. M., & Daily, G. C. (2025). Urban community gardens foster positive human-avian interactions across an income gradient in San Francisco. Landscape and Urban Planning, 261, 105391. https://doi.org/10.1016/j.landurbplan.2025.105391
 - Levitt, H. M., et al. (2018). Qualitative and quantitative reporting standards: APA JARS. *American Psychologist*, 73(1), 1.
 - Lombard, M., Snyder-Duch, J., & Campanella Bracken, C. (2002). Content analysis in mass communication. *Human Communication Research*, 28(4), 587-604.
 - Naito, R., Zhao, J., Naidoo, R., & Chan, K. M. (2023). Private and civic actions as distinct types of individual engagement for transforming the exotic pet trade. *People and Nature*, 5(5), 1526-1538.
 - Norman, G. (2010). Likert scales, levels of measurement and the "laws" of statistics. *Advances in Health Sciences Education*, 15(5), 625-632.
 - Putnick, D. L., & Bornstein, M. H. (2016). Measurement invariance conventions and reporting. *Developmental Review*, 41, 71-90.
-- Schroeder, et al. (2025). (Reference for LLM surface vs. interpretive coding performance).
+- Schroeder, H., Quéré, M. A. L., Randazzo, C., Mimno, D., & Schoenebeck, S. (2025). Large Language Models in Qualitative Research: Uses, Tensions, and Intentions. https://arxiv.org/abs/2410.07362
 - Sun, S., Pan, W., & Wang, L. L. (2010). A comprehensive review of effect size reporting. *Psychological Methods*, 15(4), 424-428.
 - Tavakol, M., & Dennick, R. (2011). Making sense of Cronbach's alpha. *International Journal of Medical Education*, 2, 53-55.
 - Teel, T. L., & Manfredo, M. J. (2010). Understanding the diversity of public interests. *Environment and Behavior*, 42(4), 549-570.
 - "The Impact of Scale Direction on Data Quality" (2025). https://doi.org/10.18148/srm/2025.v19i2.8384
-- "Thematic Analysis and Artificial Intelligence: A Step-by-Step Process for Using ChatGPT in Thematic Analysis" (2025). https://doi.org/10.1177/16094069251333886
-- Turner, B. S., & Astin, J. (2021). (Reference for grounded theory in survey contexts).
-- "Using Large Language Models for Coding German Open-Ended Survey Responses on Survey Motivation" (2025). https://doi.org/10.18148/srm/2025.v19i3.8568
-- "Using Memes and Emoji-Scales in a Web Survey: Experimental Assessment of Consequences for Multimodal Cognitive Effort and Data Quality" (2024). https://doi.org/10.1080/13645579.2024.2359474
+- Naeem, M., Smith, T., & Thomas, L. (2025). Thematic analysis and artificial intelligence: A step-by-step process for using ChatGPT in thematic analysis. *International Journal of Qualitative Methods*, *24*. https://doi.org/10.1177/16094069251333886
+- Turner, C., & Astin, F. (2021). Grounded theory: What makes a grounded theory study? *European Journal of Cardiovascular Nursing*, *20*(3), 285–289. https://doi.org/10.1093/eurjcn/zvaa034
+- von der Heyde, L., Haensch, A.-C., Weiß, B., & Daikeler, J. (2025). AIn’t nothing but a survey? Using large language models for coding German open-ended survey responses on survey motivation. *Survey Research Methods*, *19*(4). https://doi.org/10.18148/srm/2025.v19i4.8568
+- Suleymanov, R., & Lebedev, D. (2024). Using memes and emoji-scales in a web survey: Experimental assessment of consequences for multimodal cognitive effort and data quality. *International Journal of Social Research Methodology*, *28*(2), 241–255. https://doi.org/10.1080/13645579.2024.2359474
 - Vaske, J. J. (2019). *Survey Research and Analysis* (2nd ed.). Venture Publishing.
-- Wilson, et al. (2022). (Reference for fine-tuned classifiers vs. generative LLMs for coding).
+- Wilson, J., Pollard, B., Aiken, J. M., Caballero, M. D., & Lewandowski, H. J. (2022). Classification of open-ended responses to a research-based assessment using natural language processing. Phys. Rev. Phys. Educ. Res., 18(1), 010141. https://doi.org/10.1103/PhysRevPhysEducRes.18.010141
 
----
-
-## 2026 revision — literature curation pass
-
-Of 87 Step 11 candidates reviewed by abstract — by far the largest candidate
-set of any Step — the great majority (~65) were rejected as off-topic
-Structural Equation Modeling *application* papers (Theory of Planned
-Behavior, protection motivation, ecosystem services, TAM/UTAUT, forestry,
-tourism, entrepreneurship, etc.) that use SEM as an analytic tool in
-unrelated substantive domains, offering no new *methodological* guidance
-beyond what Section 3's existing SEM row already documents. Instead, this
-pass focused on two clusters of genuinely new methodological evidence: (1)
-five 2025 papers on LLM-assisted qualitative coding, added to a new Section
-4b, directly extending this README's existing (but citation-sparse) LLM
-guidance in Section 4 with concrete benchmarking and workflow evidence; and
-(2) five 2023–2025 papers on survey data-quality diagnostics (response
-format, scale direction, interviewer rapport, incentive structure, racial
-data-quality disparities), added to a new Section 1b, extending the existing
-data-cleaning checklist with evidence on *why* these specific design choices
-matter for downstream data quality. Ecological data-quality papers
-("Evaluating effects of data quality and variable weighting on habitat
-suitability modelling," "Data quality issues in data used in species
-distribution models") were reviewed but judged out of scope — they concern
-species distribution modeling data pipelines, not human-subjects survey data
-cleaning, and are more relevant to a conservation-biology methods repository
-than this survey-design one. Several references above are cited by title
-rather than full author lists because author metadata was not available in
-the corpus records reviewed during this pass; author names should be
-verified against source PDFs before final manuscript submission.

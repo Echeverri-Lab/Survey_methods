@@ -30,7 +30,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 LIT_ROOT = HERE.parent  # .../Relevant Literature
-CORPUS_CSV = HERE / "exports" / "survey_corpus_v3_retained.csv"
+from local_abstracts import full_copy, split  # noqa: E402  abstracts are kept out of the public repo
+CORPUS_CSV = full_copy(HERE / "exports" / "survey_corpus_v3_retained.csv")
 RIS_FILES = [
     LIT_ROOT / "Survey methods paper.ris",
     LIT_ROOT / "Exported Items" / "Exported Items.ris",
@@ -201,6 +202,7 @@ def main():
         w.writeheader()
         for rec in master:
             w.writerow(rec)
+    split(master_path)  # abstracts stay in local_abstracts/ (not committed)
 
     # Step classification (keyword match on title+abstract), sample-only records
     class_path = OUT_DIR / "step_classification.csv"

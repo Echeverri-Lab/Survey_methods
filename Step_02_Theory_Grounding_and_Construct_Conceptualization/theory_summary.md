@@ -97,7 +97,7 @@ Cialdini, R. B., Reno, R. R., & Kallgren, C. A. (1990). A focus theory of normat
 
 Clayton, S. (2003). Environmental identity: A conceptual and an operational definition. In S. Clayton & S. Opotow (Eds.), *Identity and the natural environment: The psychological significance of nature* (pp. 45–65). MIT Press.
 
-Cohen, J. (2018). Defining identification: A theoretical look at the identification of audiences with media characters. In P. Vorderer, C. Klimmt, & U. Ritterfeld (Eds.), *Fundamental questions in entertainment research* (pp. 253–272). Routledge.
+Cohen, J. (2001). Defining identification: A theoretical look at the identification of audiences with media characters. *Mass Communication and Society*, *4*(3), 245–264. https://doi.org/10.1207/S15327825MCS0403_01
 
 Collins, A. M., & Loftus, E. F. (1975). A spreading-activation theory of semantic processing. *Psychological Review*, *82*(6), 407–428. https://doi.org/10.1037/0033-295X.82.6.407
 
@@ -121,7 +121,7 @@ Edwards, W. (1954). The theory of decision making. *Psychological Bulletin*, *51
 
 Eyster, H. N., Satterfield, T., & Chan, K. M. A. (2022). Why people do what they do: An interdisciplinary synthesis of human action theories. *Annual Review of Environment and Resources*, *47*, 725–751. https://doi.org/10.1146/annurev-environ-020422-125351
 
-Eyster, H. N., Satterfield, T., & Chan, K. M. A. (2025). Use of human action theories in conservation. *Conservation Biology*, *39*(1), e14384. https://doi.org/10.1111/cobi.14384
+Eyster, H. N., Gould, R. K., Chan, K. M. A., & Satterfield, T. (2025). Use of theories of human action in recent conservation research. *Conservation Biology*, *39*(2), e14461. https://doi.org/10.1111/cobi.14461
 
 Festinger, L. (1957). *A theory of cognitive dissonance*. Stanford University Press.
 

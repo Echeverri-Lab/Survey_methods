@@ -69,7 +69,7 @@ The subjective assessment or cognitive perception of the probability and severit
 * Ajzen, I. (1991). The theory of planned behavior. *Organizational Behavior and Human Decision Processes*, 50(2), 179-211.
 * American Psychological Association. (2017). *Ethical principles of psychologists and code of conduct*.
 * Bennett, N. J., et al. (2017). Conservation social science: Understanding and integrating human dimensions to improve conservation. *Biological Conservation*, 205, 93-108.
-* Browne-Nuñez, C., et al. (2015). Toward an integrated understanding of the human dimensions of human-wildlife conflict. *Biological Conservation*, 184, 258-266.
+* Browne-Nuñez, C., Treves, A., MacFarland, D., Voyles, Z., & Turng, C. (2015). Tolerance of wolves in Wisconsin: A mixed-methods examination of policy effects on attitudes and behavioral inclinations. Biological Conservation, Detecting and Understanding Non-Compliance with Conservation Rules, 189, 59–71. https://doi.org/10.1016/j.biocon.2014.12.016
 * Charmaz, K. (2006). *Constructing grounded theory: A practical guide through qualitative analysis*. Sage.
 * Cialdini, R. B., Reno, R. R., & Kallgren, C. A. (1990). A focus theory of normative conduct: Recycling the concept of norms to reduce littering in public places. *Journal of Personality and Social Psychology*, 58(6), 1015.
 * Corbin, J., & Strauss, A. (2014). *Basics of qualitative research: Techniques and procedures for developing grounded theory*. Sage publications.
@@ -84,7 +84,7 @@ The subjective assessment or cognitive perception of the probability and severit
 * Jacobs, M. H., Vaske, J. J., & Roemer, J. M. (2012). Toward a mental systems approach to human relationships with wildlife: The role of emotional dispositions. *Human Dimensions of Wildlife*, 17(1), 4-15.
 * Likert, R. (1932). A technique for the measurement of attitudes. *Archives of Psychology*.
 * Manfredo, M. J. (2008). *Who cares about wildlife? Social science concepts for exploring human-wildlife relationships and conservation issues*. Springer Science & Business Media.
-* Manfredo, M. J., Teel, T. L., & Dietsch, A. M. (2014). Implications of human value shift and persistence for biodiversity conservation. *Conservation Biology*, 30(2), 287-296.
+* Manfredo, M. J., Teel, T. L., & Dietsch, A. M. (2016). Implications of human value shift and persistence for biodiversity conservation. *Conservation Biology*, *30*(2), 287–296. https://doi.org/10.1111/cobi.12619
 * Nunnally, J. C., & Bernstein, I. H. (1994). *Psychometric theory*. McGraw-Hill.
 * Saldaña, J. (2021). *The coding manual for qualitative researchers*. Sage.
 * Schwartz, S. H. (1992). Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries. *Advances in Experimental Social Psychology*, 25, 1-65.

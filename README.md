@@ -8,6 +8,27 @@ This repository provides structured guidance, templates, annotated code, and ref
 
 ---
 
+## Contents
+
+- [Step 00 Key Terminology](Step_00_Key_Terminology/)
+- [Step 01 Epistemological Alignment and Method Selection](Step_01_Epistemological_Alignment_and_Method_Selection/)
+- [Step 02 Theory Grounding and Construct Conceptualization](Step_02_Theory_Grounding_and_Construct_Conceptualization/)
+- [Step 03 Psychometric Scales and Construct Validity](Step_03_Psychometric_Scales_and_Construct_Validity/)
+- [Step 04 Study Architecture and Experimental Design](Step_04_Study_Architecture_and_Experimental_Design/)
+- [Step 05 Preregistration and Open Science](Step_05_Preregistration_and_Open_Science/)
+- [Step 06 Instrument Construction](Step_06_Instrument_Construction/)
+- [Step 07 Measuring Behavior Beyond Self Report](Step_07_Measuring_Behavior_Beyond_Self_Report/)
+- [Step 08 Ethics and Participant Compensation](Step_08_Ethics_and_Participant_Compensation/)
+- [Step 09 Power Analysis Sampling and Pilots](Step_09_Power_Analysis_Sampling_and_Pilots/)
+- [Step 10 Survey Distribution](Step_10_Survey_Distribution/)
+- [Step 11 Data Preparation Analysis and Reporting](Step_11_Data_Preparation_Analysis_and_Reporting/)
+- [Step 12 Writing Survey Research Paper](Step_12_Writing_Survey_Research_Paper/)
+- [Review methods and audit trail](review_methods/) · [Search and screening records](Relevant%20Literature/search_2026/) · [PRISMA flow](PRISMA/)
+
+> On the anonymized review mirror, the file tree on the left may truncate long folder names; use these links instead.
+
+---
+
 ## How to use this repository
 
 Each `Step_XX` folder corresponds to one section of the manuscript and contains:
@@ -34,7 +55,7 @@ Work through the steps in order for a new study, or jump directly to the step mo
 | `Step_05_Preregistration_and_Open_Science/` | Why and how to preregister; AsPredicted and OSF templates; confirmatory vs. exploratory analysis guide; preregistration checklist. |
 | `Step_06_Instrument_Construction/` | 11-type question reference table (word association, Likert, slider, 3-D visualisation, etc.); survey matrix template; survey template; QC checklist; worked example from Echeverri (2019). |
 | `Step_07_Measuring_Behavior_Beyond_Self_Report/` | Eye-tracking, mouse-tracking, implicit association, incentivised choice, field behavioural observation. Worked examples with citations; code stub folder. |
-| `Step_08_Ethics_and_Participant_Compensation/` | IRB/BREB process; informed consent template; CARE and FAIR data principles; compensation guidelines for Prolific, MTurk, and community panels; deception and debriefing protocols. Real approved protocol examples (PDFs). |
+| `Step_08_Ethics_and_Participant_Compensation/` | IRB/BREB process; informed consent template; CARE and FAIR data principles; compensation guidelines for Prolific, MTurk, and community panels; deception and debriefing protocols. (Approved protocol examples are not included in the public repository for privacy reasons.) |
 | `Step_09_Power_Analysis_Sampling_and_Pilots/` | Effect-size estimation; power analysis in R (`pwr`, `lavaan`) and Python (`pingouin`); probability and non-probability sampling schemes; pilot study guidance; speeder-threshold derivation. |
 | `Step_10_Survey_Distribution/` | Mode selection guide (online panel vs. in-person vs. field tablet); AAPOR response-rate definitions; translation and back-translation protocol; platform comparison table (Qualtrics, REDCap, KoBoToolbox, SurveyCTO). |
 | `Step_11_Data_Preparation_Analysis_and_Reporting/` | Full cleaning pipeline with ordered exclusion log template; annotated R and Python code for eligibility filtering, bot detection, speeder removal, AI-text flagging, and missing data imputation (`mice`); CFA/SEM workflow; qualitative coding guidance; LLM-assisted coding considerations; visualization guide with working R/Python code for Likert, word clouds, Sankey diagrams, ordination, and path models. |
@@ -44,9 +65,9 @@ Work through the steps in order for a new study, or jump directly to the step mo
 
 | Folder | Purpose |
 |---|---|
-| `Flag_for_Review/` | Reference audit report (`reference_audit_report.md`). Lists all citations flagged as placeholders, incomplete, inconsistent, or non-peer-reviewed across the repository. Resolve before manuscript submission. |
-| `Relevant Literature/` | Collected PDFs, RIS export files, and reference libraries not yet assigned to a specific step. |
-| `_archive/` | One-off PDF extraction scripts and raw outputs from early repository exploration. Not part of the active workflow; see `_archive/README.md`. |
+| `review_methods/` | Documentation of how the review behind the manuscript was conducted, kept separate from the step-by-step resources. Includes the superseded 2026 curation-pass records moved out of the step folders. |
+| `PRISMA/` | Flow-diagram data and scripts for the manuscript's literature search. |
+| `Relevant Literature/` | Collected PDFs, RIS export files, and reference libraries not yet assigned to a specific step. `search_2026/` holds the search strings, exports, screening log, and supplementary-search (Stream B) records. |
 
 ---
 
@@ -66,7 +87,7 @@ pip install -r requirements.txt
 3. Add your own PDFs to the relevant `papers/` sub-folders and update the `.bib` files.
 4. Place your survey instrument files under `Step_06_Instrument_Construction/`.
 5. Run your cleaning and analysis scripts from `Step_11_Data_Preparation_Analysis_and_Reporting/`.
-6. Before submitting your manuscript, resolve all items in `Flag_for_Review/reference_audit_report.md`.
+6. Before submitting your manuscript, check that every reference exists and supports the sentence it is cited for.
 
 ---
 
