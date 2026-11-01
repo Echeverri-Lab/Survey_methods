@@ -93,7 +93,7 @@ Before piloting any instrument, build a **question justification matrix** — a 
 
 - Abbey, J. D., & Meloy, M. G. (2017). Attention by design. *Journal of Operations Management*, 53–56, 63–70.
 - Echeverri, A., et al. (2019). Avian cultural ecosystem services. *People and Nature*, 1(1), 102–115.
-- Miller, J. (2025). Inclusive survey design. *Survey Practice*.
+- Miller, A. (2025). Accessibility, disability, and inclusive instrument design: A critical literature review interrogating the user experience of online surveys and interviews. *The International Journal of Information, Diversity, & Inclusion*, *9*(1/2). https://doi.org/10.33137/ijidi.v9i1/2.43997
 - Danaher, K., & Crandall, C. S. (2008). Stereotype threat in applied settings re-examined. *Journal of Applied Social Psychology*, 38(6), 1639–1655.
 - Steele, C. M., & Aronson, J. (1995). Stereotype threat and the intellectual test performance of African Americans. *Journal of Personality and Social Psychology*, 69(5), 797–811.
 - Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). *The Psychology of Survey Response*. Cambridge University Press.

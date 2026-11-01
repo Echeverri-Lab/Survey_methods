@@ -250,19 +250,3 @@ The value of behavioral measures is realized when they are regressed against psy
 - Stern, P. C. (2000). New environmental theories: Toward a coherent theory of environmentally significant behavior. *Journal of Social Issues*, 56(3), 407–424.
 - Veríssimo, D., Fiennes, S., & Dunn, M. (2024). Using digital mobile games to increase the support for nature conservation. *Conservation Science and Practice*, 6(11), e13236. https://doi.org/10.1111/csp2.13236
 
----
-
-## 2026 revision — literature curation pass
-
-Of 22 Step 7 candidates reviewed by abstract, two were added as new worked
-examples (B-09, B-10) because they directly instantiate this Step's core
-methodological point — comparing self-reported and actual/objective behavior
-within the same study — in domains (online security behavior; wearable-verified
-physical activity) not previously represented in the example matrix. Most other
-candidates were rejected as off-topic self-report *scale validations*
-(psychometric adaptations, SEM applications, teacher/policing surveys) rather
-than genuine self-report-vs-behavior comparisons; two further candidates —
-"Little Evidence for Consistent Initial Elevation Bias..." (EMA coordinated
-analysis) and "Coercive Control...Semi-Structured Interviews Versus
-Likert-Scale Self-Reports" — were reviewed but not added in this pass to keep
-the example matrix focused; they remain candidates for a future revision.

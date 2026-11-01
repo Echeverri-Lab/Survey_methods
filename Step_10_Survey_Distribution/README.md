@@ -131,30 +131,10 @@ Recent large-scale panel and field experiments give more precise, generalizable 
 ---
 
 ## References
-- Dillman, D. A., Smyth, J. D., & Christian, L. M. (2011). *Internet, phone, mail, and mixed-mode surveys: The tailored design method*. John Wiley & Sons.
+- Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). *Internet, phone, mail, and mixed-mode surveys: The tailored design method* (4th ed.). Wiley.
 - Douglas, B. D., Ewell, P. J., & Brauer, M. (2023). Data quality in online human-subjects research. *PLOS ONE*, 18(3), e0279720.
-- Edunov, S., et al. (2018). (Reference for back-translation evaluation).
+- Edunov, S., Ott, M., Auli, M., & Grangier, D. (2018). Understanding Back-Translation at Scale. In E. Riloff, D. Chiang, J. Hockenmaier, & J. Tsujii (Eds.), Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (pp. 489–500). Association for Computational Linguistics. https://doi.org/10.18653/v1/D18-1045
 - Against All Odds: On the Robustness of Probability Samples Against Decreases in Response Rates (2025). *Survey Methods: Insights from the Field*. https://doi.org/10.18148/srm/8475
-- Invitation Letters Increase Response Rates in Elite Surveys: Evidence from Germany and the United Kingdom (2025). *Journal of Experimental Political Science*. https://doi.org/10.1017/xps.2025.10004
+- Giger, N., & Pereira, M. M. (2025). Invitation letters increase response rates in elite surveys: Evidence from Germany and the United Kingdom. *Journal of Experimental Political Science*, *13*(3), 328–333. https://doi.org/10.1017/xps.2025.10004
 - American Association for Public Opinion Research (AAPOR). (2023). *Standard Definitions: Final Dispositions of Case Codes and Outcome Rates for Surveys*. https://aapor.org
 
----
-
-## 2026 revision — literature curation pass
-
-Of 31 Step 10 candidates reviewed by abstract, this pass added a new Section 6
-synthesizing the strongest response-rate/incentive/nonresponse evidence rather
-than a long uncurated reference dump, given the volume of candidates (31 —
-the largest single Step folder after Step 11). Priority was given to papers
-with (a) large-scale randomized or quasi-experimental designs, and (b) direct
-actionability for a field survey administrator (incentive timing, letter
-design, response-rate interpretation). Two references above are cited by
-title rather than author list because author metadata was not available in
-the corpus abstract records reviewed during this pass — author names should
-be verified against the source PDFs before final manuscript submission. Many
-remaining candidates were topically adjacent but off-domain applications
-(e.g., forest owner TPB surveys, angler mixed-mode nudging, hunter/trapper
-mail response trends, ethnic-name signature discrimination in Finnish traffic
-surveys) — genuinely interesting for mode/nonresponse methodology but not
-added individually to keep this README's citation list a curated "best
-evidence" set rather than an exhaustive bibliography.

@@ -1,4 +1,39 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psychometric scales for socio-ecological research</title>
+<style>
+/* Theme tokens: the original fragment relied on a host page to define these. */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --border-radius-md: 6px;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f3f4f6;
+  --color-border-primary: #6b7280;
+  --color-border-secondary: #d1d5db;
+  --color-border-tertiary: #e5e7eb;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #111827;
+    --color-background-secondary: #1f2937;
+    --color-border-primary: #9ca3af;
+    --color-border-secondary: #4b5563;
+    --color-border-tertiary: #374151;
+    --color-text-primary: #f9fafb;
+    --color-text-secondary: #d1d5db;
+  }
+}
+body { background: var(--color-background-primary); color: var(--color-text-primary); max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+</style>
+</head>
+<body>
+<h1 style="font-family: var(--font-sans); font-size: 20px; font-weight: 600; margin: 1rem 0 0.25rem;">Psychometric scales for socio-ecological research</h1>
+<p style="font-family: var(--font-sans); font-size: 13px; color: var(--color-text-secondary);">Interactive version of <code>scales_reference_table.md</code> (the canonical table). Download and open in a browser; GitHub shows .html files as source.</p>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: var(--font-sans); }
@@ -90,8 +125,7 @@ const scales = [
     catLabel: "Nature connectedness",
     desc: "Affective, experiential connection to nature; sense of being part of the natural world rather than separate from it",
     items: "14 items; 5-point Likert",
-    cite: "Mayer, F. S., & Frantz, C. M. (2004). Journal of Environmental Psychology, 24(4), 503–515. [VERIFY]",
-    flag: true
+    cite: "Mayer, F. S., & Frantz, C. M. (2004). Journal of Environmental Psychology, 24(4), 503–515. https://doi.org/10.1016/j.jenvp.2004.10.001"
   },
   {
     abbr: "INS",
@@ -100,8 +134,7 @@ const scales = [
     catLabel: "Nature connectedness",
     desc: "Single-item pictorial measure of the overlap between self and nature; widely used as a brief proxy for nature connectedness",
     items: "1 item (Venn diagram pictorial scale)",
-    cite: "Schultz, P. W. (2002). In P. Schmuck & W. Schultz (Eds.), Psychology of Sustainable Development. [VERIFY]",
-    flag: true
+    cite: "Schultz, P. W. (2002). Inclusion with nature: The psychology of human-nature relations. In P. Schmuck & P. W. Schultz (Eds.), Psychology of Sustainable Development (pp. 61–78). Springer. https://doi.org/10.1007/978-1-4615-0995-0_4"
   },
   {
     abbr: "EID",
@@ -130,8 +163,7 @@ const scales = [
     catLabel: "Values / orientations",
     desc: "Worldview or belief system regarding humanity's relationship with the natural environment; widely used to measure pro-ecological orientation",
     items: "15 items (revised); 5-point Likert",
-    cite: "Dunlap, R. E., Van Liere, K. D., Mertig, A. G., & Jones, R. E. (2000). Journal of Social Issues, 56(3), 425–442. [VERIFY]",
-    flag: true
+    cite: "Dunlap, R. E., Van Liere, K. D., Mertig, A. G., & Jones, R. E. (2000). Journal of Social Issues, 56(3), 425–442. https://doi.org/10.1111/0022-4537.00176"
   },
   {
     abbr: "VO",
@@ -150,8 +182,7 @@ const scales = [
     catLabel: "Values / orientations",
     desc: "Preservation vs. utilization values toward nature; used extensively in European environmental attitude research",
     items: "10 items; 5-point Likert",
-    cite: "Wiseman, M., & Bogner, F. X. (2003). Personality and Individual Differences, 34(7), 1161–1175. [VERIFY]",
-    flag: true
+    cite: "Wiseman, M., & Bogner, F. X. (2003). A higher-order model of ecological values and its relationship to personality. Personality and Individual Differences, 34(5), 783–794. https://doi.org/10.1016/S0191-8869(02)00071-5"
   },
   {
     abbr: "PANAS",
@@ -190,8 +221,7 @@ const scales = [
     catLabel: "Wellbeing",
     desc: "Positive mental wellbeing including hedonic and eudaimonic dimensions; used to evaluate nature-based interventions",
     items: "14 items (full) or 7 items (SWEMWBS); 5-point Likert",
-    cite: "Tennant, R., et al. (2007). Health and Quality of Life Outcomes, 5(1), 63. [VERIFY]",
-    flag: true
+    cite: "Tennant, R., et al. (2007). Health and Quality of Life Outcomes, 5, 63. https://doi.org/10.1186/1477-7525-5-63"
   },
   {
     abbr: "AAS",
@@ -200,8 +230,7 @@ const scales = [
     catLabel: "Attitudes",
     desc: "Attitudes towards the treatment and use of animals; covers dimensions of animal welfare and rights",
     items: "20 items (short form available); 5-point Likert",
-    cite: "Herzog, H. A., Betchart, N. S., & Pittman, R. B. (1991). Anthrozoos, 4(3), 169–174. [VERIFY]",
-    flag: true
+    cite: "Herzog, H. A., Betchart, N. S., & Pittman, R. B. (1991). Anthrozoös, 4(3), 184–191. https://doi.org/10.2752/089279391787057170"
   },
   {
     abbr: "Kellert typology",
@@ -220,8 +249,7 @@ const scales = [
     catLabel: "Attitudes",
     desc: "Species-specific scale measuring knowledge, attitudes, and conservation intentions towards bats",
     items: "Multi-item Likert",
-    cite: "Pérez et al. (2021). [VERIFY – confirm full citation]",
-    flag: true
+    cite: "Pérez, B., Álvarez, B., Boso, A., & Lisón, F. (2021). Animals, 11(2), 244. https://doi.org/10.3390/ani11020244"
   },
   {
     abbr: "Cortes-Avizanda",
@@ -240,8 +268,7 @@ const scales = [
     catLabel: "Attitudes",
     desc: "Attitudes and values towards birds in cultural/socio-ecological contexts",
     items: "[VERIFY]",
-    cite: "Echeverri et al. (2019). [VERIFY – confirm full citation]",
-    flag: true
+    cite: "Echeverri, A., Naidoo, R., Karp, D. S., Chan, K. M. A., & Zhao, J. (2019). Ecological Indicators, 106, 105454. https://doi.org/10.1016/j.ecolind.2019.105454"
   },
   {
     abbr: "ES / EIS",
@@ -312,3 +339,6 @@ function search(val) {
 
 renderTable();
 </script>
+
+</body>
+</html>

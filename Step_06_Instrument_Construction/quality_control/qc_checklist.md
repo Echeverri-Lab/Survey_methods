@@ -166,19 +166,7 @@
 - Galesic, M., & Bosnjak, M. (2009). Effects of questionnaire length on participation and indicators of response quality. *Public Opinion Quarterly*, 73(2), 349–360.
 - Hu, L., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis. *Structural Equation Modeling*, 6(1), 1–55.
 - Landesvatter, C., & Bauer, P. C. (2025). How valid are trust survey measures? New insights from open-ended probing data and supervised machine learning. *Sociological Methods & Research*. https://doi.org/10.1177/00491241241234871
-- Miller, J. (2025). Inclusive survey design. *Survey Practice*.
+- Miller, A. (2025). Accessibility, disability, and inclusive instrument design: A critical literature review interrogating the user experience of online surveys and interviews. *The International Journal of Information, Diversity, & Inclusion*, *9*(1/2). https://doi.org/10.33137/ijidi.v9i1/2.43997
 - Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). *The Psychology of Survey Response*. Cambridge University Press.
 - Willis, G. B. (2005). *Cognitive Interviewing: A Tool for Improving Questionnaire Design*. SAGE.
 
----
-
-## 2026 revision — literature curation pass
-
-Only 1 candidate paper (of the 395-record random subsample) matched Step 6
-keywords: Landesvatter & Bauer (2025), added above to Section 1B as guidance
-on validating abstract attitudinal items (e.g., trust) via open-ended
-probing and supervised ML (meets C3 — concrete technique illustration).
-No other candidates were found; this is expected, since Step 6 (item
-wording mechanics) is a narrower topic than the broader theory/scales/design
-Steps and was under-represented in the keyword search strings used to build
-the subsample.

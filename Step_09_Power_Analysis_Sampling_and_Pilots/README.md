@@ -66,24 +66,8 @@ Pilot studies bridge instrument design and credible inference, functioning as a 
 - Bonett, D. G., & Wright, T. A. (2000). Sample size requirements for estimating Pearson, Kendall and Spearman correlations. *Psychometrika*, 65(1), 23-28.
 - Douglas, B. D., Ewell, P. J., & Brauer, M. (2023). Data quality in online human-subjects research: Comparisons between MTurk, Prolific, CloudResearch, Qualtrics, and SONA. *PLOS One*, 18(3), e0279720.
 - Kang, H. (2021). Sample size determination and power analysis using the G*Power software. *Journal of Educational Evaluation for Health Professions*, 18.
-- Kay, J. (2025). (Reference on MTurk bot farms and data degradation).
+- Kay, C. S. (2025). Why you shouldn’t trust data collected on MTurk. Behavior Research Methods, 57(12), 340. https://doi.org/10.3758/s13428-025-02852-7
 - Schulz, J. F., Bahrami-Rad, D., Beauchamp, J. P., & Henrich, J. (2018). The origins of WEIRD psychology. *Science*.
 - Starcevich, L. A., Burgess, H., & Uhrin, A. V. (2025). Optimizing marine debris monitoring: Balancing statistical power and test size in survey design. *Ecological Indicators*. https://doi.org/10.1016/j.ecolind.2025.113807
 - Willis, G. B. (2018). *Cognitive Interviewing: A Tool for Improving Questionnaire Design*. SAGE.
 
----
-
-## 2026 revision — literature curation pass
-
-Of 14 Step 9 candidates reviewed by abstract, one was added: Starcevich et
-al. (2025), a directly on-topic worked example of power-analysis trade-offs
-(sample size vs. test size vs. revisit frequency) in ecological monitoring
-survey design, added to Section 1. The remaining 13 candidates were almost
-all single-domain "pilot study" reports (VR cognition tasks, EEG, office
-well-being, sleep, microbiome) that use the word "pilot" descriptively but do
-not offer generalizable pilot-study *methodology* guidance beyond what is
-already covered in Section 3; these were not added to avoid diluting the
-curated tool/method focus of this README. The "Questionable Research
-Practices" paper was considered but is conceptually redirected to
-`Step_05_Preregistration_and_Open_Science/`, which already covers QRP-adjacent
-topics (deviations from preregistration).

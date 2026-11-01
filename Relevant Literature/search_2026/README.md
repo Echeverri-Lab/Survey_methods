@@ -1,5 +1,7 @@
 # search_2026 — search and screening audit trail
 
+> **Abstracts are not committed** (publisher copyright). Committed CSVs carry DOIs and OpenAlex IDs; full copies with abstracts are kept locally in `local_abstracts/` (gitignored; see `local_abstracts.py`).
+
 This folder is the archive location cited in the manuscript Methods for the
 literature search underlying Figure 2 (PRISMA-style flow diagram) and the
 practice-focused curation described there. It exists because a search cannot

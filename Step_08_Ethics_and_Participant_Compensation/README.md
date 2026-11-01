@@ -58,7 +58,7 @@ Step_08_Ethics_and_Compensation/
 
 ## References
 
-- Betancort Cabrera, N., et al. (2020). (General Reference for FAIR data principles in human research).
+- Betancort Cabrera, N., Bongartz, E. C., Dörrenbächer, N., Goebel, J., Kaluza, H., & Siegers, P. (2020). White paper on implementing the FAIR principles for data in the social, behavioural, and economic sciences (Vol. 274). Rat für Sozial- und Wirtschaftsdaten (RatSWD). https://doi.org/https://doi.org/10.17620/02671.60
 - Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., Holbrook, J., Lovett, R., Materechera, S., ... & Hudson, M. (2020). The CARE Principles for Indigenous Data Governance. *Data Science Journal*, 19, 43.
 - Garrison, N. A. (2013). Genomic justice for Native Americans: impact of the Havasupai case on genetic research. *Science, Technology, & Human Values*, 38(2), 201-223.
 - Göritz, A. S. (2010). Incentive effects on variance in intention to participate in a panel survey. *International Journal of Market Research*, 52(6), 727-735.
@@ -67,25 +67,6 @@ Step_08_Ethics_and_Compensation/
 - Lahman, M. K. E., Landram, S. V., Teman, E. D., & Kincaid, T. (2022). Cultural humility, human research ethics review, and informed consent. *Cultural Studies <-> Critical Methodologies*, 23(2), 133-144. https://doi.org/10.1177/15327086221138983
 - Roberts, K. (2026). Research ethics in conflict zones: Reflections on 'do no harm' ethics for the research network. *Asia Pacific Viewpoint*. https://doi.org/10.1111/apv.70053
 - Sieber, J. E., Iannuzzo, R., & Rodriguez, B. (1995). Deception methods in psychology: Have they changed in 23 years?. *Ethics & Behavior*, 5(1), 67-85.
-- Wagner, R. (2003). (General Reference for co-developing work with communities).
+- Wagner, R. M. (2003). Ethical review of research involving human subjects: When and why is IRB review necessary? Muscle & Nerve, 28(1), 27–39. https://doi.org/10.1002/mus.10398
 - Wittich, W., Boie, N. R., & Jaiswal, A. (2023). Methodological approaches to obtaining informed consent when conducting research with individuals with deafblindness. *International Journal of Qualitative Methods*, 22. https://doi.org/10.1177/16094069231205176
 
----
-
-## 2026 revision — literature curation pass
-
-Of 17 Step 8 candidates reviewed by abstract, four were added as a new
-Section 5 addressing gaps in the existing ethics guidance: decolonizing
-consent practices (Lahman et al., 2022), communicative accessibility for
-consent (Wittich et al., 2023), calibrating consent disclosures for autistic
-participants (Khatiwada et al., 2026), and conflict-zone "do no harm"
-protocols (Roberts, 2026). Several strong Indigenous-data-sovereignty
-candidates (e.g., "Trust in Scholarly Communications and Infrastructure,"
-"Indigenous data sovereignty in intangible cultural heritage governance")
-were reviewed but not added because this README already cites Carroll et al.
-(2020) CARE Principles directly on this topic; adding redundant citations was
-avoided in favor of genuinely new gaps. General research-ethics-training and
-REB-process papers (e.g., "Evaluating the Impacts of a Research Ethics
-Training Course," "Surrogate Practices in Research in the Absence of a
-Research Ethics Committee") were judged tangential to this repo's survey
-design focus and were not added.
