@@ -173,5 +173,5 @@ semPaths(fit, what = "std", layout = "tree", edge.label.cex = 0.8,
 ---
 
 ## References
-- Mariano, et al. (2018). (Reference on pie chart distortion for Likert data).
+- Mariano, G. C., Staggemeier, V. G., Morellato, L. P. C., & Torres, R. da S. (2018). Multivariate cyclical data visualization using radial visual rhythms: A case study in phenology analysis. Ecological Informatics, 46, 19–35. https://doi.org/10.1016/j.ecoinf.2018.05.003
 - Wickham, H. (2016). *ggplot2: Elegant Graphics for Data Analysis*. Springer. https://ggplot2-book.org/

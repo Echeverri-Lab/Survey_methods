@@ -204,10 +204,10 @@ Use the table below to select the appropriate format for each item.
 ## References
 
 - Abbey, J. D., & Meloy, M. G. (2017). Attention by design. *Journal of Operations Management*, 53–56, 63–70.
-- Dylong, M., et al. (2024). Survey design in environmental psychology. *Journal of Environmental Psychology*.
+- Dylong, P., Setzepfand, P., & Uebelmesser, S. (2024). Priming attitudes toward immigrants: Implications for migration research and survey design. European Journal of Political Economy, 85, 102554. https://doi.org/10.1016/j.ejpoleco.2024.102554
 - Galesic, M., & Bosnjak, M. (2009). Effects of questionnaire length. *Public Opinion Quarterly*, 73(2), 349–360.
-- Jeong, S., et al. (2023). Best practices in online survey design. *Behavior Research Methods*.
-- Miller, J. (2025). Inclusive survey design. *Survey Practice*.
+- Jeong, D., Aggarwal, S., Robinson, J., Kumar, N., Spearot, A., & Park, D. S. (2023). Exhaustive or exhausting? Evidence on respondent fatigue in long surveys. Journal of Development Economics, 161, 102992. https://doi.org/10.1016/j.jdeveco.2022.102992
+- Miller, A. (2025). Accessibility, disability, and inclusive instrument design: A critical literature review interrogating the user experience of online surveys and interviews. *The International Journal of Information, Diversity, & Inclusion*, *9*(1/2). https://doi.org/10.33137/ijidi.v9i1/2.43997
 - Danaher, K., & Crandall, C. S. (2008). Stereotype threat in applied settings re-examined. *Journal of Applied Social Psychology*, 38(6), 1639–1655.
 - Steele, C. M., & Aronson, J. (1995). Stereotype threat and the intellectual test performance of African Americans. *Journal of Personality and Social Psychology*, 69(5), 797–811.
 - Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). *The Psychology of Survey Response*. Cambridge University Press.

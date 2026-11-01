@@ -21,12 +21,12 @@ When designing a survey instrument, choosing the appropriate format for a specif
 ## References
 
 * Constantz, B. M., Dunne, A. M., Haddad, B. M., & Holl, K. D. (2026). Utilitarian and biocentric stakeholders' visual preferences for floodplain restoration heterogeneity. *Restoration Ecology*, e70315.
-* Echeverri, A., et al. (2017). (General Reference for Likert Scales).
+* Echeverri, A., Chan, K. M. A., & Zhao, J. (2017). How messaging shapes attitudes toward sea otters as a species at risk. Human Dimensions of Wildlife, 22(2). https://doi.org/10.1080/10871209.2016.1272146
 * Echeverri, A., Karp, D. S., Naidoo, R., Zhao, J., & Chan, K. M. (2019). Approaching human-animal relationships from multiple angles: A synthetic perspective. *Biological Conservation*, 240, 108297.
-* Grundei, et al. (2024). (General Reference for Ranking items).
+* Grundei, L.-L., Schöttes, F. M., Gethöffer, F., Tost, D., Kluge, L., Siebert, U., & Pees, M. (2024). Human–Wildlife Interaction—A Social Survey. Animals, 14(5), 808. https://doi.org/10.3390/ani14050808
 * Klain, S., Satterfield, T., Chan, K. M., & Lindberg, K. (2020). Octopus’s garden under the blade: Boosting biodiversity increases willingness to pay for offshore wind in the United States. *Energy Research & Social Science*, 69, 101744.
-* Langhans, et al. (2025). (General Reference for Image Association).
+* Langhans, K. E., Echeverri, A., Xu, M., Callahan, M., Palmeri, M. L., Nguyen, O., Ardoin, N. M., & Daily, G. C. (2025). Urban community gardens foster positive human-avian interactions across an income gradient in San Francisco. Landscape and Urban Planning, 261, 105391. https://doi.org/10.1016/j.landurbplan.2025.105391
 * Liefländer, A. K., Fröhlich, G., Bogner, F. X., & Schultz, P. W. (2013). Promoting connectedness with nature through environmental education. *Environmental Education Research*, 19(3), 370-384. 
-* Prober, et al. (2019). (General Reference for Image Heat Maps).
-* Shaw, et al. (2026). (General Reference for Slider Scales).
-* Wang & E. Lewis. (2022). (General Reference for Pick, group, and rank).
+* Prober, S. M., Raisbeck-Brown, N., Porter, N. B., Williams, K. J., Leviston, Z., & Dickson, F. (2019). Recent climate-driven ecological change across a continent as perceived through local ecological knowledge. PLOS ONE, 14(11), e0224625. https://doi.org/10.1371/journal.pone.0224625
+* Shaw, M. N., Tirlea, L., Borrie, W. T., McLeod, E. M., & Miller, K. K. (2026). The influence of wildlife images on conservation intentions: Investigating the mediating role of emotion. People and Nature, 8(6). https://doi.org/10.1002/pan3.70328
+* Wang, Y., & E. Lewis, S. (2022). Towards a theoretically sound measure of chemistry students’ motivation; investigating rank-sort survey methodology to reduce response style bias. Chemistry Education Research and Practice, 23(1), 240–256. https://doi.org/10.1039/D1RP00206F
