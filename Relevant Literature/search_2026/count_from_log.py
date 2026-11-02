@@ -19,11 +19,15 @@ from pathlib import Path
 
 TOPIC_SOURCES = {f"S{i}" for i in range(1, 12)}
 
+# Full-text exclusion codes from the approved eligibility criteria (2026-11-01).
+# "not_retrieved" is reported separately ("reports not retrieved" in PRISMA-ScR).
 FT_EXCLUSION_KEYS = {
-    "not_methodological": "excl_ft_notmethod",
-    "not_transferable":   "excl_ft_nottransf",
-    "superseded":         "excl_ft_superseded",
-    "unavailable":        "excl_ft_unavail",
+    "not_human_survey":         "excl_ft_not_human_survey",
+    "application_only":         "excl_ft_application_only",
+    "instrument_out_of_domain": "excl_ft_instrument_out_of_domain",
+    "not_english":              "excl_ft_not_english",
+    "wrong_doc_type":           "excl_ft_wrong_doc_type",
+    "duplicate":                "excl_ft_duplicate",
 }
 
 
@@ -52,9 +56,8 @@ def tally(rows):
         "db_core": 0, "db_topic": 0,
         "oth_texts": 0, "oth_citation": 0, "oth_standards": 0, "oth_team": 0,
         "duplicates": 0, "screened": 0, "excl_screen": 0,
-        "fulltext": 0,
-        "excl_ft_notmethod": 0, "excl_ft_nottransf": 0,
-        "excl_ft_superseded": 0, "excl_ft_unavail": 0,
+        "fulltext": 0, "not_retrieved": 0,
+        **{key: 0 for key in FT_EXCLUSION_KEYS.values()},
         "eligible": 0, "not_prioritised": 0,
         "included": 0, "cited_main": 0, "in_repo_tables": 0,
     }
@@ -87,7 +90,10 @@ def tally(rows):
         elif source:
             unrecognized_sources[source] += 1
 
-        if duplicate_of:
+        # "legacy:" marks a match with the old repository citation list, which is not a
+        # search stream, so it is not a duplicate. "A:" matches refer to the Stream A
+        # corpus and must be recomputed when the re-run exports are added.
+        if duplicate_of and any(not d.startswith("legacy:") for d in duplicate_of.split(";")):
             n["duplicates"] += 1
             continue
 
@@ -96,11 +102,14 @@ def tally(rows):
         if screen_ta == "exclude":
             n["excl_screen"] += 1
             continue
-        if screen_ta != "include":
-            continue  # not yet screened
+        if screen_ta not in ("include", "unsure"):
+            continue  # not yet screened; "unsure" goes to full text
 
         n["fulltext"] += 1
 
+        if ft_decision == "exclude" and ft_reason == "not_retrieved":
+            n["not_retrieved"] += 1
+            continue
         if ft_decision == "exclude":
             key = FT_EXCLUSION_KEYS.get(ft_reason)
             if key:

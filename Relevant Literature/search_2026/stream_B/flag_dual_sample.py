@@ -1,4 +1,6 @@
 """
+OBSOLETE (2026-11-02): all records are now double-screened; see ../screening/assign_pairs.py.
+
 flag_dual_sample.py
 ===================
 

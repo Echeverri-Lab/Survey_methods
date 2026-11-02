@@ -38,7 +38,7 @@ THIN = Side(style="thin", color="BFBFBF")
 COLUMNS = [
     ("record_id", "record_id", 11),
     ("source", lambda r, c: r[c["src"]], 14),
-    ("dual sample", lambda r, c: "Y" if "dual_screen_sample" in r["notes"] else "", 7),
+    ("block", lambda r, c: c["blocks"].get(r["record_id"], ""), 7),
     ("title", "title", 50),
     ("authors", "authors", 24),
     ("year", "year", 7),
@@ -66,6 +66,17 @@ def main(initials="AE"):
         cols = reader.fieldnames
         names = {"src": cols[1], "dup": cols[7], "dec": next(c for c in cols if c.startswith("screen_ta_decision"))}
         rows = [r for r in reader if not r[names["dec"]]]
+    # Double screening: when assignments.csv exists, a screener gets only the records
+    # assigned to them that they have not decided yet (decisions are in ta_decisions.csv).
+    assign_path, dec_path = HERE / "assignments.csv", HERE / "ta_decisions.csv"
+    names["blocks"] = {}
+    if assign_path.exists():
+        mine = {a["record_id"]: a["block"] for a in csv.DictReader(open(assign_path, encoding="utf-8"))
+                if initials in (a["screener_a"], a["screener_b"])}
+        decided = {d["record_id"] for d in csv.DictReader(open(dec_path, encoding="utf-8"))
+                   if d["screener"] == initials} if dec_path.exists() else set()
+        rows = [r for r in rows if r["record_id"] in mine and r["record_id"] not in decided]
+        names["blocks"] = mine
     sys.path.insert(0, str(HERE.parent))
     from local_abstracts import lookup
     names["abstracts"] = lookup("screening_log.csv", "record_id")  # local only; not committed
@@ -121,7 +132,7 @@ def main(initials="AE"):
         ("DECISION", "include = meets at least one of I1–I5 on title/abstract (go to full text); exclude = clearly meets an "
                      "exclusion code; unsure = cannot tell from title/abstract (goes to full text)."),
         ("REASON", "Required for exclude, one code: " + ", ".join(REASONS) + ". See the codes below."),
-        ("dual sample = Y", "Pre-drawn 20% sample (seed 2026) that a second screener will also screen. Screen it like any other row."),
+        ("block", "Your assigned block. Every record is screened independently by two people; do not discuss records with your pair partner until both have finished."),
         ("already in", "Record also found in Stream A (A:...) or already cited in the repository (legacy:...). Screen it anyway; "
                        "duplicates are resolved when the streams are merged."),
         ("No abstract", "Screen on title; mark unsure if the title is ambiguous."),
@@ -175,7 +186,6 @@ def main(initials="AE"):
         ("Unsure", f'=COUNTIF({rng},"unsure")'),
         ("Remaining", "=B2-B3"),
         ("Percent screened", "=IF(B2=0,0,B3/B2)"),
-        ("Dual-sample rows screened", f'=COUNTIFS(Screen!$C$2:$C${last},"Y",{rng},"<>")'),
         ("Excludes missing a reason", f'=COUNTIFS({rng},"exclude",Screen!$M$2:$M${last},"")'),
     ]
     p.cell(row=1, column=1, value="Measure").font = Font(name=FONT, bold=True)
