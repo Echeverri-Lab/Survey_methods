@@ -18,6 +18,7 @@ Step_09_Power_Analysis_Sampling_and_Pilots/
     ├── power_example_a_two_groups.R       ← (a) two conditions, between subjects (pwr)
     ├── power_example_b_baci.R             ← (b) BACI: before/after × control/impact (pwr + lme4 simulation)
     ├── power_example_c_aci.R              ← (c) ACI: after-only control/impact, clustered sites (pwr)
+    ├── power_example_d_2x2_between_mediation.R ← (d) 2×2 message experiment: behaviour outcomes + mediation
     └── power_example.py                   ← Python placeholder
 ```
 
@@ -39,6 +40,7 @@ The `scripts/` folder has one commented R script per design. Each script explain
 | [`power_example_a_two_groups.R`](scripts/power_example_a_two_groups.R) | Two conditions (control vs. treatment), between subjects | `pwr` | N per group, N to recruit, sensitivity table, simulation check |
 | [`power_example_b_baci.R`](scripts/power_example_b_baci.R) | BACI: everyone measured before and after; control vs. impact groups | `pwr`, `lme4` | N of completers and recruits, sensitivity to the pre–post correlation, mixed-model simulation |
 | [`power_example_c_aci.R`](scripts/power_example_c_aci.R) | ACI: after-only, control vs. impact, respondents clustered in sites | `pwr` | N for 2 and 3 groups (*d* and *f*), design effect, sites needed, sensitivity table |
+| [`power_example_d_2x2_between_mediation.R`](scripts/power_example_d_2x2_between_mediation.R) | Hypothetical 2×2 between-subjects message experiment (narrative vs. fact sheet × scientist vs. farmer messenger), with behavioural outcomes and mediation | `pwr` (+ base-R simulation) | Minimum detectable *d* with a fixed N, the same effect as *f*/partial η², why the interaction is exploratory, detectable petition-signing increases, Monte Carlo mediation power |
 
 To run a script, install [R](https://cran.r-project.org) (and optionally RStudio), open the file, edit the "YOUR ASSUMPTIONS" section, and click **Source** (or run `Rscript scripts/power_example_a_two_groups.R`). The scripts install `pwr` and `lme4` if they are missing. Record the numbers in [`power_analysis_template.pdf`](power_analysis_template.pdf) and attach the script output.
 
@@ -92,9 +94,11 @@ Every template in this folder also comes as a fillable PDF next to the Markdown 
 
 ## References
 - Albers, C., & Lakens, D. (2018). When power analyses based on pilot data are biased: Inaccurate effect size estimators and follow-up bias. *Journal of Experimental Social Psychology*, 74, 187–195. https://doi.org/10.1016/j.jesp.2017.09.004
+- Braddock, K., & Dillard, J. P. (2016). Meta-analytic evidence for the persuasive effect of narratives on beliefs, attitudes, intentions, and behaviors. *Communication Monographs*, 83(4), 446–467. https://doi.org/10.1080/03637751.2015.1128555
 - Bergquist, M., Thiel, M., Goldberg, M. H., & van der Linden, S. (2023). Field interventions for climate change mitigation behaviors: A second-order meta-analysis. *Proceedings of the National Academy of Sciences*, 120(13), e2214851120. https://doi.org/10.1073/pnas.2214851120
 - Bonett, D. G., & Wright, T. A. (2000). Sample size requirements for estimating Pearson, Kendall and Spearman correlations. *Psychometrika*, 65(1), 23-28.
 - Douglas, B. D., Ewell, P. J., & Brauer, M. (2023). Data quality in online human-subjects research: Comparisons between MTurk, Prolific, CloudResearch, Qualtrics, and SONA. *PLOS One*, 18(3), e0279720.
+- Fritz, M. S., & MacKinnon, D. P. (2007). Required sample size to detect the mediated effect. *Psychological Science*, 18(3), 233–239. https://doi.org/10.1111/j.1467-9280.2007.01882.x
 - Kang, H. (2021). Sample size determination and power analysis using the G*Power software. *Journal of Educational Evaluation for Health Professions*, 18.
 - Kraemer, H. C., Mintz, J., Noda, A., Tinklenberg, J., & Yesavage, J. A. (2006). Caution regarding the use of pilot studies to guide power calculations for study proposals. *Archives of General Psychiatry*, 63(5), 484. https://doi.org/10.1001/archpsyc.63.5.484
 - Lakens, D. (2013). Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for t-tests and ANOVAs. *Frontiers in Psychology*, 4, 863. https://doi.org/10.3389/fpsyg.2013.00863
