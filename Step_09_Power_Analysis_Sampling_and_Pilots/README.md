@@ -100,6 +100,7 @@ Every template in this folder also comes as a fillable PDF next to the Markdown 
 - Douglas, B. D., Ewell, P. J., & Brauer, M. (2023). Data quality in online human-subjects research: Comparisons between MTurk, Prolific, CloudResearch, Qualtrics, and SONA. *PLOS One*, 18(3), e0279720.
 - Fritz, M. S., & MacKinnon, D. P. (2007). Required sample size to detect the mediated effect. *Psychological Science*, 18(3), 233–239. https://doi.org/10.1111/j.1467-9280.2007.01882.x
 - Kang, H. (2021). Sample size determination and power analysis using the G*Power software. *Journal of Educational Evaluation for Health Professions*, 18.
+- Kay, C. S. (2025). Why you shouldn’t trust data collected on MTurk. Behavior Research Methods, 57(12), 340. https://doi.org/10.3758/s13428-025-02852-7
 - Kraemer, H. C., Mintz, J., Noda, A., Tinklenberg, J., & Yesavage, J. A. (2006). Caution regarding the use of pilot studies to guide power calculations for study proposals. *Archives of General Psychiatry*, 63(5), 484. https://doi.org/10.1001/archpsyc.63.5.484
 - Lakens, D. (2013). Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for t-tests and ANOVAs. *Frontiers in Psychology*, 4, 863. https://doi.org/10.3389/fpsyg.2013.00863
 - Lakens, D. (2022). Sample size justification. *Collabra: Psychology*, 8(1), 33267. https://doi.org/10.1525/collabra.33267
@@ -107,7 +108,6 @@ Every template in this folder also comes as a fillable PDF next to the Markdown 
 - Nisa, C. F., Bélanger, J. J., Schumpe, B. M., & Faller, D. G. (2019). Meta-analysis of randomised controlled trials testing behavioural interventions to promote household action on climate change. *Nature Communications*, 10, 4545. https://doi.org/10.1038/s41467-019-12457-2
 - Osbaldiston, R., & Schott, J. P. (2012). Environmental sustainability and behavioral science: Meta-analysis of proenvironmental behavior experiments. *Environment and Behavior*, 44(2), 257–299. https://doi.org/10.1177/0013916511402673
 - Richard, F. D., Bond, C. F., & Stokes-Zoota, J. J. (2003). One hundred years of social psychology quantitatively described. *Review of General Psychology*, 7(4), 331–363. https://doi.org/10.1037/1089-2680.7.4.331
-- Kay, C. S. (2025). Why you shouldn’t trust data collected on MTurk. Behavior Research Methods, 57(12), 340. https://doi.org/10.3758/s13428-025-02852-7
 - Schulz, J. F., Bahrami-Rad, D., Beauchamp, J. P., & Henrich, J. (2018). The origins of WEIRD psychology. *Science*.
 - Starcevich, L. A., Burgess, H., & Uhrin, A. V. (2025). Optimizing marine debris monitoring: Balancing statistical power and test size in survey design. *Ecological Indicators*. https://doi.org/10.1016/j.ecolind.2025.113807
 - Willis, G. B. (2018). *Cognitive Interviewing: A Tool for Improving Questionnaire Design*. SAGE.
