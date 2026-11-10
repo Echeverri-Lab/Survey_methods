@@ -98,3 +98,17 @@ Before piloting any instrument, build a **question justification matrix** — a 
 - Steele, C. M., & Aronson, J. (1995). Stereotype threat and the intellectual test performance of African Americans. *Journal of Personality and Social Psychology*, 69(5), 797–811.
 - Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). *The Psychology of Survey Response*. Cambridge University Press.
 - Willis, G. B. (2005). *Cognitive Interviewing*. SAGE.
+
+---
+
+## Fillable PDF versions of the templates
+
+Every template in this folder also comes as a fillable PDF next to the Markdown file. You do not need GitHub or Markdown to use them: open the PDF link below, click the download button, fill it in with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it to your assignment.
+
+| Template | Markdown source | Fillable PDF |
+|---|---|---|
+| Survey Design Matrix — Blank Template | [`templates/survey_matrix_template.md`](templates/survey_matrix_template.md) | [`survey_matrix_template.pdf`](templates/survey_matrix_template.pdf) |
+| Survey instrument template | [`templates/survey_template.md`](templates/survey_template.md) | [`survey_template.pdf`](templates/survey_template.pdf) |
+| Quality Control Checklist for Survey Instruments | [`quality_control/qc_checklist.md`](quality_control/qc_checklist.md) | [`qc_checklist.pdf`](quality_control/qc_checklist.pdf) |
+
+*The PDFs are generated from the Markdown with [`tools/make_fillable_pdfs.py`](../tools/make_fillable_pdfs.py); edit the Markdown, then rebuild the PDFs.*

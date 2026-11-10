@@ -106,3 +106,17 @@ Manuscript: report confirmatory and exploratory results in separate sections
 - Ghai, S., Theriault, R., Forscher, P., Shoda, Y., Syed, M., Puthillam, A., Peng, H. C., Basnight-Brown, D., Majid, A., Azevedo, F., & Singh, L. (2025). A manifesto for a globally diverse, equitable, and inclusive open science. *Communications Psychology, 3*, 1. https://doi.org/10.1038/s44271-024-00179-1
 - Mundinger, C., Schulz, N. K. E., Singh, P., Janz, S., Schurig, M., Seidemann, J., Kurtz, J., Müller, C., Schielzeth, H., von Kortzfleisch, V. T., & Richter, S. H. (2025). Testing the reproducibility of ecological studies on insect behavior in a multi-laboratory setting identifies opportunities for improving experimental rigor. *PLOS Biology, 23*(x), e3003019.
 
+---
+
+## Fillable PDF versions of the templates
+
+Every template in this folder also comes as a fillable PDF next to the Markdown file. You do not need GitHub or Markdown to use them: open the PDF link below, click the download button, fill it in with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it to your assignment.
+
+| Template | Markdown source | Fillable PDF |
+|---|---|---|
+| AsPredicted Pre-registration Template (v2.00) | [`aspredicted_template.md`](aspredicted_template.md) | [`aspredicted_template.pdf`](aspredicted_template.pdf) |
+| Confirmatory vs. Exploratory Analysis — Decision Guide | [`confirmatory_vs_exploratory_guide.md`](confirmatory_vs_exploratory_guide.md) | [`confirmatory_vs_exploratory_guide.pdf`](confirmatory_vs_exploratory_guide.pdf) |
+| Pre-registration Go / No-Go Checklist | [`preregistration_checklist.md`](preregistration_checklist.md) | [`preregistration_checklist.pdf`](preregistration_checklist.pdf) |
+| Pre-registration Template | [`preregistration_template.md`](preregistration_template.md) | [`preregistration_template.pdf`](preregistration_template.pdf) |
+
+*The PDFs are generated from the Markdown with [`tools/make_fillable_pdfs.py`](../tools/make_fillable_pdfs.py); edit the Markdown, then rebuild the PDFs.*

@@ -10,11 +10,15 @@ This folder covers the quantitative foundations of your survey rollout: defining
 ## Folder structure
 
 ```
-Step_09_Power_and_Sampling/
+Step_09_Power_Analysis_Sampling_and_Pilots/
 ├── README.md                              ← this file
+├── power_analysis_template.md / .pdf      ← worksheet to attach to your proposal (fillable PDF)
 │
 └── scripts/
-    └── power_example.py                   ← Example scripts to calculate sample sizes and run power simulations
+    ├── power_example_a_two_groups.R       ← (a) two conditions, between subjects (pwr)
+    ├── power_example_b_baci.R             ← (b) BACI: before/after × control/impact (pwr + lme4 simulation)
+    ├── power_example_c_aci.R              ← (c) ACI: after-only control/impact, clustered sites (pwr)
+    └── power_example.py                   ← Python placeholder
 ```
 
 ---
@@ -25,6 +29,18 @@ Researchers should conduct a power analysis *before* data collection. While simp
 A power analysis is only as good as its assumed effect size. Derive effect sizes from prior studies in the same system, or ideally from a pilot study. When no estimate exists, run **sensitivity analyses** across a plausible range to understand how capable your design is at detecting different magnitudes of effect.
 
 > **Worked ecological example.** Starcevich, Burgess, & Uhrin (2025) illustrate this trade-off directly for environmental monitoring: they show how sample size, revisit frequency, and Type I error rate ("test size") jointly determine the power of a long-term marine debris monitoring survey, and how optimizing one dimension (e.g., minimizing sites visited) can silently erode power to detect a real trend. This is a useful worked template for any repeated-measures or longitudinal environmental survey design in this repository.
+
+### Worked examples in R (start here)
+
+The `scripts/` folder has one commented R script per design. Each script explains, step by step, how to choose and justify the effect size (meta-analyses, converting reported statistics to *d* or *f*, the smallest effect size of interest, and why pilot effect sizes are unreliable), how to set alpha and power, and how to inflate the sample for attrition and non-response. Each one ends with a sensitivity table and a sentence you can adapt for your proposal.
+
+| Script | Design | Packages | What it prints |
+|---|---|---|---|
+| [`power_example_a_two_groups.R`](scripts/power_example_a_two_groups.R) | Two conditions (control vs. treatment), between subjects | `pwr` | N per group, N to recruit, sensitivity table, simulation check |
+| [`power_example_b_baci.R`](scripts/power_example_b_baci.R) | BACI: everyone measured before and after; control vs. impact groups | `pwr`, `lme4` | N of completers and recruits, sensitivity to the pre–post correlation, mixed-model simulation |
+| [`power_example_c_aci.R`](scripts/power_example_c_aci.R) | ACI: after-only, control vs. impact, respondents clustered in sites | `pwr` | N for 2 and 3 groups (*d* and *f*), design effect, sites needed, sensitivity table |
+
+To run a script, install [R](https://cran.r-project.org) (and optionally RStudio), open the file, edit the "YOUR ASSUMPTIONS" section, and click **Source** (or run `Rscript scripts/power_example_a_two_groups.R`). The scripts install `pwr` and `lme4` if they are missing. Record the numbers in [`power_analysis_template.pdf`](power_analysis_template.pdf) and attach the script output.
 
 ### Recommended Computational Tools:
 - **R Packages**: 
@@ -62,10 +78,31 @@ Pilot studies bridge instrument design and credible inference, functioning as a 
 
 ---
 
+## Fillable PDF versions of the templates
+
+Every template in this folder also comes as a fillable PDF next to the Markdown file. You do not need GitHub or Markdown to use them: open the PDF link below, click the download button, fill it in with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it to your assignment.
+
+| Template | Markdown source | Fillable PDF |
+|---|---|---|
+| Power Analysis Worksheet | [`power_analysis_template.md`](power_analysis_template.md) | [`power_analysis_template.pdf`](power_analysis_template.pdf) |
+
+*The PDFs are generated from the Markdown with [`tools/make_fillable_pdfs.py`](../tools/make_fillable_pdfs.py); edit the Markdown, then rebuild the PDFs.*
+
+---
+
 ## References
+- Albers, C., & Lakens, D. (2018). When power analyses based on pilot data are biased: Inaccurate effect size estimators and follow-up bias. *Journal of Experimental Social Psychology*, 74, 187–195. https://doi.org/10.1016/j.jesp.2017.09.004
+- Bergquist, M., Thiel, M., Goldberg, M. H., & van der Linden, S. (2023). Field interventions for climate change mitigation behaviors: A second-order meta-analysis. *Proceedings of the National Academy of Sciences*, 120(13), e2214851120. https://doi.org/10.1073/pnas.2214851120
 - Bonett, D. G., & Wright, T. A. (2000). Sample size requirements for estimating Pearson, Kendall and Spearman correlations. *Psychometrika*, 65(1), 23-28.
 - Douglas, B. D., Ewell, P. J., & Brauer, M. (2023). Data quality in online human-subjects research: Comparisons between MTurk, Prolific, CloudResearch, Qualtrics, and SONA. *PLOS One*, 18(3), e0279720.
 - Kang, H. (2021). Sample size determination and power analysis using the G*Power software. *Journal of Educational Evaluation for Health Professions*, 18.
+- Kraemer, H. C., Mintz, J., Noda, A., Tinklenberg, J., & Yesavage, J. A. (2006). Caution regarding the use of pilot studies to guide power calculations for study proposals. *Archives of General Psychiatry*, 63(5), 484. https://doi.org/10.1001/archpsyc.63.5.484
+- Lakens, D. (2013). Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for t-tests and ANOVAs. *Frontiers in Psychology*, 4, 863. https://doi.org/10.3389/fpsyg.2013.00863
+- Lakens, D. (2022). Sample size justification. *Collabra: Psychology*, 8(1), 33267. https://doi.org/10.1525/collabra.33267
+- Lakens, D., Scheel, A. M., & Isager, P. M. (2018). Equivalence testing for psychological research: A tutorial. *Advances in Methods and Practices in Psychological Science*, 1(2), 259–269. https://doi.org/10.1177/2515245918770963
+- Nisa, C. F., Bélanger, J. J., Schumpe, B. M., & Faller, D. G. (2019). Meta-analysis of randomised controlled trials testing behavioural interventions to promote household action on climate change. *Nature Communications*, 10, 4545. https://doi.org/10.1038/s41467-019-12457-2
+- Osbaldiston, R., & Schott, J. P. (2012). Environmental sustainability and behavioral science: Meta-analysis of proenvironmental behavior experiments. *Environment and Behavior*, 44(2), 257–299. https://doi.org/10.1177/0013916511402673
+- Richard, F. D., Bond, C. F., & Stokes-Zoota, J. J. (2003). One hundred years of social psychology quantitatively described. *Review of General Psychology*, 7(4), 331–363. https://doi.org/10.1037/1089-2680.7.4.331
 - Kay, C. S. (2025). Why you shouldn’t trust data collected on MTurk. Behavior Research Methods, 57(12), 340. https://doi.org/10.3758/s13428-025-02852-7
 - Schulz, J. F., Bahrami-Rad, D., Beauchamp, J. P., & Henrich, J. (2018). The origins of WEIRD psychology. *Science*.
 - Starcevich, L. A., Burgess, H., & Uhrin, A. V. (2025). Optimizing marine debris monitoring: Balancing statistical power and test size in survey design. *Ecological Indicators*. https://doi.org/10.1016/j.ecolind.2025.113807

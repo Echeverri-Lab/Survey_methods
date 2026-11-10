@@ -168,6 +168,18 @@ See `visualization_guide.md` for annotated examples and code. Quick reference:
 
 ---
 
+## Fillable PDF versions of the templates
+
+Every template in this folder also comes as a fillable PDF next to the Markdown file. You do not need GitHub or Markdown to use them: open the PDF link below, click the download button, fill it in with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it to your assignment.
+
+| Template | Markdown source | Fillable PDF |
+|---|---|---|
+| Data Cleaning Checklist for Survey Research | [`data_cleaning_checklist.md`](data_cleaning_checklist.md) | [`data_cleaning_checklist.pdf`](data_cleaning_checklist.pdf) |
+
+*The PDFs are generated from the Markdown with [`tools/make_fillable_pdfs.py`](../tools/make_fillable_pdfs.py); edit the Markdown, then rebuild the PDFs.*
+
+---
+
 ## References
 
 - Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. *Qualitative Research in Psychology*, 3(2), 77-101.
