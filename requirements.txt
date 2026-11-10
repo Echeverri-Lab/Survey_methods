@@ -4,3 +4,4 @@ scipy
 matplotlib
 seaborn
 jupyter
+reportlab>=4.0,<4.3  # tools/make_fillable_pdfs.py (newer releases need Python 3.10+)

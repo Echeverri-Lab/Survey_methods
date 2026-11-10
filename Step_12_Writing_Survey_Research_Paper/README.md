@@ -129,6 +129,19 @@ The published manuscript is rarely the only output. For community or place-based
 
 ---
 
+## Fillable PDF versions of the templates
+
+Every template in this folder also comes as a fillable PDF next to the Markdown file. You do not need GitHub or Markdown to use them: open the PDF link below, click the download button, fill it in with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it to your assignment.
+
+| Template | Markdown source | Fillable PDF |
+|---|---|---|
+| Methods Section Template for Survey Research Papers | [`methods_section_template.md`](methods_section_template.md) | [`methods_section_template.pdf`](methods_section_template.pdf) |
+| Reporting Checklists for Survey Research | [`reporting_checklists.md`](reporting_checklists.md) | [`reporting_checklists.pdf`](reporting_checklists.pdf) |
+
+*The PDFs are generated from the Markdown with [`tools/make_fillable_pdfs.py`](../tools/make_fillable_pdfs.py); edit the Markdown, then rebuild the PDFs.*
+
+---
+
 ## References
 
 - Eysenbach, G. (2004). Improving the quality of web surveys: the Checklist for Reporting Results of Internet E-Surveys (CHERRIES). *Journal of Medical Internet Research*, 6(3), e34.

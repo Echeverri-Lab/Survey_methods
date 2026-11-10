@@ -56,6 +56,18 @@ Step_08_Ethics_and_Compensation/
 
 ---
 
+## Fillable PDF versions of the templates
+
+Every template in this folder also comes as a fillable PDF next to the Markdown file. You do not need GitHub or Markdown to use them: open the PDF link below, click the download button, fill it in with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it to your assignment.
+
+| Template | Markdown source | Fillable PDF |
+|---|---|---|
+| Consent template | [`policies/consent_template.md`](policies/consent_template.md) | [`consent_template.pdf`](policies/consent_template.pdf) |
+
+*The PDFs are generated from the Markdown with [`tools/make_fillable_pdfs.py`](../tools/make_fillable_pdfs.py); edit the Markdown, then rebuild the PDFs.*
+
+---
+
 ## References
 
 - Betancort Cabrera, N., Bongartz, E. C., Dörrenbächer, N., Goebel, J., Kaluza, H., & Siegers, P. (2020). White paper on implementing the FAIR principles for data in the social, behavioural, and economic sciences (Vol. 274). Rat für Sozial- und Wirtschaftsdaten (RatSWD). https://doi.org/https://doi.org/10.17620/02671.60

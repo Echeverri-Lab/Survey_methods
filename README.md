@@ -39,6 +39,12 @@ Each `Step_XX` folder corresponds to one section of the manuscript and contains:
 
 Work through the steps in order for a new study, or jump directly to the step most relevant to your current task.
 
+### Using the templates without GitHub or Markdown
+
+- **Fillable PDFs.** Every template in the step folders (design matrices, randomization plan, survey matrix, power-analysis worksheet, checklists, and others) has a fillable PDF next to its Markdown file, linked from each step's README. Download the PDF, type into the boxes with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it. To download from GitHub, open the PDF and click the download button above the preview.
+- **R power-analysis examples.** [`Step_09_Power_Analysis_Sampling_and_Pilots/scripts/`](Step_09_Power_Analysis_Sampling_and_Pilots/scripts/) has commented R scripts for two-group, BACI, and ACI designs.
+- **Maintainers:** the PDFs are generated from the Markdown by [`tools/make_fillable_pdfs.py`](tools/make_fillable_pdfs.py). After editing a template, run `venv/bin/python tools/make_fillable_pdfs.py` (or `python tools/make_fillable_pdfs.py Step_04` for one step) and commit the Markdown and PDF together.
+
 ---
 
 ## Repository structure

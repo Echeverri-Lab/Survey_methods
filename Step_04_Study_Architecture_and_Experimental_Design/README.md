@@ -39,3 +39,18 @@ This folder covers the architecture of survey and behavioral intervention studie
 - Scale selection → [`../Step_03_Psychometric_Scales_and_Construct_Validity/`](../Step_03_Psychometric_Scales_and_Construct_Validity/)
 - Pre-registration → [`../Step_05_Preregistration_and_Open_Science/`](../Step_05_Preregistration_and_Open_Science/)
 
+---
+
+## Fillable PDF versions of the templates
+
+Every template in this folder also comes as a fillable PDF next to the Markdown file. You do not need GitHub or Markdown to use them: open the PDF link below, click the download button, fill it in with the free Adobe Acrobat Reader (macOS Preview and web browsers also work), save, and attach it to your assignment.
+
+| Template | Markdown source | Fillable PDF |
+|---|---|---|
+| Design Decision Matrix | [`design_decision_matrix.md`](design_decision_matrix.md) | [`design_decision_matrix.pdf`](design_decision_matrix.pdf) |
+| Randomization Plan | [`design_docs/randomization_plan.md`](design_docs/randomization_plan.md) | [`randomization_plan.pdf`](design_docs/randomization_plan.pdf) |
+| Survey Flow Diagram — Template | [`design_docs/survey_flow_diagram.md`](design_docs/survey_flow_diagram.md) | [`survey_flow_diagram.pdf`](design_docs/survey_flow_diagram.pdf) |
+| Study Design Checklist | [`study_design_checklist.md`](study_design_checklist.md) | [`study_design_checklist.pdf`](study_design_checklist.pdf) |
+| Temporal Context Log | [`temporal_context_log.md`](temporal_context_log.md) | [`temporal_context_log.pdf`](temporal_context_log.pdf) |
+
+*The PDFs are generated from the Markdown with [`tools/make_fillable_pdfs.py`](../tools/make_fillable_pdfs.py); edit the Markdown, then rebuild the PDFs.*
