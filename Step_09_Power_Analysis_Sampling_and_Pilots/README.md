@@ -19,6 +19,7 @@ Step_09_Power_Analysis_Sampling_and_Pilots/
     ├── power_example_b_baci.R             ← (b) BACI: before/after × control/impact (pwr + lme4 simulation)
     ├── power_example_c_aci.R              ← (c) ACI: after-only control/impact, clustered sites (pwr)
     ├── power_example_d_2x2_between_mediation.R ← (d) 2×2 message experiment: behaviour outcomes + mediation
+    ├── power_example_e_sample_size_calculator_traits.R ← (e) sample size calculator: predicting an outcome from traits (no intervention)
     └── power_example.py                   ← Python placeholder
 ```
 
@@ -41,6 +42,7 @@ The `scripts/` folder has one commented R script per design. Each script explain
 | [`power_example_b_baci.R`](scripts/power_example_b_baci.R) | BACI: everyone measured before and after; control vs. impact groups | `pwr`, `lme4` | N of completers and recruits, sensitivity to the pre–post correlation, mixed-model simulation |
 | [`power_example_c_aci.R`](scripts/power_example_c_aci.R) | ACI: after-only, control vs. impact, respondents clustered in sites | `pwr` | N for 2 and 3 groups (*d* and *f*), design effect, sites needed, sensitivity table |
 | [`power_example_d_2x2_between_mediation.R`](scripts/power_example_d_2x2_between_mediation.R) | Hypothetical 2×2 between-subjects message experiment (narrative vs. fact sheet × scientist vs. farmer messenger), with behavioural outcomes and mediation | `pwr` (+ base-R simulation) | Minimum detectable *d* with a fixed N, the same effect as *f*/partial η², why the interaction is exploratory, detectable petition-signing increases, Monte Carlo mediation power |
+| [`power_example_e_sample_size_calculator_traits.R`](scripts/power_example_e_sample_size_calculator_traits.R) | **Sample size calculator** for an observational study with several predictors and no intervention (hypothetical: willingness to host a bird nest, predicted from the bird's plumage colour, pattern, and diet). Three versions: one rating per person; a fixed set of real species; designed trait profiles (conjoint) | `pwr`, `lme4` | N for one predictor's unique effect (Δ*R*², *f*²) vs. the overall test; why the number of SPECIES, not people, limits power when traits belong to species; respondents × profiles needed in a conjoint design |
 
 To run a script, install [R](https://cran.r-project.org) (and optionally RStudio), open the file, edit the "YOUR ASSUMPTIONS" section, and click **Source** (or run `Rscript scripts/power_example_a_two_groups.R`). The scripts install `pwr` and `lme4` if they are missing. Record the numbers in [`power_analysis_template.pdf`](power_analysis_template.pdf) and attach the script output.
 
